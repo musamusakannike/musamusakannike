@@ -1,0 +1,55 @@
+body{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'sans-serif';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: linear-gradient(135deg, #2af598, #009efd);
+}
+
+body > section{
+	padding: 15px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding-bottom: 50px;
+	background: linear-gradient(135deg, #009efd, #2af598)
+}
+
+h1{
+	font-size: 4rem;
+	margin: 2px 0;
+	text-align: center;
+	color: #f4f4f4;
+}
+
+#message-el{
+	font-style: italic;
+	font-size: large;
+}
+
+.start-container{
+	text-align: center;
+}
+
+.start-container button{
+	color: #f4f4f4;
+	background: linear-gradient(90deg, #0075ff, #00a3ff);
+	padding: 10px;
+	margin: 3px auto;
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	cursor: pointer;
+	transition: .8s;
+}
+
+.start-container button:hover{
+	background: linear-gradient(90deg, #00a3ff, #0075ff);
+}
+
+#player-el{
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: bolder;
+	margin: 5px 0;
+}

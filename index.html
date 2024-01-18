@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Musa Musa Kannike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Brief description of your website">
+    <meta property="og:title" content="Musa Musa Kannike">
+    <meta property="og:description"
+        content="Musa Musa Kannike's portfolio showcases a skilled frontend web developer with expertise in HTML, CSS, JavaScript, Bootstrap, and jQuery. Explore the site for a concise overview of education, skills, social presence, client testimonials, and contact details.">
+    <meta property="og:image" content="img/profile_image.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow px-md-5 py-3">
+        <a class="navbar-brand font-weight-bold">Musa Musa Kannike</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="fa fa-navicon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a id="homeNav" class="nav-link active" href="#home">HOME</a></li>
+                <li class="nav-item"><a id="aboutNav" class="nav-link" href="#about-me">ABOUT</a></li>
+                <li class="nav-item"><a id="educationNav" class="nav-link" href="#education">EDUCATION</a></li>
+                <li class="nav-item"><a id="skillsNav" class="nav-link" href="#skills">SKILLS</a></li>
+                <!-- <li class="nav-item" id=""><a class="nav-link" href="#experience">EXPERIENCE</a></li> -->
+                <li class="nav-item"><a id="socialNav" class="nav-link" href="#social">SOCIAL</a></li>
+                <li class="nav-item"><a id="projectsNav" class="nav-link" href="#projects">PROJECTS</a></li>
+                <!-- <li class="nav-item" id=""><a class="nav-link" href="#clients">CLIENTS</a></li> -->
+                <li class="nav-item"><a id="contactNav" class="nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn"><a href="#home"><i class="fa fa-arrow-circle-o-up"></i></a></button>
+
+    <header class="header" id="home">
+        <div class="hero-text">
+            <h1 class="animate__animated animate__fadeInUp">I am Musa Musa Kannike</h1>
+            <p class="animate__animated animate__fadeInUp">And I'm a Frontend Developer</p>
+            <button class="hire-me my-2 mx-2 animate__animated animate__fadeInDown"><a href="#contact">Hire me</a></button>
+            <button class="download-cv my-2 mx-2 animate__animated animate__fadeInDown"><a href="Resume/MUSA MUSA.pdf"
+                    download="MUSA MUSA.pdf">Download CV</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-me" class="text-center py-5">
+            <h2 class="py-4 font-weight-bolder">ABOUT ME</h2>
+            <hr>
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <p>Hello there! I'm Musa Musa Kannike, a passionate frontend web developer with expertise in
+                            HTML, CSS, JavaScript, Bootstrap, and jQuery. I find joy in crafting visually stunning and
+                            highly responsive websites that leave a lasting impression.</p>
+                        <p class="text-secondary">Let's create beautiful and responsive websites together. Check out
+                            some of
+                            <a href="#projects">my projects</a>.
+                        </p>
+
+
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading1">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse1">Read more... </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="heading1">
+                                    <div class="panel-body">
+                                        <p class="text-secondary">I thrive on turning ideas into reality, leveraging my
+                                            skills in HTML, CSS, JavaScript, Bootstrap, and jQuery. With a keen eye for
+                                            design and a commitment to delivering exceptional user experiences, I ensure
+                                            that every project is a masterpiece.</p>
+
+                                        <p class="text-secondary">Driven by a passion for coding, I constantly seek new
+                                            challenges and opportunities to enhance my skills. My journey involves
+                                            overcoming coding puzzles, exploring innovative solutions, and staying
+                                            up-to-date with the latest industry trends
+                                        </p>
+
+                                        <p class="text-secondary">Beyond coding, I am dedicated to fostering
+                                            collaboration and creating a positive impact in the web development
+                                            community. Let's connect and explore the endless possibilities of the
+                                            digital realm!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row border-top mt-4 pt-4">
+                            <div class="col-sm-12 col-md-4">
+                                <h6>Phone Number</h6>
+                                <p>+234-913-3896-509</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <h6>Email</h6>
+                                <p>musamusakannike@gmail.com</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <h6>Address</h6>
+                                <Address>
+                                    Ilorin, Kwara State, Nigeria.
+                                </Address>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <img loading="lazy" src="img/profile_image.jpg"
+                            alt="Musa Musa Kannike's official profile picture" class="profile-pic">
+                        <div class="social-media-links text-light py-3 position-absolute">
+                            <a href="https://www.instagram.com/musamusakannike?igsh=YzljYTk10Dg3Zg=="><i
+                                    class="text-light fa fa-2x fa-instagram fa-border"></i></a>
+                            <a href="www.linkedin.com/in/musamusakannike"><i class="text-light fa fa-2x fa-linkedin fa-border"></i></a>
+                            <a href="https://twitter.com/Musa_Musa_K" class="text-dark"><i class="text-light fa fa-2x fa-brands fa-x-twitter fa-border"></i></a>
+                            <a href="https://github.com/musamusakannike"><i class="text-light fa fa-2x fa-github fa-border"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="container py-5">
+            <h2 class="py-4 font-weight-bolder text-center">EDUCATION</h2>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card shadow">
+                        <img loading="lazy" src="img/webCertificate.jpg"
+                            alt="Musa Musa Kannike's web development certificate" class="card-img img-thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Complete Web development</h5>
+                            <h6 class="card-subtitle">Courses: <span class="text-secondary">HTML, CSS, JavaScript,
+                                    Bootstrap</span></h6>
+                            <p class="card-text ml-3">I have undergone rigorous training and earned certification in a
+                                'Comprehensive Web Development Course' offered by Programming Hero. This course covered
+                                a broad spectrum of web technologies, including HTML, CSS, Bootstrap, and JavaScript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card shadow my-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Complete Web development</h5>
+                            <h6 class="card-subtitle py-1">Institution: <span class="text-secondary">Programming Hero
+                                    Institute</span></h6>
+                            <h6 class="card-subtitle py-1">Duration: <span class="text-secondary">June 2023 - August
+                                    2023</span></h6>
+                            <h6 class="card-subtitle py-1">Degree: <span class="text-secondary">Certificate in Web
+                                    Development</span></h6>
+                            <h6 class="card-subtitle py-1">Relevant Courses: <span class="text-secondary">HTML, CSS,
+                                    JavaScript, Bootstrap</span></h6>
+                            <p class="card-text ml-3">
+                                Earned a certificate in a comprehensive web development course, covering a broad
+                                spectrum of web technologies including HTML, CSS, Bootstrap, and JavaScript.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow my-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Complete jQuery</h5>
+                            <h6 class="card-subtitle py-1">Institution: <span class="text-secondary">The NetNinja</span>
+                            </h6>
+                            <h6 class="card-subtitle py-1">Duration: <span class="text-secondary">August 2023 -
+                                    September 2023</span></h6>
+                            <h6 class="card-subtitle py-1">Degree: <span class="text-secondary">Comprehensive Knowledge
+                                    of jQuery</span></h6>
+                            <h6 class="card-subtitle py-1">Relevant Courses: <span class="text-secondary">JavaScript,
+                                    jQuery, AJAX</span></h6>
+                            <p class="card-text ml-3">
+                                Completed a comprehensive jQuery course, covering a JavaScript framework; 'jquery'.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container text-center py-5">
+            <h2 class="py-4 font-weight-bolder">SKILLS</h2>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center">
+                    <div class="progress my-5 animate-on-scroll" style="height: 30px;">
+                        <div class="html-skill progress-bar progress-bar-warning progress-bar-striped active"
+                            role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 99%; height: 30px;">
+                            <span class="h5 pt-1">HTML 5 Skill: 99%</span>
+                        </div>
+                    </div>
+
+                    <div class="progress my-5 animate-on-scroll" style="height: 30px;">
+                        <div class="css-skill progress-bar progress-bar-striped active" role="progressbar"
+                            aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 97%; height: 30px;">
+                            <span class="h5 pt-1">CSS Skill: 97%</span>
+                        </div>
+                    </div>
+
+                    <div class="progress my-5 animate-on-scroll" style="height: 30px;">
+                        <div class="js-skill progress-bar progress-bar-striped active" role="progressbar"
+                            aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%; height: 30px;">
+                            <span class="h5 pt-1">JavaScript Skill: 93%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 text-center">
+                    <div class="progress my-5 animate-on-scroll" style="height: 30px;">
+                        <div class="bootstrap-skill progress-bar progress-bar-striped active" role="progressbar"
+                            aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%; height: 30px;">
+                            <span class="h5 pt-1">Bootstrap Skill: 93%</span>
+                        </div>
+                    </div>
+
+                    <div class="progress my-5 animate-on-scroll" style="height: 30px;">
+                        <div class="jquery-skill progress-bar progress-bar-striped active" role="progressbar"
+                            aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; height: 30px;">
+                            <span class="h5 pt-1">JQuery Skill: 91%</span>
+                        </div>
+                    </div>
+
+                    <div class="progress my-5 animate-on-scroll" style="height: 30px;">
+                        <div class="comm-skill progress-bar progress-bar-striped active" role="progressbar"
+                            aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; height: 30px;">
+                            <span class="h5 pt-1">Communication Skill: 95%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social" class=" container text-center py-5">
+            <h2 class="py-4 font-weight-bolder">SOCIAL</h2>
+
+            <div class="row">
+                <div class="col-md-3 my-3">
+                    <div class="card shadow py-5">
+                        <a href="https://www.instagram.com/musamusakannike?igsh=YzljYTk10Dg3Zg==" class="text-dark"><i
+                                class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 my-3">
+                    <div class="card shadow py-5">
+                        <a href="www.linkedin.com/in/musamusakannike" class="text-dark"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 my-3">
+                    <div class="card shadow py-5">
+                        <a href="https://twitter.com/Musa_Musa_K" class="text-dark"><i class="fa fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 my-3">
+                    <div class="card shadow py-5">
+                        <a href="https://github.com/musamusakannike" class="text-dark"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container text-center py-5">
+            <h2 class="py-4 font-weight-bolder">PROJECTS</h2>
+
+            <p>As a passionate frontend web developer, I have worked on various interesting projects. Their designs are
+                highly responsive and they leave a lasting impression. Here is a showcase of some of my projects.</p>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow my-2" style="height: 320px;">
+                        <div class="img-thumbnail">
+                            <img loading="lazy" src="img/tic-tac-toe-project.png"
+                                alt="An image showing a responsive tic tac toe game project" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Tic Tac Toe</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="Projects/Tic Tac Toe/index.html"><i class="fa fa-external-link"></i>Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow my-2" style="height: 320px;">
+                        <div class="img-thumbnail">
+                            <img loading="lazy" src="img/blackjack-project.png"
+                                alt="An image showing a responsive Blackjack game project" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Blackjack game simulator</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="Projects/Blackjack/index.html"><i class="fa fa-external-link"></i>Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow my-2" style="height: 320px;">
+                        <div class="img-thumbnail">
+                            <img loading="lazy" src="img/calculator-project.png"
+                                alt="An image showing a responsive simple Calculator project" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Calculator</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="Projects/Calculator/index.html"><i class="fa fa-external-link"></i>Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow my-2">
+                        <div class="img-thumbnail">
+                            <img loading="lazy" src="img/topic-website-project.png"
+                                alt="An image showing a responsive website project for a company" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Topic: A company website</h4>
+                            <p class="card-subtitle text-secondary">This project is a redesign of a template gotten from
+                                <a href="https://templatemo.com/">TemplateMo</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="Projects/Topic/index.html"><i class="fa fa-external-link"></i>Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow my-2">
+                        <div class="img-thumbnail">
+                            <img loading="lazy" src="img/finexo-project.png"
+                                alt="An image showing a responsive website for a crypto project" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Finexo: A crypto project</h4>
+                            <p class="card-subtitle text-secondary">This project is a redesign of a template gotten from
+                                <a href="https://www.free-css.com/">Free CSS</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="Projects/Finexo/index.html"><i class="fa fa-external-link"></i>Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow my-2">
+                        <div class="img-thumbnail">
+                            <img loading="lazy" src="img/to-do-list-project.png"
+                                alt="An image showing a responsive to do list web application project" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">To do List</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://plum-mame-44.tiiny.site"><i class="fa fa-external-link"></i>Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <section id="clients" class="container text-center py-5">
+            <h2 class="py-4 font-weight-bolder">CLIENTS</h2>
+
+            <div class="clients-testimonials">
+                <div class="testimonial">
+                    <img loading="lazy" src="img/client1.jpg" alt="Client 1" class="client-pic">
+                    <div class="testimonial-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p class="client-name">John Doe</p>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <img loading="lazy" src="img/client2.jpg" alt="Client 2" class="client-pic">
+                    <div class="testimonial-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p class="client-name">Jane Smith</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section id="contact" class="container text-center py-5">
+            <h2 class="py-4 font-weight-bolder">CONTACT</h2>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-7">
+                    <form action="https://formspree.io/f/meqyorjr" method="POST" role="form">
+                        <input type="text" name="name" id="username" placeholder="Name" class="username" required>
+                        <input type="email" name="email" id="usermail" placeholder="Email" class="usermail" required>
+                        <input type="text" name="subject" id="user-subject" placeholder="Subject"
+                            class="my-2 user-subject" required>
+                        <textarea name="message" id="user-message" rows="10" placeholder="Your message"
+                            required></textarea>
+                        <button type="submit" id="submit" class="submit">Send</button>
+                    </form>
+                </div>
+
+                <div class="col-sm-12 col-md-5 px-1 text-left">
+                    <div class="py-2">
+                        <h3 class="font-weight-normal">Musa Musa K</h3>
+                        <p class="text-secondary">Frontend Web developer</p>
+                    </div>
+                    <div class="py-2">
+                        <h3 class="font-weight-light">Phone</h3>
+                        <p class="text-secondary">+234-913-3896-509</p>
+                    </div>
+                    <div class="py-2">
+                        <h3 class="font-weight-light">Email</h3>
+                        <p class="text-secondary">musamusakannike@gmail.com</p>
+                    </div>
+                    <div class="social-media-links">
+                        <a href="https://www.instagram.com/musamusakannike?igsh=YzljYTk10Dg3Zg=="
+                            class="text-secondary mx-2"><i class="fa fa-2x fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/musamusakannike" class="text-secondary mx-2"><i class="fa fa-2x fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Musa_Musa_K" class="text-secondary mx-2"><i class="fa fa-2x fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/musamusakannike" class="text-secondary mx-2"><i class="fa fa-2x fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-5 text-center">
+        <p class="text-monospace">&copy; Copyright | 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f93edf7c4c.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

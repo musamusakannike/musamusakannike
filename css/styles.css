@@ -1,0 +1,247 @@
+/*General Restyling*/
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Navigation styles*/
+nav.navbar {
+  background-color: #f5deb3;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+nav .nav-link.active{
+  font-weight: 700;
+}
+
+/* Scroll to top button styles */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: #af6742;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: background 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background: #d2691e;
+}
+
+#scrollToTopBtn a {
+  color: #fff;
+}
+
+/*Header styles*/
+header.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../img/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header .hero-text {
+  text-align: center;
+  position: absolute;
+  /*top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+  color: white;
+}
+
+header button {
+  padding: 12px 30px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+header button.hire-me {
+  background-color: #00bfff;
+  transition: 0.8s;
+}
+
+header button.hire-me:hover {
+  background-color: #1e90ff;
+}
+
+header button.download-cv {
+  background-color: #ff7550;
+  transition: 0.8s;
+}
+
+header button.download-cv:hover {
+  background-color: #d2691e;
+}
+
+header button a {
+  color: #fff;
+}
+
+/* Main section styles */
+main #about-me #accordion .panel-heading {
+  background-color: rgb(232, 241, 254);
+  border-bottom: 1px solid #ddd;
+  border-radius: 30px;
+  margin-bottom: 3px;
+  padding: 10px 15px;
+}
+
+main #about-me #accordion .panel-heading .panel-title a {
+  color: #111;
+}
+
+main #about-me #accordion .panel-heading .panel-title a:hover {
+  text-decoration: none;
+  color: darkslateblue;
+}
+
+main #about-me #accordion .panel-body {
+  margin: 15px;
+  padding: 30px;
+}
+
+main #about-me .profile-pic {
+  width: 91%;
+}
+
+main #about-me .social-media-links {
+  background-color: #1f2c6c;
+  top: 85%;
+  left: 5%;
+  width: 91%;
+}
+
+/*Skills styles*/
+.progress {
+  border: 1px solid #aaa;
+}
+
+.comm-skill.progress-bar,
+.jquery-skill.progress-bar,
+.bootstrap-skill.progress-bar,
+.js-skill.progress-bar,
+.css-skill.progress-bar,
+.html-skill.progress-bar {
+  background-color: #e7b557;
+  animation: progressbar 2s ease-in;
+}
+
+.animate-on-scroll .progress-bar {
+  width: 0;
+  transition: width 2s ease-in-out;
+}
+
+@keyframes progressbar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: initial;
+  }
+}
+
+/* Social styles */
+#social .row .card.shadow {
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+#social .row .card.shadow:hover {
+  background: linear-gradient(#1f2c6c, #3233a2);
+}
+
+#social .row .card.shadow a i.fa {
+  font-size: 6em;
+}
+
+#social .row .card.shadow a i.fa:hover {
+  color: #fff;
+}
+
+#clients .clients-testimonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Projects section styles */
+#projects .row .card.shadow {
+  height: 360px;
+}
+
+/*Clients section styles*/
+#clients .testimonial {
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+
+#clients .client-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#clients .testimonial-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#clients .client-name {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Contact styles */
+#contact form .username,
+#contact form .usermail {
+  width: 49%;
+  padding: 5px 2px;
+}
+
+#contact form .user-subject {
+  width: 99%;
+}
+
+#contact form textarea {
+  width: 99%;
+}
+
+#contact form .submit {
+  width: 99%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #ff7550;
+  color: #fff;
+  border: none;
+  transition: 0.8s;
+}
+
+#contact form .submit:hover {
+  background-color: #af6742;
+}

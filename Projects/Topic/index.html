@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Topic</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Link to styles.css -->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Link to bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+	<!-- Link to animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- jQuery cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<section id="top" class="pb-4">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand text-black"><i class="fa fa-clone"></i>Topics</a>
+			<button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+					class="fa fa-navicon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link text-light active" href="#">HOME</a></li>
+					<li class="nav-item"><a class="nav-link text-light" href="#browseTopics">BROWSE TOPICS</a></li>
+					<li class="nav-item"><a class="nav-link text-light" href="#howItWorks">HOW IT WORKS</a></li>
+					<li class="nav-item"><a class="nav-link text-light" href="#faqs">FAQS</a></li>
+					<li class="nav-item pr-lg-5 pr-xl-5"><a class="nav-link text-light" href="#contact">CONTACT</a></li>
+					<li class="nav-item pad-left ml-lg-5 ml-xl-5"><a class="nav-link text-light" href=""><i
+								class="fa fa-2x fa-user-circle"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<header class="mb-5 pt-5">
+			<section class="text-center" id="hero1">
+				<h1 class="text-light dis">Discover. Learn. Enjoy</h1>
+				<p>platform for creatives around the world</p>
+				<input type="text" placeholder="Design, Code, Marketing, Finance..." class="p-2">
+				<button class="py-2 px-3">Search</button>
+			</section>
+	</section>
+
+	<section id="hero2" class="py-3">
+		<div class="card p-1 mx-1 my-4">
+			<h2>Web design</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque repellendus molestiae?
+				Iusto porro repellat, expedita at ea numquam dicta quod maiores vel iure temporibus labore
+				debitis nostrum quasi ex!</p>
+		</div>
+		<div class="card p-1 mx-1 my-4 text-light">
+			<h2>Finance</h2>
+			<p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi, labore omnis iure
+				earum
+				adipisci natus deleniti rerum non, qui in placeat sapiente debitis itaque esse quam. Quos, iste
+				itaque?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab sit quibusdam iure tenetur
+				magnam labore corporis maiores porro ad laudantium, totam esse laborum blanditiis sequi!</p>
+			<span>
+				<i class="bg-info mx-1 p-2 fa fa-twitter"></i>
+				<i class="bg-info mx-1 p-2 fa fa-facebook"></i>
+				<i class="bg-info mx-1 p-2 fa fa-snapchat"></i>
+				<i class="fa fa-2x fa-bookmark-o fa-pull-right"></i>
+			</span>
+
+		</div>
+	</section>
+	</header>
+
+	<main class="my-5 py-2">
+		<section class="container" id="browseTopics">
+			<h2 class="text-center">Browse Topics</h2>
+			<nav class="text-center">
+				<ul>
+					<li><a class="btn active" id="navDesign" onclick="designClicked()">Design</a></li>
+					<li><a class="btn" id="navMarketing" onclick="marketingClicked()">Marketing</a></li>
+					<li><a class="btn" id="navFinance" onclick="financeClicked()">Finance</a></li>
+					<li><a class="btn" id="navMusic" onclick="musicClicked()">Music</a></li>
+					<li><a class="btn" id="navEducation" onclick="educationClicked()">Education</a></li>
+				</ul>
+			</nav>
+
+			<div class="grid-container mb-5 designGrid">
+				<div class="grid-item1 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Web Design</h2>
+						<p>This webite is completely designed by Musa Musa Kannike, an experienced frontend web
+							developer. You will be so lucky if you hire him.</p>
+					</div>
+				</div>
+
+				<div class="grid-item2 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Graphic</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veritatis dolore at
+							dolores maxime doloribus tempore, sequi a voluptatem commodi.</p>
+					</div>
+				</div>
+
+				<div class="grid-item3 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Logo Design</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque unde vero voluptatibus
+							explicabo, ex nihil laudantium? Voluptatum, repellat.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-container mb-5 marketingGrid" style="display: none;">
+				<div class="grid-item1 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Price Control</h2>
+						<p>This webite is completely designed by Musa Musa Kannike, an experienced frontend web
+							developer. You will be so lucky if you hire him. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Consequuntur fugit delectus quam voluptate in architecto ut sequi
+							accusantium quis fuga!</p>
+					</div>
+				</div>
+
+				<div class="grid-item2 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Inflation</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veritatis dolore at
+							dolores maxime doloribus tempore, sequi a voluptatem commodi. Lorem ipsum dolor sit
+							amet.l Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+							amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+
+				<div class="grid-item3 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Market</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque unde vero voluptatibus
+							explicabo, ex nihil laudantium? Voluptatum, repellat. Lorem ipsum dolor sit amet
+							consectetur, adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Incidunt id neque libero ipsum quasi architecto ratione consectetur amet esse! Rerum?
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-container mb-5 financeGrid" style="display: none;">
+				<div class="grid-item1 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Money</h2>
+						<p>This webite is completely designed by Musa Musa Kannike, an experienced frontend web
+							developer. You will be so lucky if you hire him. Lorem ipsum dolor, sit amet consectetur
+							adipisicing elit. Nesciunt, eveniet!</p>
+					</div>
+				</div>
+
+				<div class="grid-item2 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>World Bank</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veritatis dolore at
+							dolores maxime doloribus tempore, sequi a voluptatem commodi. Lorem ipsum dolor sit
+							amet.</p>
+					</div>
+				</div>
+
+				<div class="grid-item3 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Currency values</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque unde vero voluptatibus
+							explicabo, ex nihil laudantium? Voluptatum, repellat. Lorem ipsum dolor sit amet
+							consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-container mb-5 musicGrid" style="display: none;">
+				<div class="grid-item1 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Hip-Pop</h2>
+						<p>This webite is completely designed by Musa Musa Kannike, an experienced frontend web
+							developer. You will be so lucky if you hire him. Lorem ipsum, dolor sit amet consectetur
+							adipisicing elit. Labore, tenetur.</p>
+					</div>
+				</div>
+
+				<div class="grid-item2 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Blues</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veritatis dolore at
+							dolores maxime doloribus tempore, sequi a voluptatem commodi. Lorem ipsum dolor sit
+							amet.</p>
+					</div>
+				</div>
+
+				<div class="grid-item3 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Fuji</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque unde vero voluptatibus
+							explicabo, ex nihil laudantium? Voluptatum, repellat. Lorem ipsum dolor, sit amet
+							consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-container mb-5 educationGrid" style="display: none;">
+				<div class="grid-item1 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Science</h2>
+						<p>This webite is completely designed by Musa Musa Kannike, an experienced frontend web
+							developer. You will be so lucky if you hire him. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Accusamus, incidunt.</p>
+					</div>
+				</div>
+
+				<div class="grid-item2 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>Technology</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veritatis dolore at
+							dolores maxime doloribus tempore, sequi a voluptatem commodi. Lorem ipsum dolor sit
+							amet.</p>
+					</div>
+				</div>
+
+				<div class="grid-item3 grid-item my-2">
+					<div class="card shadow p-2">
+						<h2>School</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque unde vero voluptatibus
+							explicabo, ex nihil laudantium? Voluptatum, repellat. Lorem ipsum dolor sit, amet
+							consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="container-fluid my-5" id="howItWorks">
+			<h2 class="text-center">How does it work?</h2>
+			<dl>
+				<dt class="h3"> <i class="fa fa-search"></i> Search your favourite topic</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+
+				<dt class="h3"> <i class="fa fa-bookmark"></i> Bookmark & keep it for yourself</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+
+				<dt class="h3"> <i class="fa fa-book"></i> Read & Enjoy</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+			</dl>
+
+			<div class="text-center pb-5"><i>Want to learn more?</i> <a href="youtube.com"
+					class="btn btn-outline-light">Check out YouTube</a> </div>
+		</section>
+
+		<section class="container" id="faqs">
+			<div>
+				<h2>Frequently Asked Questions</h2>
+				<img src="img/faq.png" alt="An image representing Frequently asked questions.">
+			</div>
+			<div>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="heading1">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1">What
+									is Topic Listing? <i class="fa fa-pull-right fa-angle-down"></i></a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse in" role="tabpanel"
+							aria-labelledby="heading1">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis beatae
+								inventore, voluptatum, mollitia doloremque nostrum ab animi natus iste quos
+								voluptatibus odit nam repudiandae cupiditate error accusamus laboriosam?
+								Consequuntur, deserunt.
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="heading2">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2">How
+									to find a Topic <i class="fa fa-pull-right fa-angle-down"></i></a>
+							</h4>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse in" role="tabpanel"
+							aria-labelledby="heading2">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis beatae
+								inventore, voluptatum, mollitia doloremque nostrum ab animi natus iste quos
+								voluptatibus odit nam repudiandae cupiditate error accusamus laboriosam?
+								Consequuntur, deserunt.
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="heading3">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Is it
+									paid for? <i class="fa fa-pull-right fa-angle-down"></i></a>
+							</h4>
+						</div>
+						<div id="collapse3" class="panel-collapse collapse in" role="tabpanel"
+							aria-labelledby="heading3">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis beatae
+								inventore, voluptatum, mollitia doloremque nostrum ab animi natus iste quos
+								voluptatibus odit nam repudiandae cupiditate error accusamus laboriosam?
+								Consequuntur, deserunt.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="p-3 my-4">
+			<h2 class="text-center">Get in Touch</h2>
+			<div class="grid-container">
+				<div>
+					<img src="img/location.png" class="img-thumbnail">
+				</div>
+				<div class="card p-1 my-2">
+					<h3>Head office</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
+				<div class="card p-1 my-2">
+					<h3>Dubai office</h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="grid-container">
+			<div class="my-2 pb-3">
+				<h3><i class="fa fa-2x fa-clone"></i>Topic</h3>
+			</div>
+			<div class="my-2">
+				<h3>Resources</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#howItWorks">How it works</a></li>
+					<li><a href="#faqs">FAQs</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="my-2">
+				<h3>Information</h3>
+				<li>+234-56789-100</li>
+				<li>info@topicproject.mymail.com</li>
+			</div>
+			<div>
+				<select name="Language">
+					<option value="arabic">Arabic</option>
+					<option value="english" selected>English</option>
+					<option value="french">French</option>
+					<option value="yoruba">Yoruba</option>
+				</select>
+				<p class="pt-3">Copyright &copy; Topic, 2023</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/script.js" async defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/f93edf7c4c.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
