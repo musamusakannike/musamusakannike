@@ -14,6 +14,7 @@ Welcome to my GitHub profile! I'm a passionate web developer with a focus on bui
 - React-Bootstrap
 - React.js
 - Next.js
+- Tailwind
 
 **Backend Development:**
 
@@ -22,8 +23,6 @@ Welcome to my GitHub profile! I'm a passionate web developer with a focus on bui
 
 **Database:**
 
-- Firebase
-- Firebase Auth
 - MongoDB
 
 ## 🌟 Projects
@@ -34,6 +33,16 @@ A movie app that allows you to check trending movies, add favourites, search cat
 - **Frontend:** React, Bootstrap
 - **Data:** The MovieDB API
 
+#### [App Site]((https://watch-wave2.vercel.app)
+
+### [Dishful](https://github.com/musamusakannike/dishful)
+An AI powered website for searching food recipes
+
+- **Frontend:** Next, Tailwind
+- **Data:** The MealDB API
+- **AI:** Google generative AI API
+
+#### [App Site](https://dishful.vercel.app)
 
 ## 📫 How to reach me
 
