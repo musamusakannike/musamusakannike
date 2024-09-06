@@ -33,7 +33,9 @@ A movie app that allows you to check trending movies, add favourites, search cat
 - **Frontend:** React, Bootstrap
 - **Data:** The MovieDB API
 
-#### [App Site]((https://watch-wave2.vercel.app)
+#### [WatchWave App Site](https://watch-wave2.vercel.app)
+
+
 
 ### [Dishful](https://github.com/musamusakannike/dishful)
 An AI powered website for searching food recipes
@@ -42,7 +44,7 @@ An AI powered website for searching food recipes
 - **Data:** The MealDB API
 - **AI:** Google generative AI API
 
-#### [App Site](https://dishful.vercel.app)
+#### [Dishful App Site](https://dishful.vercel.app)
 
 ## 📫 How to reach me
 
