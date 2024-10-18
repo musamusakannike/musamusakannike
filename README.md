@@ -15,11 +15,13 @@ Welcome to my GitHub profile! I'm a passionate web developer with a focus on bui
 - React.js
 - Next.js
 - Tailwind
+- React Native
 
 **Backend Development:**
 
 - Node.js
 - Express.js
+- Python
 
 **Database:**
 
