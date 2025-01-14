@@ -15,7 +15,7 @@ Welcome to my GitHub profile! I'm a passionate web developer with a focus on bui
 - React.js
 - Next.js
 - Tailwind
-- React Native
+- React Native (Expo)
 
 **Backend Development:**
 
@@ -29,6 +29,15 @@ Welcome to my GitHub profile! I'm a passionate web developer with a focus on bui
 
 ## 🌟 Projects
 
+### [SmartDrill](https://github.com/musamusakannike/smart-drill-frontend)
+Access past questions, take mock tests, and get AI-powered explanations to sharpen your understanding. SmartDrill is your ultimate study companion.
+- **[Frontend](https://github.com/musamusakannike/smart-drill-frontend):** Next js, Tailwind css
+- **[Backend](https://github.com/musamusakannike/smart-drill-backend):** Node js, Express
+- **Database:** MongoDB
+
+#### [SmartDrill Website](https://smartdrill.vercel.app)
+
+
 ### [WatchWave](https://github.com/musamusakannike/WatchWave2.0)
 A movie app that allows you to check trending movies, add favourites, search categories and search for movies.
 
@@ -37,17 +46,6 @@ A movie app that allows you to check trending movies, add favourites, search cat
 
 #### [WatchWave App Site](https://watch-wave2.vercel.app)
 
-
-
-### [Dishful](https://github.com/musamusakannike/dishful)
-An AI powered website for searching food recipes
-
-- **Frontend:** Next, Tailwind
-- **Data:** The MealDB API
-- **AI:** Google generative AI API
-
-#### [Dishful App Site](https://dishful.vercel.app)
-
 ## 📫 How to reach me
 
 - **Email:** musamusakannike@gmail.com
@@ -55,9 +53,9 @@ An AI powered website for searching food recipes
 
 ## 🌱 Currently Learning
 
-- Advanced Node.js
-- React Native
 - GraphQL
+- ML Engineering
+- PostgreSQL
 
 ## 💼 Job Experience
 
