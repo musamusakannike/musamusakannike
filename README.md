@@ -46,7 +46,7 @@ A school management system application. It includes Subject management, Class ma
 - **Backend:** Node js, express, Typescript 
 - **Database:** MongoDB 
 
-#### [GradeFlow App Site](https://gradeflow.vercel.app)
+#### [GradeFlow App Site](https://gradeflow-school.vercel.app)
 
 ### [WatchWave](https://github.com/musamusakannike/WatchWave2.0)
 A movie app that allows you to check trending movies, add favourites, search categories and search for movies.
