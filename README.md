@@ -1,6 +1,6 @@
-# Hi there, I'm Musa Musa K. 👋
+# Hi there, I'm Musa Musa Kannike. 👋
 
-Welcome to my GitHub profile! I'm a passionate web developer with a focus on building beautiful, responsive, and functional web applications. Below you'll find more information about me, my skills, and my projects.
+Welcome to my GitHub profile! I'm a passionate fullstack web developer with a focus on building beautiful, responsive, and functional web applications. Below you'll find more information about me, my skills, and my projects.
 
 ## 🛠 Skills
 
@@ -14,8 +14,9 @@ Welcome to my GitHub profile! I'm a passionate web developer with a focus on bui
 - React-Bootstrap
 - React.js
 - Next.js
-- Tailwind
+- Tailwind css
 - React Native (Expo)
+- Typescript 
 
 **Backend Development:**
 
@@ -38,6 +39,15 @@ Access past questions, take mock tests, and get AI-powered explanations to sharp
 #### [SmartDrill Website](https://smartdrill.vercel.app)
 
 
+### [GradeFlow](https://github.com/musamusakannike/gradeflow-backend)
+A school management system application. It includes Subject management, Class management, Students management, Teacher management and Exam/Test Results management.
+
+- **Frontend:** Next js 15, Tailwind css
+- **Backend:** Node js, express, Typescript 
+- **Database:** MongoDB 
+
+#### [GradeFlow App Site](https://gradeflow.vercel.app)
+
 ### [WatchWave](https://github.com/musamusakannike/WatchWave2.0)
 A movie app that allows you to check trending movies, add favourites, search categories and search for movies.
 
@@ -45,6 +55,7 @@ A movie app that allows you to check trending movies, add favourites, search cat
 - **Data:** The MovieDB API
 
 #### [WatchWave App Site](https://watch-wave2.vercel.app)
+
 
 ## 📫 How to reach me
 
