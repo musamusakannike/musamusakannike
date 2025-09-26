@@ -16,7 +16,8 @@ Welcome to my GitHub profile! I'm a passionate fullstack and mobile app develope
 - React.js
 - Next.js
 - React Native (Expo)
-- Typescript 
+- Typescript
+- Shadcn UI
 
 **Backend Development:**
 
@@ -24,6 +25,8 @@ Welcome to my GitHub profile! I'm a passionate fullstack and mobile app develope
 - Express.js
 - Python
 - Typescript
+- Appwrite
+- Supabase
 
 **Database:**
 
