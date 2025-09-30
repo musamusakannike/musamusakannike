@@ -74,7 +74,9 @@ A movie app that allows you to check trending movies, add favourites, search cat
 
 ## 💼 Job Experience
 
-I'm currently seeking my first professional experience in frontend web development. I am eager to work on projects where I can apply my skills and continue to learn and grow as a developer.
+Fluenterra Limited: Developed Terrachow (B2C food delivery app) and 360gadgetsafrica (e-commerce platform).
+TaasHAM: Built a mobile app for a Saudi-based freelance platform for event planners.
+Proffyemphy's Ideal Academy: Created an eLearning platform for student-tutor interaction.
 
 ## 🎯 Goals
 
