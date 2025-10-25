@@ -1,6 +1,6 @@
 # Hi there, I'm Musa Musa Kannike. 👋
 
-Welcome to my GitHub profile! I'm a passionate fullstack and mobile app developer with a focus on building beautiful, responsive, and functional web applications. Below you'll find more information about me, my skills, and my projects.
+Welcome to my GitHub profile! I'm a passionate fullstack,desktop and mobile app developer with a focus on building beautiful, responsive, and functional web applications. Below you'll find more information about me, my skills, and my projects.
 
 ## 🛠 Skills
 
@@ -16,6 +16,7 @@ Welcome to my GitHub profile! I'm a passionate fullstack and mobile app develope
 - React.js
 - Next.js
 - React Native (Expo)
+- Electron.js
 - Typescript
 - Shadcn UI
 
@@ -27,6 +28,7 @@ Welcome to my GitHub profile! I'm a passionate fullstack and mobile app develope
 - Typescript
 - Appwrite
 - Supabase
+- Firebase
 
 **Database:**
 
