@@ -36,13 +36,13 @@ Welcome to my GitHub profile! I'm a passionate fullstack,desktop and mobile app 
 
 ## 🌟 Projects
 
-### [SmartDrill](https://github.com/musamusakannike/smart-drill-frontend)
-Access past questions, take mock tests, and get AI-powered explanations to sharpen your understanding. SmartDrill is your ultimate study companion.
-- **[Frontend](https://github.com/musamusakannike/smart-drill-frontend):** Next js, Tailwind css
-- **[Backend](https://github.com/musamusakannike/smart-drill-backend):** Node js, Express
+### [Synapse AI](https://github.com/musamusakannike/synapse)
+A Gemini AI API powered learning assistant with lots of educational and research features
+- **[Frontend](https://github.com/musamusakannike/synapse/tree/main/frontend):** Next js, Tailwind css
+- **[Backend](https://github.com/musamusakannike/synapse/tree/main/server):** Node js, Express, Gemini API, Firebase Auth
 - **Database:** MongoDB
 
-#### [SmartDrill Website](https://smartdrill.vercel.app)
+#### [Synapse AI Website](https://synapsebot.vercel.app)
 
 
 ### [GradeFlow](https://github.com/musamusakannike/gradeflow-backend)
@@ -58,6 +58,7 @@ A school management system application. It includes Subject management, Class ma
 A movie app that allows you to check trending movies, add favourites, search categories and search for movies.
 
 - **Frontend:** React, Bootstrap
+- **Mobile:** React Native, Expo
 - **Data:** The MovieDB API
 
 #### [WatchWave App Site](https://watch-wave2.vercel.app)
