@@ -63,6 +63,6 @@ Currently, I'm diving deeper into **AI and Machine Learning** technologies using
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical" alt="Musa's Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=radical" alt="Top Langs" />
+  <img src="https://github-readme-stats.vercel.app/api?username=musamusakannike&show_icons=true&theme=radical" alt="Musa's Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=musamusakannike&layout=compact&theme=radical" alt="Top Langs" />
 </p>
