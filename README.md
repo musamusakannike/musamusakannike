@@ -56,9 +56,9 @@ Currently, I'm diving deeper into **AI and Machine Learning** technologies using
 
 ## 📫 Connect with Me
 
-- 🌐 **Portfolio:** [musacodes.vercel.app](https://musacodes.vercel.app/)
+- 🌐 **Portfolio:** [codiac.online](https://portfolio.codiac.online/)
 - 📧 **Email:** [musamusakannike@gmail.com](mailto:musamusakannike@gmail.com)
-- 📄 **Resume:** [Download CV](https://musacodes.vercel.app/Musa%20Musa%20Kannike%20CV.pdf)
+- 📄 **Resume:** [Download CV](https://codiac.online/Musa%20Musa%20Kannike%20CV.pdf)
 
 ---
 
