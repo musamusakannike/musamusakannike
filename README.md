@@ -48,9 +48,9 @@ Currently, I'm diving deeper into **AI and Machine Learning** technologies using
 
 ## 💼 Work Experience
 
-- **Fullstack Developer** @ [Cloudstech](https://cloudstech.com) _(Jan 2026 - Present)_
+- **Fullstack Developer** @ [Cloudstech](https://cloudstech.org) _(Jan 2026 - Present)_
 - **Backend Developer** @ [360gadgetsafrica](https://360gadgetsafrica.com) _(Oct 2024 - Present)_
-- **Mobile App Developer Intern** @ Terrachow Logistics _(Jan 2024 - Oct 2024)_
+- **Mobile App Developer Intern** @ [Terrachow Logistics](https://terrachow.com) _(Jan 2024 - Oct 2024)_
 
 ---
 
