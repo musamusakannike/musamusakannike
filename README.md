@@ -10,16 +10,10 @@ Currently, I'm diving deeper into **AI and Machine Learning** technologies using
 
 ## 🛠️ Technical Arsenal
 
-**Languages**
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
 **Frontend & Mobile**
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 **Backend & Database**
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -29,7 +23,6 @@ Currently, I'm diving deeper into **AI and Machine Learning** technologies using
 
 **Tools & DevOps**
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Electron.js](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white)
 
 ---
 
@@ -37,11 +30,9 @@ Currently, I'm diving deeper into **AI and Machine Learning** technologies using
 
 | Project | Description | Stack |
 | :--- | :--- | :--- |
-| **[AI Word Processor](https://ai-word-processor.vercel.app)** | An app that transforms natural language prompts into formatted MS Word documents using Gemini 1.5 Flash. | Next.js, Python, FastAPI, Gemini API |
-| **[Synapse AI](https://synapsebot.vercel.app)** | Intelligent learning assistant helping students understand complex topics via conversational AI. | React, Node.js, Gemini API, MongoDB |
+| **[Sabi Learn](https://sabilearn.online)** | Intelligent learning assistant helping students understand complex topics via conversational AI. | Next.js, Nest.js, MongoDB |
 | **[Terrachow](https://store.terrachow.com/)** | B2C food logistics platform connecting consumers with vendors in Nigeria. | React Native, Node.js, MongoDB |
 | **[360GadgetsAfrica](https://360gadgetsafrica.com/)** | Comprehensive e-commerce platform for tech gadgets and VTU services. | React, React Native, Node.js |
-| **[LamatFikr](https://lamatfikr.com)** | International social platform combining community feeds with a marketplace. | Next.js, Node.js, GetStream, MongoDB |
 | **[GlamConnect](https://glamconnect.sa)** | A beauty industry platform connecting artists, models, and clients. | Next.js, Node.js, Flutter |
 
 ---
@@ -56,7 +47,7 @@ Currently, I'm diving deeper into **AI and Machine Learning** technologies using
 
 ## 📫 Connect with Me
 
-- 🌐 **Portfolio:** [codiac.online](https://portfolio.codiac.online/)
+- 🌐 **Portfolio:** [codiac.online](https://www.codiac.online/)
 - 📧 **Email:** [musamusakannike@gmail.com](mailto:musamusakannike@gmail.com)
 - 📄 **Resume:** [Download CV](https://codiac.online/Musa%20Musa%20Kannike%20CV.pdf)
 
