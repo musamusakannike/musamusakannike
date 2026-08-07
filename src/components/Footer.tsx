@@ -88,6 +88,7 @@ const Footer = () => {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`${link.name} (opens in new tab)`}
                         className="text-[#A3A3A3] hover:text-primary transition-colors duration-200 text-[15px] font-medium"
                       >
                         {link.name}

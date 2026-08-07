@@ -14,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-const SITE_URL = "https://codiac.online";
+const SITE_URL = "https://www.codiac.online";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -46,13 +46,11 @@ export const metadata: Metadata = {
     title: "Musa Musa Kannike | Fullstack Developer",
     description:
       "4+ years building production apps in web, mobile & desktop. React, Next.js, React Native, Node.js, TypeScript.",
-    images: [{ url: "/profile.jpg", width: 1200, height: 630, alt: "Musa Musa Kannike — Fullstack Developer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Musa Musa Kannike | Fullstack Developer",
     description: "4+ years building production apps in web, mobile & desktop.",
-    images: ["/profile.jpg"],
     creator: "@musa_codes",
   },
 };
@@ -61,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": `${SITE_URL}/#person`,
     name: "Musa Musa Kannike",
     alternateName: "Codiac",
     url: SITE_URL,
@@ -74,6 +73,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     knowsAbout: ["TypeScript", "React", "Next.js", "React Native", "Node.js", "Python"],
   };
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: "Musa Musa Kannike — Codiac",
+    publisher: { "@id": `${SITE_URL}/#person` },
+  };
+
+  const profilePageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${SITE_URL}/#profilepage`,
+    url: SITE_URL,
+    mainEntity: { "@id": `${SITE_URL}/#person` },
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+  };
+
   return (
     <html
       lang="en"
@@ -83,6 +100,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }}
         />
         {children}
       </body>

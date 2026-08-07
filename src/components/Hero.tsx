@@ -87,15 +87,14 @@ const Hero = () => {
               </div>
 
               {/* Headline */}
-              <h1 className="text-black text-[60px] xl:text-[68px] font-bold uppercase tracking-tight leading-[1.05] flex flex-col gap-1.5" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
-                <span className="sr-only">Musa Musa Kannike — </span>
+              <p className="text-black text-[60px] xl:text-[68px] font-bold uppercase tracking-tight leading-[1.05] flex flex-col gap-1.5" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }} aria-hidden="true">
                 <span className="block">I BUILD THINGS</span>
                 <span className="block">THAT ACTUALLY</span>
                 <span className="relative inline">
                   <span className="relative inline-block self-start mt-1 z-50">WORK.</span>
                   <span className="absolute left-0 right-0 -bottom-1 h-[48px] bg-primary transition-all z-40 transform skew-x-12 max-w-[60%]"></span>
                 </span>
-              </h1>
+              </p>
 
               <p className="text-[#525252] text-[18px] leading-[30px] font-medium max-w-xl">
                 4+ years building production-grade web, mobile & desktop applications for startups and companies across Nigeria and beyond. Specializing in React, Next.js, React Native (Expo), and Node.js.
@@ -163,8 +162,8 @@ const Hero = () => {
         </div>
 
         {/* 3D grid decoration */}
-        <div className="absolute bottom-0 left-0 right-0 w-full h-[180px] sm:h-[220px] pointer-events-none select-none z-0">
-          <Image src="/3d-grid.png" alt="Grid Pattern" fill sizes="100vw" className="object-cover object-bottom" priority />
+        <div className="absolute bottom-0 left-0 right-0 w-full h-[180px] sm:h-[220px] pointer-events-none select-none z-0" aria-hidden="true">
+          <Image src="/3d-grid.png" alt="" fill sizes="100vw" className="object-cover object-bottom" priority />
         </div>
       </section>
     </section>

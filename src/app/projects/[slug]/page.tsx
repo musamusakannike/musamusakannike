@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { projects } from "@/data/projects";
 
-const SITE_URL = "https://codiac.online";
+const SITE_URL = "https://www.codiac.online";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -78,7 +78,7 @@ export default async function ProjectPage({ params }: Props) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Projects", item: `${SITE_URL}/#projects` },
+      { "@type": "ListItem", position: 2, name: "Projects", item: `${SITE_URL}/projects` },
       { "@type": "ListItem", position: 3, name: project.name, item: url },
     ],
   };
@@ -102,7 +102,7 @@ export default async function ProjectPage({ params }: Props) {
           <nav aria-label="Breadcrumb" className="mb-8 text-[13px] font-semibold uppercase tracking-wide text-[#525252]">
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/#projects" className="hover:text-primary transition-colors">Projects</Link>
+            <Link href="/projects" className="hover:text-primary transition-colors">Projects</Link>
             <span className="mx-2">/</span>
             <span className="text-[#171717]">{project.name}</span>
           </nav>
@@ -169,7 +169,7 @@ export default async function ProjectPage({ params }: Props) {
 
           {/* Back to all projects */}
           <div className="mt-10">
-            <Link href="/#projects" className="font-bold text-[15px] text-[#171717] hover:text-primary transition-colors uppercase tracking-wide">
+            <Link href="/projects" className="font-bold text-[15px] text-[#171717] hover:text-primary transition-colors uppercase tracking-wide">
               ← Back to all projects
             </Link>
           </div>

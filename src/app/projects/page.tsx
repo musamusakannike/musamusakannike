@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { projects } from "@/data/projects";
 
-const SITE_URL = "https://codiac.online";
+const SITE_URL = "https://www.codiac.online";
 
 export const metadata: Metadata = {
   title: "Projects",
