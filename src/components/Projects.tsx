@@ -8,7 +8,7 @@ const projects = [
     tagline: "Nigerian Food Delivery Platform",
     description:
       "A food delivery platform connecting users with local vendors across Nigeria. Features real-time order tracking, secure payments, and seamless delivery management.",
-    image: "/projects/terrachow.png",
+    image: "/projects/terrachow.jpg",
     tags: ["React Native", "Expo", "Mobile"],
     role: "Mobile App Developer",
     links: [
@@ -23,7 +23,7 @@ const projects = [
     tagline: "E-commerce & Digital Services Platform",
     description:
       "A full-featured e-commerce platform for electronic gadgets across Nigeria with digital services (VTU). Integrated Paystack & Flutterwave payment gateways.",
-    image: "/projects/360gadgets.png",
+    image: "/projects/360gadgets.jpg",
     tags: ["React Native", "Next.js", "Node.js", "MongoDB", "Paystack"],
     role: "Fullstack Engineer",
     links: [
@@ -38,7 +38,7 @@ const projects = [
     tagline: "Tech Training & Gadget Repair Platform",
     description:
       "A comprehensive platform for gadget repair training (online & offline), gadget repairs, and tool sales. Built the full website(s) and service platform from ground up.",
-    image: "/projects/a1infotech.png",
+    image: "/projects/a1infotech.jpg",
     tags: ["Next.js", "TypeScript", "Node.js", "MongoDB"],
     role: "Lead Fullstack Developer",
     links: [
@@ -52,7 +52,7 @@ const projects = [
     tagline: "Beauty Professionals Booking Platform",
     description:
       "A Saudi-Arabian based platform connecting beauty professionals with clients. Simplifies booking, portfolio showcasing, and payments for beauty service providers.",
-    image: "/projects/glamconnect.png",
+    image: "/projects/glamconnect.jpg",
     tags: ["Node.js", "Express", "MongoDB", "REST API"],
     role: "Backend Developer",
     links: [
@@ -67,7 +67,7 @@ const projects = [
     tagline: "International Software & AI Agency",
     description:
       "The marketing website for an international software and AI agency. Built with Next.js, Three.js for 3D effects, and GSAP animations for a stunning, interactive experience.",
-    image: "/projects/cloudstech.png",
+    image: "/projects/cloudstech.jpg",
     tags: ["Next.js", "Three.js", "GSAP", "TypeScript"],
     role: "Frontend Engineer",
     links: [
@@ -109,7 +109,7 @@ const Projects = () => {
               <div className="relative w-full h-[200px] overflow-hidden border-b-2 border-black bg-[#F3F4F6]">
                 <Image
                   src={project.image}
-                  alt={project.name}
+                  alt={`${project.name} — ${project.tagline} project screenshot by Musa Musa Kannike`}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"

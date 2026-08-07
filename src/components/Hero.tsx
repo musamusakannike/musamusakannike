@@ -16,7 +16,7 @@ const Hero = () => {
         className="relative w-full min-h-[calc(100vh-100px)] flex flex-col lg:hidden justify-center items-start overflow-hidden px-6 sm:px-12 py-16 md:py-24 bg-black"
         style={{
           backgroundImage:
-            "linear-gradient(to right, rgba(10, 14, 17, 0.95) 0%, rgba(10, 14, 17, 0.85) 55%, rgba(10, 14, 17, 0.6) 100%), url('/profile.png')",
+            "linear-gradient(to right, rgba(10, 14, 17, 0.95) 0%, rgba(10, 14, 17, 0.85) 55%, rgba(10, 14, 17, 0.6) 100%), url('/profile.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
@@ -36,6 +36,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-white text-[40px] sm:text-[48px] font-bold uppercase tracking-tight leading-[1.1] flex flex-col gap-1" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+            <span className="sr-only">Musa Musa Kannike — </span>
             <span className="block">BUILDING THINGS</span>
             <span className="relative inline">
               <span className="relative z-50 px-0.5">THAT ACTUALLY</span>
@@ -87,6 +88,7 @@ const Hero = () => {
 
               {/* Headline */}
               <h1 className="text-black text-[60px] xl:text-[68px] font-bold uppercase tracking-tight leading-[1.05] flex flex-col gap-1.5" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+                <span className="sr-only">Musa Musa Kannike — </span>
                 <span className="block">I BUILD THINGS</span>
                 <span className="block">THAT ACTUALLY</span>
                 <span className="relative inline">
@@ -140,8 +142,8 @@ const Hero = () => {
               {/* Main image frame */}
               <div className="relative w-full aspect-[4/4.5] border-4 border-black bg-white shadow-[10px_10px_0px_#0A0E11] overflow-hidden">
                 <Image
-                  src="/profile.png"
-                  alt="Musa Musa Kannike — Fullstack Developer"
+                  src="/profile.jpg"
+                  alt="Musa Musa Kannike — Fullstack Developer, Codiac, headshot photo"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover"

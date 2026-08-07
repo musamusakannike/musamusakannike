@@ -14,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-const SITE_URL = "https://musamusakannike.dev";
+const SITE_URL = "https://codiac.online";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
     title: "Musa Musa Kannike | Fullstack Developer",
     description:
       "4+ years building production apps in web, mobile & desktop. React, Next.js, React Native, Node.js, TypeScript.",
-    images: [{ url: "/profile.png", width: 1200, height: 630, alt: "Musa Musa Kannike — Fullstack Developer" }],
+    images: [{ url: "/profile.jpg", width: 1200, height: 630, alt: "Musa Musa Kannike — Fullstack Developer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Musa Musa Kannike | Fullstack Developer",
     description: "4+ years building production apps in web, mobile & desktop.",
-    images: ["/profile.png"],
+    images: ["/profile.jpg"],
     creator: "@musa_codes",
   },
 };
@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: "Musa Musa Kannike",
     alternateName: "Codiac",
     url: SITE_URL,
-    image: `${SITE_URL}/profile.png`,
+    image: `${SITE_URL}/profile.jpg`,
     jobTitle: "Fullstack Developer",
     sameAs: [
       "https://github.com/musamusakannike",
