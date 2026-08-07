@@ -91,7 +91,7 @@ const CTA = () => {
           </a>
         ))}
         <a
-          href="/Musa Musa Kannike Fullstack CV.pdf"
+          href="/musa-musa-kannike-fullstack-cv.pdf"
           download
           className="border-2 border-[#525252] text-[#A3A3A3] hover:border-primary hover:text-primary flex items-center gap-2 px-4 py-2 text-[13px] font-bold uppercase tracking-wide transition-colors duration-200"
         >

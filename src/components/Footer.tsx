@@ -64,7 +64,7 @@ const Footer = () => {
             <div className="relative mt-2">
               <div className="absolute inset-0 border-2 border-primary bg-primary translate-x-1.5 translate-y-1.5" />
               <a
-                href="/Musa Musa Kannike Fullstack CV.pdf"
+                href="/musa-musa-kannike-fullstack-cv.pdf"
                 download
                 className="relative bg-primary text-black border-2 border-primary font-extrabold px-6 py-3 uppercase tracking-wider text-sm cursor-pointer select-none transition-transform duration-100 ease-out hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-1.5 active:translate-y-1.5 inline-block"
               >

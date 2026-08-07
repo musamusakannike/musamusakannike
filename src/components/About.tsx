@@ -52,7 +52,7 @@ const About = () => {
           {/* CTA */}
           <div className="mt-10">
             <a
-              href="/Musa Musa Kannike Fullstack CV.pdf"
+              href="/musa-musa-kannike-fullstack-cv.pdf"
               download
               className="inline-flex items-center gap-2 border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[15px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer select-none"
             >

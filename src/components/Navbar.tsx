@@ -107,7 +107,7 @@ const Navbar = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="/Musa Musa Kannike Fullstack CV.pdf"
+              href="/musa-musa-kannike-fullstack-cv.pdf"
               download
               className="font-bold text-[14px] tracking-wide text-[#525252] hover:text-primary transition-colors"
             >
@@ -155,7 +155,7 @@ const Navbar = () => {
         </div>
         <div className="mt-auto p-6 pb-12 flex flex-col gap-3">
           <a
-            href="/Musa Musa Kannike Fullstack CV.pdf"
+            href="/musa-musa-kannike-fullstack-cv.pdf"
             download
             onClick={() => setIsOpen(false)}
             className="flex h-12 w-full items-center justify-center border-[3px] border-black font-bold uppercase tracking-wider text-[15px] bg-white text-black"
