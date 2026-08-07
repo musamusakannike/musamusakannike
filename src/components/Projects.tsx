@@ -41,18 +41,6 @@ const Projects = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                {/* Role badge */}
-                <div className="absolute top-3 left-3 bg-black border border-primary px-2.5 py-1">
-                  <span className="text-[10px] font-bold text-primary uppercase tracking-widest">
-                    {project.role}
-                  </span>
-                </div>
-                {/* Index number */}
-                <div className="absolute bottom-3 right-3 w-8 h-8 bg-primary border-2 border-black flex items-center justify-center">
-                  <span className="text-black font-bold text-sm" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                </div>
               </div>
 
               {/* Content */}
