@@ -26,7 +26,7 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.slice(0, 5).map((project) => (
             <div
               key={project.id}
               className="flex flex-col bg-white border-2 border-black group hover:-translate-y-1 transition-transform duration-200"
@@ -91,6 +91,15 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center mt-14">
+          <Link
+            href="/projects"
+            className="inline-flex items-center justify-center border-[3px] border-black bg-white text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
+          >
+            View All Projects
+          </Link>
         </div>
       </div>
     </section>
