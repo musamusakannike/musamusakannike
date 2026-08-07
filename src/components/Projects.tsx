@@ -1,80 +1,7 @@
 import React from "react";
 import Image from "next/image";
-
-const projects = [
-  {
-    id: 1,
-    name: "Terrachow",
-    tagline: "Nigerian Food Delivery Platform",
-    description:
-      "A food delivery platform connecting users with local vendors across Nigeria. Features real-time order tracking, secure payments, and seamless delivery management.",
-    image: "/projects/terrachow.jpg",
-    tags: ["React Native", "Expo", "Mobile"],
-    role: "Mobile App Developer",
-    links: [
-      { label: "Website", href: "https://store.terrachow.com/" },
-      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.terrachow.terrachow" },
-      { label: "App Store", href: "https://apps.apple.com/us/app/terrachow/id1587526296" },
-    ],
-  },
-  {
-    id: 2,
-    name: "360Gadgets Africa",
-    tagline: "E-commerce & Digital Services Platform",
-    description:
-      "A full-featured e-commerce platform for electronic gadgets across Nigeria with digital services (VTU). Integrated Paystack & Flutterwave payment gateways.",
-    image: "/projects/360gadgets.jpg",
-    tags: ["React Native", "Next.js", "Node.js", "MongoDB", "Paystack"],
-    role: "Fullstack Engineer",
-    links: [
-      { label: "Website", href: "https://360gadgetsafrica.com/" },
-      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.gadgetsafrica.gadgetsafrica" },
-      { label: "App Store", href: "https://apps.apple.com/us/app/360gadgetsafrica/id6736353137" },
-    ],
-  },
-  {
-    id: 3,
-    name: "A1 Information Technology",
-    tagline: "Tech Training & Gadget Repair Platform",
-    description:
-      "A comprehensive platform for gadget repair training (online & offline), gadget repairs, and tool sales. Built the full website(s) and service platform from ground up.",
-    image: "/projects/a1infotech.jpg",
-    tags: ["Next.js", "TypeScript", "Node.js", "MongoDB"],
-    role: "Lead Fullstack Developer",
-    links: [
-      { label: "Main Site", href: "https://www.a1info.tech/" },
-      { label: "Academy", href: "https://academy.a1info.tech/" },
-    ],
-  },
-  {
-    id: 4,
-    name: "GlamConnect",
-    tagline: "Beauty Professionals Booking Platform",
-    description:
-      "A Saudi-Arabian based platform connecting beauty professionals with clients. Simplifies booking, portfolio showcasing, and payments for beauty service providers.",
-    image: "/projects/glamconnect.jpg",
-    tags: ["Node.js", "Express", "MongoDB", "REST API"],
-    role: "Backend Developer",
-    links: [
-      { label: "Web App", href: "https://glam-sync-mvp.vercel.app/" },
-      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=sa.aba.glam_connect" },
-      { label: "App Store", href: "https://apps.apple.com/us/app/glamconnect/id6755059933" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Cloudstech",
-    tagline: "International Software & AI Agency",
-    description:
-      "The marketing website for an international software and AI agency. Built with Next.js, Three.js for 3D effects, and GSAP animations for a stunning, interactive experience.",
-    image: "/projects/cloudstech.jpg",
-    tags: ["Next.js", "Three.js", "GSAP", "TypeScript"],
-    role: "Frontend Engineer",
-    links: [
-      { label: "Website", href: "https://www.cloudstech.org/" },
-    ],
-  },
-];
+import Link from "next/link";
+import { projects } from "@/data/projects";
 
 const ExternalIcon = () => (
   <svg className="w-3.5 h-3.5 ml-1 inline shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -154,6 +81,12 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="flex flex-wrap gap-3 pt-2 border-t border-neutral-100 mt-auto">
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="text-[13px] font-bold text-primary hover:text-[#171717] transition-colors uppercase tracking-wide"
+                  >
+                    Case Study
+                  </Link>
                   {project.links.map((link) => (
                     <a
                       key={link.label}

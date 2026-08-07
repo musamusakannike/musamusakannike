@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const RulerTicks = () => (
   <svg className="absolute top-0 left-0 w-full h-[18px]" xmlns="http://www.w3.org/2000/svg">
@@ -42,6 +43,8 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -56,6 +59,10 @@ const Navbar = () => {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
+    if (pathname !== "/") {
+      router.push(`/${href}`);
+      return;
+    }
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
