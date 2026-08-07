@@ -44,14 +44,14 @@ const Footer = () => {
           <div className="lg:col-span-2 flex flex-col items-start gap-5">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-[#FF634E] border-2 border-[#FF634E] flex items-center justify-center" style={{ boxShadow: "3px 3px 0 #fff" }}>
+              <div className="w-12 h-12 bg-primary border-2 border-primary flex items-center justify-center" style={{ boxShadow: "3px 3px 0 #fff" }}>
                 <span className="text-black font-bold text-base tracking-widest" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>MK</span>
               </div>
               <div>
                 <p className="font-bold text-white text-[18px] leading-tight tracking-wide uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                   Musa Musa Kannike
                 </p>
-                <p className="text-[#FF634E] text-[13px] font-semibold tracking-widest uppercase">Codiac</p>
+                <p className="text-primary text-[13px] font-semibold tracking-widest uppercase">Codiac</p>
               </div>
             </div>
 
@@ -62,11 +62,11 @@ const Footer = () => {
 
             {/* CV Download Button */}
             <div className="relative mt-2">
-              <div className="absolute inset-0 border-2 border-[#FF634E] bg-[#FF634E] translate-x-1.5 translate-y-1.5" />
+              <div className="absolute inset-0 border-2 border-primary bg-primary translate-x-1.5 translate-y-1.5" />
               <a
                 href="/Musa Musa Kannike Fullstack CV.pdf"
                 download
-                className="relative bg-[#FF634E] text-black border-2 border-[#FF634E] font-extrabold px-6 py-3 uppercase tracking-wider text-sm cursor-pointer select-none transition-transform duration-100 ease-out hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-1.5 active:translate-y-1.5 inline-block"
+                className="relative bg-primary text-black border-2 border-primary font-extrabold px-6 py-3 uppercase tracking-wider text-sm cursor-pointer select-none transition-transform duration-100 ease-out hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-1.5 active:translate-y-1.5 inline-block"
               >
                 DOWNLOAD CV
               </a>
@@ -79,7 +79,7 @@ const Footer = () => {
               <h3 className="font-extrabold text-white text-[16px] tracking-wider uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                 {section.title}
               </h3>
-              <div className="w-[40px] h-[2.5px] bg-[#FF634E] mt-2 mb-6" />
+              <div className="w-[40px] h-[2.5px] bg-primary mt-2 mb-6" />
               <ul className="flex flex-col gap-3.5 w-full">
                 {section.links.map((link) => (
                   <li key={link.name}>
@@ -88,14 +88,14 @@ const Footer = () => {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#A3A3A3] hover:text-[#FF634E] transition-colors duration-200 text-[15px] font-medium"
+                        className="text-[#A3A3A3] hover:text-primary transition-colors duration-200 text-[15px] font-medium"
                       >
                         {link.name}
                       </a>
                     ) : (
                       <Link
                         href={link.href}
-                        className="text-[#A3A3A3] hover:text-[#FF634E] transition-colors duration-200 text-[15px] font-medium"
+                        className="text-[#A3A3A3] hover:text-primary transition-colors duration-200 text-[15px] font-medium"
                       >
                         {link.name}
                       </Link>
@@ -116,7 +116,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Musa Musa Kannike (Codiac). All rights reserved.
           </p>
           <p className="text-center">
-            Built with <Link href="https://www.a1info.tech/" target="_blank" rel="noopener noreferrer" className="text-[#FF634E]">A1 info tech</Link> UI inspiration
+            Built with <Link href="https://www.a1info.tech/" target="_blank" rel="noopener noreferrer" className="text-primary">A1 info tech</Link> UI inspiration
           </p>
         </div>
       </div>

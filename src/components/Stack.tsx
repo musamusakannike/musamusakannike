@@ -3,7 +3,7 @@ import React from "react";
 const specializations = [
   {
     icon: (
-      <svg className="w-8 h-8 text-[#FF634E]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+      <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
       </svg>
     ),
@@ -14,7 +14,7 @@ const specializations = [
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-[#FF634E]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+      <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
@@ -25,7 +25,7 @@ const specializations = [
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-[#FF634E]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+      <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
       </svg>
@@ -42,7 +42,7 @@ const Stack = () => {
     <section id="stack" className="py-20 lg:py-24 px-6 sm:px-8 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <span className="block text-base font-semibold tracking-[0.12em] uppercase text-[#FF634E] mb-3">
+          <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-3">
             // WHAT I DO
           </span>
           <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-[#171717]" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
@@ -58,7 +58,7 @@ const Stack = () => {
               style={{ boxShadow: "4px 4px 0px #0A0E11" }}
             >
               {/* Icon circle */}
-              <div className="w-16 h-16 rounded-full border-2 border-black bg-[#FFF5F3] flex items-center justify-center shrink-0 group-hover:bg-[#FF634E] group-hover:border-black transition-colors duration-200">
+              <div className="w-16 h-16 rounded-full border-2 border-black bg-[#FFF5F3] flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:border-black transition-colors duration-200">
                 <div className="group-hover:[&_svg]:text-white transition-colors duration-200">
                   {spec.icon}
                 </div>

@@ -45,11 +45,11 @@ const CTA = () => {
     >
       {/* Tag */}
       <div className="inline-flex items-center gap-2">
-        <span className="block w-2 h-2 bg-[#FF634E] rotate-45" />
-        <span className="font-bold text-[#FF634E] uppercase tracking-widest text-sm" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+        <span className="block w-2 h-2 bg-primary rotate-45" />
+        <span className="font-bold text-primary uppercase tracking-widest text-sm" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
           LET&apos;S WORK TOGETHER
         </span>
-        <span className="block w-2 h-2 bg-[#FF634E] rotate-45" />
+        <span className="block w-2 h-2 bg-primary rotate-45" />
       </div>
 
       {/* Heading */}
@@ -68,7 +68,7 @@ const CTA = () => {
       {/* Primary CTA */}
       <a
         href="mailto:musamusakannike@gmail.com"
-        className="inline-flex items-center justify-center gap-3 border-[3px] border-white bg-[#FF634E] text-black font-bold uppercase tracking-wider text-[16px] px-10 py-4 transition-all duration-100 ease-out shadow-[4px_4px_0px_#FF634E] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#FF634E] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer select-none"
+        className="inline-flex items-center justify-center gap-3 border-[3px] border-white bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-10 py-4 transition-all duration-100 ease-out shadow-[4px_4px_0px_var(--color-primary)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_var(--color-primary)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer select-none"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -85,7 +85,7 @@ const CTA = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={s.label}
-            className="w-11 h-11 border-2 border-[#525252] text-[#A3A3A3] hover:border-[#FF634E] hover:text-[#FF634E] flex items-center justify-center transition-colors duration-200"
+            className="w-11 h-11 border-2 border-[#525252] text-[#A3A3A3] hover:border-primary hover:text-primary flex items-center justify-center transition-colors duration-200"
           >
             {s.icon}
           </a>
@@ -93,7 +93,7 @@ const CTA = () => {
         <a
           href="/Musa Musa Kannike Fullstack CV.pdf"
           download
-          className="border-2 border-[#525252] text-[#A3A3A3] hover:border-[#FF634E] hover:text-[#FF634E] flex items-center gap-2 px-4 py-2 text-[13px] font-bold uppercase tracking-wide transition-colors duration-200"
+          className="border-2 border-[#525252] text-[#A3A3A3] hover:border-primary hover:text-primary flex items-center gap-2 px-4 py-2 text-[13px] font-bold uppercase tracking-wide transition-colors duration-200"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

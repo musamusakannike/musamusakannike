@@ -7,11 +7,11 @@ const RulerTicks = () => (
   <svg className="absolute top-0 left-0 w-full h-[18px]" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="ruler-ticks-portfolio" width="40" height="18" patternUnits="userSpaceOnUse">
-        <line x1="0" y1="0" x2="0" y2="18" stroke="#FF634E" strokeWidth="2" />
-        <line x1="8" y1="0" x2="8" y2="8" stroke="#FF634E" strokeWidth="1.5" />
-        <line x1="16" y1="0" x2="16" y2="8" stroke="#FF634E" strokeWidth="1.5" />
-        <line x1="24" y1="0" x2="24" y2="8" stroke="#FF634E" strokeWidth="1.5" />
-        <line x1="32" y1="0" x2="32" y2="8" stroke="#FF634E" strokeWidth="1.5" />
+        <line x1="0" y1="0" x2="0" y2="18" stroke="var(--color-primary)" strokeWidth="2" />
+        <line x1="8" y1="0" x2="8" y2="8" stroke="var(--color-primary)" strokeWidth="1.5" />
+        <line x1="16" y1="0" x2="16" y2="8" stroke="var(--color-primary)" strokeWidth="1.5" />
+        <line x1="24" y1="0" x2="24" y2="8" stroke="var(--color-primary)" strokeWidth="1.5" />
+        <line x1="32" y1="0" x2="32" y2="8" stroke="var(--color-primary)" strokeWidth="1.5" />
       </pattern>
     </defs>
     <rect width="100%" height="100%" fill="url(#ruler-ticks-portfolio)" />
@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className="relative w-full h-[40px] md:h-[60px] bg-black transition-all duration-300">
         <RulerTicks />
         {/* Brand mark in ruler */}
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 text-[#FF634E] font-bold tracking-[0.3em] text-xs uppercase hidden md:block">
+        <div className="absolute right-6 top-1/2 -translate-y-1/2 text-primary font-bold tracking-[0.3em] text-xs uppercase hidden md:block">
           CODIAC
         </div>
       </div>
@@ -76,11 +76,11 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-black flex items-center justify-center border-2 border-black" style={{ boxShadow: "3px 3px 0 #FF634E" }}>
-              <span className="text-[#FF634E] font-bold text-sm tracking-widest" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>MK</span>
+            <div className="w-10 h-10 bg-black flex items-center justify-center border-2 border-black" style={{ boxShadow: "3px 3px 0 var(--color-primary)" }}>
+              <span className="text-primary font-bold text-sm tracking-widest" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>MK</span>
             </div>
             <span className="font-bold text-[18px] tracking-wide uppercase text-black hidden sm:block" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
-              Musa<span className="text-[#FF634E]">.</span>Kannike
+              Musa<span className="text-primary">.</span>Kannike
             </span>
           </Link>
 
@@ -90,7 +90,7 @@ const Navbar = () => {
               <button
                 key={link.name}
                 onClick={() => handleNavClick(link.href)}
-                className="relative py-1 font-semibold text-[#171717] hover:text-[#FF634E] transition-colors text-[15px] tracking-wide bg-transparent border-none cursor-pointer"
+                className="relative py-1 font-semibold text-[#171717] hover:text-primary transition-colors text-[15px] tracking-wide bg-transparent border-none cursor-pointer"
               >
                 <span className="relative z-10">{link.name}</span>
               </button>
@@ -102,13 +102,13 @@ const Navbar = () => {
             <a
               href="/Musa Musa Kannike Fullstack CV.pdf"
               download
-              className="font-bold text-[14px] tracking-wide text-[#525252] hover:text-[#FF634E] transition-colors"
+              className="font-bold text-[14px] tracking-wide text-[#525252] hover:text-primary transition-colors"
             >
               Download CV
             </a>
             <button
               onClick={() => handleNavClick("#contact")}
-              className="inline-flex items-center justify-center border-[3px] border-black bg-[#FF634E] text-black font-bold uppercase tracking-wider text-[13px] px-5 py-2 transition-all duration-100 ease-out select-none cursor-pointer shadow-[2px_2px_0px_#0A0E11] hover:translate-x-px hover:translate-y-px hover:shadow-[1px_1px_0px_#0A0E11] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
+              className="inline-flex items-center justify-center border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[13px] px-5 py-2 transition-all duration-100 ease-out select-none cursor-pointer shadow-[2px_2px_0px_#0A0E11] hover:translate-x-px hover:translate-y-px hover:shadow-[1px_1px_0px_#0A0E11] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
             >
               HIRE ME
             </button>
@@ -129,9 +129,9 @@ const Navbar = () => {
         <div className="py-4 px-6 flex items-center justify-between border-b-2 border-black">
           <Link href="/" className="flex items-center gap-2">
             <div className="w-9 h-9 bg-black flex items-center justify-center">
-              <span className="text-[#FF634E] font-bold text-xs tracking-widest" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>MK</span>
+              <span className="text-primary font-bold text-xs tracking-widest" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>MK</span>
             </div>
-            <span className="font-bold text-[16px] uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>Musa<span className="text-[#FF634E]">.</span>Kannike</span>
+            <span className="font-bold text-[16px] uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>Musa<span className="text-primary">.</span>Kannike</span>
           </Link>
           <div className="w-10 h-10" />
         </div>
@@ -157,7 +157,7 @@ const Navbar = () => {
           </a>
           <button
             onClick={() => handleNavClick("#contact")}
-            className="flex h-12 w-full items-center justify-center border-[3px] border-black bg-[#FF634E] text-black font-bold uppercase tracking-wider text-[15px] shadow-[3px_3px_0px_#0A0E11] cursor-pointer"
+            className="flex h-12 w-full items-center justify-center border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[15px] shadow-[3px_3px_0px_#0A0E11] cursor-pointer"
           >
             HIRE ME
           </button>

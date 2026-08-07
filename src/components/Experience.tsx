@@ -49,7 +49,7 @@ const experiences = [
 ];
 
 const typeColors: Record<string, string> = {
-  Current: "#FF634E",
+  Current: "var(--color-primary)",
   Contract: "#0A0E11",
   Hybrid: "#525252",
   Remote: "#525252",
@@ -60,7 +60,7 @@ const Experience = () => {
     <section id="experience" className="py-20 lg:py-24 px-6 sm:px-8 lg:px-14 bg-white w-full">
       <div className="max-w-[1200px] mx-auto">
         <div className="mb-14">
-          <span className="block text-base font-semibold tracking-[0.12em] uppercase text-[#FF634E] mb-3">
+          <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-3">
             // MY JOURNEY
           </span>
           <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-[#171717]" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
@@ -77,7 +77,7 @@ const Experience = () => {
               <div key={index} className="relative flex gap-8 md:pl-16">
                 {/* Timeline dot */}
                 <div
-                  className="absolute left-[13px] top-6 w-5 h-5 rounded-full border-2 border-black bg-[#FF634E] hidden md:block shrink-0 z-10"
+                  className="absolute left-[13px] top-6 w-5 h-5 rounded-full border-2 border-black bg-primary hidden md:block shrink-0 z-10"
                   style={{ animation: index === 0 ? "dot-pulse 2s infinite" : "none" }}
                 />
 
@@ -91,7 +91,7 @@ const Experience = () => {
                       <h3 className="font-bold text-[#171717] text-xl leading-tight" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                         {exp.role}
                       </h3>
-                      <p className="text-[#FF634E] font-semibold text-[15px] tracking-wide">{exp.company}</p>
+                      <p className="text-primary font-semibold text-[15px] tracking-wide">{exp.company}</p>
                     </div>
                     <div className="flex flex-col items-start sm:items-end gap-1.5 shrink-0">
                       <span className="text-[13px] font-semibold text-[#525252] bg-[#F3F4F6] border border-black px-2.5 py-1 whitespace-nowrap">

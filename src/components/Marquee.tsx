@@ -15,7 +15,7 @@ const MarqueeSection = () => {
       <div className="flex animate-marquee whitespace-nowrap" style={{ width: "max-content" }}>
         {doubled.map((skill, i) => (
           <div key={i} className="flex items-center gap-4 mx-6">
-            <span className="inline-block w-2 h-2 bg-[#FF634E] rotate-45 shrink-0" />
+            <span className="inline-block w-2 h-2 bg-primary rotate-45 shrink-0" />
             <span
               className="font-bold text-white tracking-widest uppercase text-sm"
               style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}

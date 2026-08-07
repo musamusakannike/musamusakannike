@@ -87,7 +87,7 @@ const Projects = () => {
     <section id="projects" className="py-20 lg:py-24 px-6 sm:px-8 lg:px-14 bg-[#ece0e0] w-full">
       <div className="max-w-[1200px] mx-auto">
         <div className="mb-14">
-          <span className="block text-base font-semibold tracking-[0.12em] uppercase text-[#FF634E] mb-3">
+          <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-3">
             // MY WORK
           </span>
           <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-[#171717]" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
@@ -115,13 +115,13 @@ const Projects = () => {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Role badge */}
-                <div className="absolute top-3 left-3 bg-black border border-[#FF634E] px-2.5 py-1">
-                  <span className="text-[10px] font-bold text-[#FF634E] uppercase tracking-widest">
+                <div className="absolute top-3 left-3 bg-black border border-primary px-2.5 py-1">
+                  <span className="text-[10px] font-bold text-primary uppercase tracking-widest">
                     {project.role}
                   </span>
                 </div>
                 {/* Index number */}
-                <div className="absolute bottom-3 right-3 w-8 h-8 bg-[#FF634E] border-2 border-black flex items-center justify-center">
+                <div className="absolute bottom-3 right-3 w-8 h-8 bg-primary border-2 border-black flex items-center justify-center">
                   <span className="text-black font-bold text-sm" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                     {String(index + 1).padStart(2, "0")}
                   </span>
@@ -134,7 +134,7 @@ const Projects = () => {
                   <h3 className="font-bold text-[#171717] text-xl" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                     {project.name}
                   </h3>
-                  <p className="text-[#FF634E] text-[13px] font-semibold tracking-wide uppercase">
+                  <p className="text-primary text-[13px] font-semibold tracking-wide uppercase">
                     {project.tagline}
                   </p>
                 </div>
@@ -160,7 +160,7 @@ const Projects = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[13px] font-bold text-[#171717] hover:text-[#FF634E] transition-colors uppercase tracking-wide"
+                      className="text-[13px] font-bold text-[#171717] hover:text-primary transition-colors uppercase tracking-wide"
                     >
                       {link.label}
                       <ExternalIcon />

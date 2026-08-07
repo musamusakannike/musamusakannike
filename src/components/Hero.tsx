@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="relative w-full max-w-2xl flex flex-col items-start gap-8 z-10">
           {/* Pill tag */}
           <div className="inline-flex items-center gap-2 bg-white text-black border-[1.05px] border-black px-3 py-1.5 shadow-[2.5px_2.5px_0px_#0A0E11] select-none">
-            <div className="w-4 h-4 rounded-full bg-[#FF634E] flex items-center justify-center text-white shrink-0">
+            <div className="w-4 h-4 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
@@ -39,7 +39,7 @@ const Hero = () => {
             <span className="block">BUILDING THINGS</span>
             <span className="relative inline">
               <span className="relative z-50 px-0.5">THAT ACTUALLY</span>
-              <span className="absolute left-0 right-0 bottom-0 h-[26px] bg-[#FF634E] z-40 max-w-[95%]"></span>
+              <span className="absolute left-0 right-0 bottom-0 h-[26px] bg-primary z-40 max-w-[95%]"></span>
             </span>
             <span className="block">WORK.</span>
           </h1>
@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-start gap-4 mt-2">
             <button
               onClick={() => handleScroll("#projects")}
-              className="inline-flex items-center justify-center border-[3px] border-black bg-[#FF634E] text-black font-bold uppercase tracking-wider text-[16px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#fff] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#fff] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer"
+              className="inline-flex items-center justify-center border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#fff] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#fff] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer"
             >
               VIEW MY WORK
             </button>
@@ -79,7 +79,7 @@ const Hero = () => {
             <div className="flex flex-col gap-5">
               {/* Pill */}
               <div className="inline-flex items-center gap-2 bg-white text-black">
-                <svg className="w-5 h-5 text-[#FF634E] shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <svg className="w-5 h-5 text-primary shrink-0" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
                 <span className="font-semibold text-base tracking-wider">FULLSTACK DEVELOPER — CODIAC</span>
@@ -91,7 +91,7 @@ const Hero = () => {
                 <span className="block">THAT ACTUALLY</span>
                 <span className="relative inline">
                   <span className="relative inline-block self-start mt-1 z-50">WORK.</span>
-                  <span className="absolute left-0 right-0 -bottom-1 h-[48px] bg-[#FF634E] transition-all z-40 transform skew-x-12 max-w-[60%]"></span>
+                  <span className="absolute left-0 right-0 -bottom-1 h-[48px] bg-primary transition-all z-40 transform skew-x-12 max-w-[60%]"></span>
                 </span>
               </h1>
 
@@ -108,7 +108,7 @@ const Hero = () => {
                 { value: "10+", label: "Projects" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col">
-                  <span className="text-[40px] font-bold leading-none text-[#FF634E]" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>{stat.value}</span>
+                  <span className="text-[40px] font-bold leading-none text-primary" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>{stat.value}</span>
                   <span className="text-sm font-semibold text-[#525252] tracking-wide uppercase">{stat.label}</span>
                 </div>
               ))}
@@ -118,7 +118,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-start gap-4 mt-2 w-full sm:w-auto">
               <button
                 onClick={() => handleScroll("#projects")}
-                className="inline-flex items-center justify-center border-[3px] border-black bg-[#FF634E] text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 w-full sm:w-auto transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer group"
+                className="inline-flex items-center justify-center border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 w-full sm:w-auto transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer group"
               >
                 VIEW MY WORK
                 <svg className="w-5 h-5 ml-2.5 shrink-0 transition-transform duration-100 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -149,12 +149,12 @@ const Hero = () => {
                 />
               </div>
               {/* Floating badge — top left */}
-              <div className="absolute -top-4 -left-4 bg-[#FF634E] border-2 border-black px-3 py-2 shadow-[3px_3px_0_#0A0E11]">
+              <div className="absolute -top-4 -left-4 bg-primary border-2 border-black px-3 py-2 shadow-[3px_3px_0_#0A0E11]">
                 <span className="font-bold text-black text-xs tracking-widest uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>Available for hire</span>
               </div>
               {/* Floating badge — bottom right */}
-              <div className="absolute -bottom-4 -right-4 bg-black border-2 border-[#FF634E] px-3 py-2">
-                <span className="font-bold text-[#FF634E] text-xs tracking-widest uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>Fullstack Dev</span>
+              <div className="absolute -bottom-4 -right-4 bg-black border-2 border-primary px-3 py-2">
+                <span className="font-bold text-primary text-xs tracking-widest uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>Fullstack Dev</span>
               </div>
             </div>
           </div>
