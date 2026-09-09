@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Musa Musa Kannike 👋</h1>
+<h1 align="center">Hi, I'm Musa Musa Kannike</h1>
 <h3 align="center">Fullstack Developer, also known online as <a href="https://github.com/musamusakannike">Codiac</a></h3>
 
 <p align="center">
@@ -13,15 +13,15 @@
 
 ---
 
-### 🚀 About Me
+### About Me
 
-- 🔭 Currently building at **Africlana Ltd** and **Cloudstech**, an international software & AI agency
-- 🛠 I specialize in **React, Next.js, React Native (Expo), and Node.js** — from pixel-perfect frontends to robust backends and API integrations
-- 🌍 I've shipped products used by real people — Nigerian food delivery apps, e-commerce platforms, and a Saudi Arabian beauty-services marketplace
-- 📱 Comfortable across **3 platforms**: Web, Mobile, and Desktop
-- 💼 **10+** production projects, **5+** companies worked with
+- Currently building at **Africlana Ltd** and **Cloudstech**, an international software & AI agency
+- I specialize in **React, Next.js, React Native (Expo), and Node.js** — from pixel-perfect frontends to robust backends and API integrations
+- I've shipped products used by real people — Nigerian food delivery apps, e-commerce platforms, and a Saudi Arabian beauty-services marketplace
+- Comfortable across **3 platforms**: Web, Mobile, and Desktop
+- **10+** production projects, **5+** companies worked with
 
-### 🧰 Tech Stack
+### Tech Stack
 
 **Languages & Frameworks**
 
@@ -46,7 +46,7 @@
 ![Paystack](https://img.shields.io/badge/Paystack-00C3F7?style=flat&logo=paystack&logoColor=white)
 ![Flutterwave](https://img.shields.io/badge/Flutterwave-F5A623?style=flat)
 
-### 🏗️ Featured Projects
+### Featured Projects
 
 | Project | Description | Stack |
 |---|---|---|
@@ -56,7 +56,7 @@
 | [**GlamConnect**](https://glam-sync-mvp.vercel.app/) | Saudi Arabia-based booking platform for beauty professionals | Node.js, Express, MongoDB, REST API |
 | [**Cloudstech**](https://www.cloudstech.org/) | Marketing site for an international software & AI agency, with 3D effects and animation | Next.js, Three.js, GSAP, TypeScript |
 
-### 💼 Experience
+### Experience
 
 - **Fullstack Engineer** @ Africlana Ltd — *Aug 2026 – Present*
 - **Fullstack Engineer** @ Cloudstech — *Jan 2026 – Present*
@@ -64,9 +64,9 @@
 - **Fullstack Engineer** @ 360Gadgets Africa — *Apr 2025 – Jan 2026*
 - **Mobile App Developer Intern** @ Terrachow — *Jun 2024 – Mar 2025*
 
-### 📫 Reach Me
+### Reach Me
 
 - Email: [musamusakannike@gmail.com](mailto:musamusakannike@gmail.com)
 - LinkedIn: [musa-musa-kannike](https://www.linkedin.com/in/musa-musa-kannike-02604b418/)
 - X / Twitter: [@musa_codes](https://x.com/musa_codes)
-</content>
+
