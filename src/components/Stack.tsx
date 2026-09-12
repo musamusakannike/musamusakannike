@@ -4,13 +4,13 @@ const specializations = [
   {
     icon: (
       <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
       </svg>
     ),
-    title: "Web Development",
+    title: "Full-Cycle Product Engineering",
     description:
-      "Building fast, scalable, and SEO-optimized web platforms using React.js, Next.js, and modern CSS. From marketing sites to full-featured e-commerce platforms and SaaS dashboards.",
-    tags: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+      "Translating product specs, user stories, and customer feedback into intuitive, high-converting digital interfaces. I own features end-to-end — from wireframe prototyping to production rollouts, accessibility, and UX polish.",
+    tags: ["Product Strategy", "UX Architecture", "Design Systems", "Next.js", "TypeScript"],
   },
   {
     icon: (
@@ -18,10 +18,10 @@ const specializations = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
-    title: "Cross-Platform Mobile",
+    title: "Cross-Platform Mobile & Web",
     description:
-      "Crafting polished iOS & Android apps with React Native & Expo. Experience delivering real-time tracking, secure payments, deep linking, and native device features.",
-    tags: ["React Native", "Expo", "TypeScript", "Paystack", "Flutterwave"],
+      "Crafting polished iOS & Android apps with React Native (Expo) and performant web applications with Next.js. Engineered for smooth 60fps gesture handling, offline resilience, and frictionless checkout funnels.",
+    tags: ["React Native", "Expo", "Next.js", "Mobile UX", "Tailwind CSS"],
   },
   {
     icon: (
@@ -30,10 +30,10 @@ const specializations = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
       </svg>
     ),
-    title: "Backend & APIs",
+    title: "Scalable Systems & API Infrastructure",
     description:
-      "Designing and building robust REST APIs and server-side architectures with Node.js, Express, NestJS, and MongoDB. Integration experience with payment gateways and third-party services.",
-    tags: ["Node.js", "Express", "NestJS", "MongoDB", "Prisma"],
+      "Architecting resilient REST APIs, micro-services, and transactional databases with Node.js, Express, NestJS, and MongoDB. Extensive experience integrating payment infrastructure (Paystack, Flutterwave) with high reliability.",
+    tags: ["Node.js", "Express", "NestJS", "MongoDB", "Payment Gateways"],
   },
 ];
 

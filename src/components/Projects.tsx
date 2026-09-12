@@ -21,7 +21,7 @@ const Projects = () => {
             Production Projects
           </h2>
           <p className="text-[#525252] text-[17px] font-medium mt-3 max-w-2xl">
-            Real products used by real people — from Nigerian food delivery apps to Saudi beauty platforms.
+            Engineered from 0 to 1 and scaled in production — solving real user and commercial problems across Africa, the Middle East, and globally.
           </p>
         </div>
 

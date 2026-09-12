@@ -19,14 +19,17 @@ const SITE_URL = "https://www.codiac.online";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Musa Musa Kannike | Fullstack Developer — Codiac",
+    default: "Musa Musa Kannike | Software & Product Engineer — Codiac",
     template: "%s | Musa Musa Kannike",
   },
   description:
-    "Musa Musa Kannike (Codiac) — Fullstack Developer with 4+ years of experience building web, mobile, and desktop applications using React, Next.js, React Native, Node.js, and more.",
+    "Musa Musa Kannike (Codiac) — Software & Product Engineer with 4+ years of experience building web, mobile, and cloud products. Bridging product vision, UX architecture, and scalable fullstack engineering with React, Next.js, React Native, and Node.js.",
   keywords: [
     "Musa Musa Kannike",
     "Codiac",
+    "product engineer",
+    "software engineer",
+    "product-minded engineer",
     "fullstack developer Nigeria",
     "React Native developer",
     "Next.js developer",
@@ -43,14 +46,14 @@ export const metadata: Metadata = {
     locale: "en_NG",
     url: SITE_URL,
     siteName: "Musa Musa Kannike — Codiac",
-    title: "Musa Musa Kannike | Fullstack Developer",
+    title: "Musa Musa Kannike | Software & Product Engineer",
     description:
-      "4+ years building production apps in web, mobile & desktop. React, Next.js, React Native, Node.js, TypeScript.",
+      "4+ years bridging product vision and engineering execution across web, mobile & cloud. React, Next.js, React Native, Node.js, TypeScript.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Musa Musa Kannike | Fullstack Developer",
-    description: "4+ years building production apps in web, mobile & desktop.",
+    title: "Musa Musa Kannike | Software & Product Engineer",
+    description: "4+ years bridging product vision and engineering execution across web, mobile & cloud.",
     creator: "@musa_codes",
   },
 };
@@ -64,13 +67,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     alternateName: "Codiac",
     url: SITE_URL,
     image: `${SITE_URL}/profile.jpg`,
-    jobTitle: "Fullstack Developer",
+    jobTitle: "Software & Product Engineer",
     sameAs: [
       "https://github.com/musamusakannike",
       "https://x.com/musa_codes",
       "https://www.linkedin.com/in/musa-musa-kannike-02604b418/",
     ],
-    knowsAbout: ["TypeScript", "React", "Next.js", "React Native", "Node.js", "Python"],
+    knowsAbout: ["Product Engineering", "TypeScript", "React", "Next.js", "React Native", "Node.js", "System Design", "UI/UX"],
   };
 
   const websiteJsonLd = {

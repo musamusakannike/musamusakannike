@@ -1,10 +1,10 @@
 import React from "react";
 
 const skills = [
-  "TypeScript", "JavaScript", "Python", "React.js", "Next.js",
+  "Product Engineering", "TypeScript", "Next.js", "React.js",
   "React Native", "Expo", "Node.js", "Express.js", "Nest.js",
-  "MongoDB", "Prisma", "Tailwind CSS", "REST APIs", "GraphQL",
-  "Paystack", "Flutterwave", "Git", "Three.js", "GSAP",
+  "System Design", "MongoDB", "Prisma", "REST APIs", "GraphQL",
+  "Paystack", "Flutterwave", "UX & Interaction", "Three.js", "GSAP",
 ];
 
 const MarqueeSection = () => {

@@ -61,7 +61,7 @@ const CTA = () => {
           Got a project in mind?
         </h2>
         <p className="font-medium text-[#D4D4D4] text-center max-w-[580px] mx-auto text-[17px] leading-relaxed">
-          I&apos;m available for freelance projects, full-time roles, and exciting collaborations. Let&apos;s build something great together.
+          I&apos;m open to software & product engineering roles, high-impact consulting, and startup collaborations. Let&apos;s build scalable products that drive real results.
         </p>
       </div>
 

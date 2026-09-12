@@ -57,7 +57,7 @@ const Footer = () => {
 
             {/* Tagline */}
             <p className="text-[#D4D4D4] text-[15px] font-medium leading-relaxed max-w-xs tracking-wide">
-              Fullstack Developer building production-grade web, mobile & desktop applications for startups and companies worldwide.
+              Software & Product Engineer building production-grade web, mobile & cloud products for startups and companies worldwide.
             </p>
 
             {/* CV Download Button */}

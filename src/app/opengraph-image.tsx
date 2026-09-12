@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Musa Musa Kannike — Fullstack Developer, Codiac";
+export const alt = "Musa Musa Kannike — Software & Product Engineer, Codiac";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -63,7 +63,7 @@ export default async function OpengraphImage() {
           </span>
         </div>
         <div style={{ display: "flex", color: "#A3A3A3", fontSize: 28, marginTop: 32 }}>
-          Musa Musa Kannike — Fullstack Developer
+          Musa Musa Kannike — Software & Product Engineer
         </div>
       </div>
     ),

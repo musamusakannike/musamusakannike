@@ -10,15 +10,15 @@ const SITE_URL = "https://www.codiac.online";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "All production projects built by Musa Musa Kannike (Codiac) — web, mobile, and backend platforms shipped for startups and companies across Nigeria, Saudi Arabia, and beyond.",
+    "All production projects built by Musa Musa Kannike (Codiac) — web, mobile, and cloud platforms shipped for startups and companies across Nigeria, Saudi Arabia, and beyond.",
   alternates: { canonical: `${SITE_URL}/projects` },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/projects`,
     title: "Projects | Musa Musa Kannike",
     description:
-      "All production projects built by Musa Musa Kannike — web, mobile, and backend platforms shipped for startups and companies worldwide.",
-    images: [{ url: "/profile.jpg", width: 1200, height: 630, alt: "Musa Musa Kannike — Fullstack Developer" }],
+      "All production projects built by Musa Musa Kannike — web, mobile, and cloud platforms shipped for startups and companies worldwide.",
+    images: [{ url: "/profile.jpg", width: 1200, height: 630, alt: "Musa Musa Kannike — Software & Product Engineer" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -73,7 +73,7 @@ export default function ProjectsPage() {
               All Projects
             </h1>
             <p className="text-[#525252] text-[17px] font-medium mt-3 max-w-2xl">
-              Every production project built by Musa Musa Kannike — web, mobile, and backend platforms shipped for startups and companies worldwide.
+              Every production project built by Musa Musa Kannike — web, mobile, and cloud platforms shipped for startups and companies worldwide.
             </p>
           </div>
 

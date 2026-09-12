@@ -31,7 +31,7 @@ const Hero = () => {
               </svg>
             </div>
             <span className="font-extrabold text-xs tracking-widest" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
-              FULLSTACK DEVELOPER — CODIAC
+              SOFTWARE & PRODUCT ENGINEER — CODIAC
             </span>
           </div>
 
@@ -46,7 +46,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-[#D4D4D4] text-[17px] leading-relaxed max-w-md font-medium tracking-wide">
-            4+ years crafting production-grade web, mobile & desktop apps. React, Next.js, React Native, Node.js & more.
+            4+ years bridging product vision and engineering execution. Crafting high-impact web and mobile products with React, Next.js, React Native, and Node.js — from 0 to 1 and at scale.
           </p>
 
           <div className="flex flex-col sm:flex-row items-start gap-4 mt-2">
@@ -83,7 +83,7 @@ const Hero = () => {
                 <svg className="w-5 h-5 text-primary shrink-0" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-                <span className="font-semibold text-base tracking-wider">FULLSTACK DEVELOPER — CODIAC</span>
+                <span className="font-semibold text-base tracking-wider">SOFTWARE & PRODUCT ENGINEER — CODIAC</span>
               </div>
 
               {/* Headline */}
@@ -97,7 +97,7 @@ const Hero = () => {
               </p>
 
               <p className="text-[#525252] text-[18px] leading-[30px] font-medium max-w-xl">
-                4+ years building production-grade web, mobile & desktop applications for startups and companies across Nigeria and beyond. Specializing in React, Next.js, React Native (Expo), and Node.js.
+                4+ years bridging product vision and engineering execution. Crafting production-grade web, mobile, and cloud applications for startups and scale-ups — from 0 to 1 and beyond. Specializing in React, Next.js, React Native (Expo), and Node.js.
               </p>
             </div>
 
@@ -105,8 +105,8 @@ const Hero = () => {
             <div className="flex items-center gap-8">
               {[
                 { value: "4+", label: "Years Exp." },
-                { value: "5+", label: "Companies" },
-                { value: "10+", label: "Projects" },
+                { value: "10+", label: "Products Shipped" },
+                { value: "5+", label: "Startups & Teams" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col">
                   <span className="text-[40px] font-bold leading-none text-primary" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>{stat.value}</span>
@@ -142,7 +142,7 @@ const Hero = () => {
               <div className="relative w-full aspect-[4/4.5] border-4 border-black bg-white shadow-[10px_10px_0px_#0A0E11] overflow-hidden">
                 <Image
                   src="/profile.jpg"
-                  alt="Musa Musa Kannike — Fullstack Developer, Codiac, headshot photo"
+                  alt="Musa Musa Kannike — Software & Product Engineer, Codiac, headshot photo"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover"
@@ -155,7 +155,7 @@ const Hero = () => {
               </div>
               {/* Floating badge — bottom right */}
               <div className="absolute -bottom-4 -right-4 bg-black border-2 border-primary px-3 py-2">
-                <span className="font-bold text-primary text-xs tracking-widest uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>Fullstack Dev</span>
+                <span className="font-bold text-primary text-xs tracking-widest uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>Product Engineer</span>
               </div>
             </div>
           </div>

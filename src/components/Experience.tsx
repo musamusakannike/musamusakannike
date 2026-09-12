@@ -2,49 +2,49 @@ import React from "react";
 
 const experiences = [
   {
-    role: "Fullstack Engineer",
+    role: "Product & Fullstack Engineer",
     company: "Africlana Ltd",
     period: "Aug 2026 – Present",
     type: "Current",
     description:
-      "Working as a fullstack engineer contributing to Africlana's platforms. Building and maintaining web and mobile features for the platform's growing user base.",
-    tags: ["Fullstack", "Web", "Mobile"],
+      "Driving end-to-end product features and user experience across Africlana's web and mobile platforms. Collaborating closely with product stakeholders to rapidly iterate on feedback loops, improve user retention, and ensure scalable application architecture.",
+    tags: ["Product Engineering", "Fullstack", "Web", "Mobile"],
   },
   {
-    role: "Fullstack Engineer",
+    role: "Lead Product Engineer",
     company: "A1 Information Technology",
     period: "May 2026 – Aug 2026",
     type: "Contract",
     description:
-      "3-month contract to design and develop the complete website platform for A1 Info Tech — covering gadget repair services, an online academy, product listings, and payment integrations.",
-    tags: ["Next.js", "Node.js", "MongoDB", "Full Platform Build"],
+      "Spearheaded the 0-to-1 digital transformation for A1 Info Tech. Designed and built a dual-portal ecosystem uniting customer hardware repair intake with an interactive training academy for students, complete with curriculum delivery and automated tuition checkout.",
+    tags: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Product Architecture"],
   },
   {
-    role: "Fullstack Engineer",
+    role: "Frontend & Interactive Product Engineer",
     company: "Cloudstech",
     period: "Jan 2026 – Present",
     type: "Current",
     description:
-      "Building the company's website and internal tools at Cloudstech, an international software and AI agency. Utilized Next.js, Three.js, and GSAP to create a stunning, interactive web presence.",
-    tags: ["Next.js", "Three.js", "GSAP", "TypeScript"],
+      "Engineered high-performance web applications and internal tools for an international software & AI agency. Utilized Next.js, Three.js, and GSAP to deliver an engaging, interactive digital identity optimized for client lead generation and fast Core Web Vitals.",
+    tags: ["Next.js", "Three.js", "GSAP", "TypeScript", "Interactive UX"],
   },
   {
-    role: "Fullstack Engineer",
+    role: "Fullstack & Product Engineer",
     company: "360Gadgets Africa",
     period: "Apr 2025 – Jan 2026",
     type: "Hybrid",
     description:
-      "Worked on the full product stack — React Native mobile app, Next.js web platform, and Node.js/Express/MongoDB backend. Implemented Paystack and Flutterwave payment gateways, VTU digital services, and real-time features.",
-    tags: ["React Native", "Next.js", "Node.js", "Paystack", "Flutterwave"],
+      "Led fullstack feature delivery across mobile (React Native) and web (Next.js). Tackled checkout drop-offs by architecting multi-gateway payment routing with Paystack and Flutterwave, while engineering automated microservices for instant VTU digital service fulfillment.",
+    tags: ["React Native", "Next.js", "Node.js", "Paystack", "Flutterwave", "Checkout UX"],
   },
   {
-    role: "Mobile App Developer Intern",
+    role: "Product & Mobile App Developer",
     company: "Terrachow",
     period: "Jun 2024 – Mar 2025",
     type: "Remote",
     description:
-      "Joined Terrachow's mobile development team as an intern, contributing to the React Native Expo app for a Nigerian food delivery platform. Worked on real-time order tracking, vendor management flows, and UI improvements.",
-    tags: ["React Native", "Expo", "Mobile", "Remote"],
+      "Contributed to customer-facing mobile application development on React Native (Expo) for a multi-city Nigerian food delivery startup. Designed intuitive food discovery and checkout flows, integrated real-time delivery tracking, and improved mobile performance for lower-bandwidth networks.",
+    tags: ["React Native", "Expo", "Mobile UX", "Order Tracking", "Remote"],
   },
 ];
 
