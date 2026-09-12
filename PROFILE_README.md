@@ -50,7 +50,7 @@
 
 | Project | Description | Stack |
 |---|---|---|
-| [**Terrachow**](https://store.terrachow.com/) | Nigerian food delivery platform with real-time order tracking and resilient payments | React Native, Expo, Mobile UX |
+| [**Terrachow**](https://www.terrachow.com/) | Nigerian food delivery platform with real-time order tracking and resilient payments | React Native, Expo, Mobile UX |
 | [**360Gadgets Africa**](https://360gadgetsafrica.com/) | Omnichannel e-commerce & instant VTU platform with Paystack & Flutterwave failover | React Native, Next.js, Node.js, MongoDB |
 | [**A1 Information Technology**](https://www.a1info.tech/) | Tech education & gadget repair ecosystem with self-serve student enrollment | Next.js, TypeScript, Node.js, MongoDB |
 | [**GlamConnect**](https://glam-sync-mvp.vercel.app/) | Saudi Arabia booking marketplace for beauty professionals and salons | Node.js, Express, MongoDB, REST API |

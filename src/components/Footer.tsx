@@ -15,7 +15,7 @@ const footerLinks = [
   {
     title: "PROJECTS",
     links: [
-      { name: "Terrachow", href: "https://store.terrachow.com/", external: true },
+      { name: "Terrachow", href: "https://www.terrachow.com/", external: true },
       { name: "360Gadgets Africa", href: "https://360gadgetsafrica.com/", external: true },
       { name: "A1 Info Tech", href: "https://www.a1info.tech/", external: true },
       { name: "GlamConnect", href: "https://glam-sync-mvp.vercel.app/", external: true },
