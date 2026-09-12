@@ -58,26 +58,26 @@ const typeColors: Record<string, string> = {
 const Experience = () => {
   return (
     <section id="experience" className="py-20 lg:py-24 px-6 sm:px-8 lg:px-14 bg-white w-full">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="mb-14">
           <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-3">
             // MY JOURNEY
           </span>
-          <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-[#171717]" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+          <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-text" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
             Work Experience
           </h2>
         </div>
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-5 top-0 bottom-0 w-[2px] bg-[#E5E7EB] hidden md:block" />
+          <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-[#E5E7EB] hidden md:block" />
 
           <div className="flex flex-col gap-8">
             {experiences.map((exp, index) => (
               <div key={index} className="relative flex gap-8 md:pl-16">
                 {/* Timeline dot */}
                 <div
-                  className="absolute left-[13px] top-6 w-5 h-5 rounded-full border-2 border-black bg-primary hidden md:block shrink-0 z-10"
+                  className="absolute left-3.25 top-6 w-5 h-5 rounded-full border-2 border-black bg-primary hidden md:block shrink-0 z-10"
                   style={{ animation: index === 0 ? "dot-pulse 2s infinite" : "none" }}
                 />
 
@@ -88,7 +88,7 @@ const Experience = () => {
                 >
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                     <div>
-                      <h3 className="font-bold text-[#171717] text-xl leading-tight" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+                      <h3 className="font-bold text-text text-xl leading-tight" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                         {exp.role}
                       </h3>
                       <p className="text-primary font-semibold text-[15px] tracking-wide">{exp.company}</p>
@@ -112,7 +112,7 @@ const Experience = () => {
 
                   <div className="flex flex-wrap gap-1.5">
                     {exp.tags.map((tag) => (
-                      <span key={tag} className="text-[11px] font-bold uppercase tracking-wide border border-black px-2 py-0.5 text-[#171717] bg-[#F3F4F6]">
+                      <span key={tag} className="text-[11px] font-bold uppercase tracking-wide border border-black px-2 py-0.5 text-text bg-[#F3F4F6]">
                         {tag}
                       </span>
                     ))}

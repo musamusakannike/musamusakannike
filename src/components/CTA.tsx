@@ -60,7 +60,7 @@ const CTA = () => {
         >
           Got a project in mind?
         </h2>
-        <p className="font-medium text-[#D4D4D4] text-center max-w-[580px] mx-auto text-[17px] leading-relaxed">
+        <p className="font-medium text-[#D4D4D4] text-center max-w-145 mx-auto text-[17px] leading-relaxed">
           I&apos;m open to software & product engineering roles, high-impact consulting, and startup collaborations. Let&apos;s build scalable products that drive real results.
         </p>
       </div>
@@ -68,7 +68,7 @@ const CTA = () => {
       {/* Primary CTA */}
       <a
         href="mailto:musamusakannike@gmail.com"
-        className="inline-flex items-center justify-center gap-3 border-[3px] border-white bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-10 py-4 transition-all duration-100 ease-out shadow-[4px_4px_0px_var(--color-primary)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_var(--color-primary)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer select-none"
+        className="inline-flex items-center justify-center gap-3 border-[3px] border-white bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-10 py-4 transition-all duration-100 ease-out shadow-[4px_4px_0px_var(--color-primary)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_var(--color-primary)] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer select-none"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

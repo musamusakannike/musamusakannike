@@ -40,7 +40,7 @@ const Hero = () => {
             <span className="block">BUILDING THINGS</span>
             <span className="relative inline">
               <span className="relative z-50 px-0.5">THAT ACTUALLY</span>
-              <span className="absolute left-0 right-0 bottom-0 h-[26px] bg-primary z-40 max-w-[95%]"></span>
+              <span className="absolute left-0 right-0 bottom-0 h-6.5 bg-primary z-40 max-w-[95%]"></span>
             </span>
             <span className="block">WORK.</span>
           </h1>
@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-start gap-4 mt-2">
             <button
               onClick={() => handleScroll("#projects")}
-              className="inline-flex items-center justify-center border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#fff] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#fff] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer"
+              className="inline-flex items-center justify-center border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#fff] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#fff] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer"
             >
               VIEW MY WORK
             </button>
@@ -66,7 +66,7 @@ const Hero = () => {
         </div>
 
         {/* Watermark */}
-        <div className="absolute bottom-[-30px] right-[-30px] w-[200px] h-[200px] opacity-10 pointer-events-none select-none z-0 flex items-center justify-center">
+        <div className="absolute -bottom-7.5 -right-7.5 w-50 h-50 opacity-10 pointer-events-none select-none z-0 flex items-center justify-center">
           <span className="text-white font-bold text-[120px] leading-none" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>MK</span>
         </div>
       </section>
@@ -92,11 +92,11 @@ const Hero = () => {
                 <span className="block">THAT ACTUALLY</span>
                 <span className="relative inline">
                   <span className="relative inline-block self-start mt-1 z-50">WORK.</span>
-                  <span className="absolute left-0 right-0 -bottom-1 h-[48px] bg-primary transition-all z-40 transform skew-x-12 max-w-[60%]"></span>
+                  <span className="absolute left-0 right-0 -bottom-1 h-12 bg-primary transition-all z-40 transform skew-x-12 max-w-[60%]"></span>
                 </span>
               </p>
 
-              <p className="text-[#525252] text-[18px] leading-[30px] font-medium max-w-xl">
+              <p className="text-[#525252] text-[18px] leading-7.5 font-medium max-w-xl">
                 4+ years bridging product vision and engineering execution. Crafting production-grade web, mobile, and cloud applications for startups and scale-ups — from 0 to 1 and beyond. Specializing in React, Next.js, React Native (Expo), and Node.js.
               </p>
             </div>
@@ -119,7 +119,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-start gap-4 mt-2 w-full sm:w-auto">
               <button
                 onClick={() => handleScroll("#projects")}
-                className="inline-flex items-center justify-center border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 w-full sm:w-auto transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer group"
+                className="inline-flex items-center justify-center border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 w-full sm:w-auto transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer group"
               >
                 VIEW MY WORK
                 <svg className="w-5 h-5 ml-2.5 shrink-0 transition-transform duration-100 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -128,7 +128,7 @@ const Hero = () => {
               </button>
               <button
                 onClick={() => handleScroll("#contact")}
-                className="inline-flex items-center justify-center border-[3px] border-black bg-white text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 w-full sm:w-auto transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer"
+                className="inline-flex items-center justify-center border-[3px] border-black bg-white text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 w-full sm:w-auto transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer"
               >
                 HIRE ME
               </button>
@@ -137,9 +137,9 @@ const Hero = () => {
 
           {/* Right column — framed photo */}
           <div className="flex justify-center lg:justify-end w-full col-span-5">
-            <div className="relative w-full max-w-[460px]">
+            <div className="relative w-full max-w-115">
               {/* Main image frame */}
-              <div className="relative w-full aspect-[4/4.5] border-4 border-black bg-white shadow-[10px_10px_0px_#0A0E11] overflow-hidden">
+              <div className="relative w-full aspect-4/4.5 border-4 border-black bg-white shadow-[10px_10px_0px_#0A0E11] overflow-hidden">
                 <Image
                   src="/profile.jpg"
                   alt="Musa Musa Kannike — Software & Product Engineer, Codiac, headshot photo"
@@ -162,7 +162,7 @@ const Hero = () => {
         </div>
 
         {/* 3D grid decoration */}
-        <div className="absolute bottom-0 left-0 right-0 w-full h-[180px] sm:h-[220px] pointer-events-none select-none z-0" aria-hidden="true">
+        <div className="absolute bottom-0 left-0 right-0 w-full h-45 sm:h-55 pointer-events-none select-none z-0" aria-hidden="true">
           <Image src="/3d-grid.png" alt="" fill sizes="100vw" className="object-cover object-bottom" priority />
         </div>
       </section>

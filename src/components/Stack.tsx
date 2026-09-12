@@ -45,7 +45,7 @@ const Stack = () => {
           <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-3">
             // WHAT I DO
           </span>
-          <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-[#171717]" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+          <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-text" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
             My Specializations
           </h2>
         </div>
@@ -65,7 +65,7 @@ const Stack = () => {
               </div>
 
               <div className="flex flex-col gap-3">
-                <h3 className="font-bold text-[#171717] text-xl leading-[28px]" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+                <h3 className="font-bold text-text text-xl leading-7" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                   {spec.title}
                 </h3>
                 <p className="text-[#525252] font-medium text-base leading-relaxed">
@@ -78,7 +78,7 @@ const Stack = () => {
                 {spec.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs font-bold uppercase tracking-wide border border-black px-2.5 py-1 text-[#171717] bg-[#F3F4F6]"
+                    className="text-xs font-bold uppercase tracking-wide border border-black px-2.5 py-1 text-text bg-[#F3F4F6]"
                   >
                     {tag}
                   </span>

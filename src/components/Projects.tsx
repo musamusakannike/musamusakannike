@@ -12,12 +12,12 @@ const ExternalIcon = () => (
 const Projects = () => {
   return (
     <section id="projects" className="py-20 lg:py-24 px-6 sm:px-8 lg:px-14 bg-[#ece0e0] w-full">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="mb-14">
           <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-3">
             // MY WORK
           </span>
-          <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-[#171717]" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+          <h2 className="text-4xl lg:text-[46px] font-bold leading-[1.2] text-text" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
             Production Projects
           </h2>
           <p className="text-[#525252] text-[17px] font-medium mt-3 max-w-2xl">
@@ -33,7 +33,7 @@ const Projects = () => {
               style={{ boxShadow: "4px 4px 0px #0A0E11" }}
             >
               {/* Image */}
-              <div className="relative w-full h-[200px] overflow-hidden border-b-2 border-black bg-[#F3F4F6]">
+              <div className="relative w-full h-50 overflow-hidden border-b-2 border-black bg-[#F3F4F6]">
                 <Image
                   src={project.image}
                   alt={`${project.name} — ${project.tagline} project screenshot by Musa Musa Kannike`}
@@ -46,7 +46,7 @@ const Projects = () => {
               {/* Content */}
               <div className="flex flex-col gap-3 p-5 flex-1">
                 <div>
-                  <h3 className="font-bold text-[#171717] text-xl" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+                  <h3 className="font-bold text-text text-xl" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                     {project.name}
                   </h3>
                   <p className="text-primary text-[13px] font-semibold tracking-wide uppercase">
@@ -61,7 +61,7 @@ const Projects = () => {
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1.5">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="text-[11px] font-bold uppercase tracking-wide border border-black px-2 py-0.5 text-[#171717] bg-[#F3F4F6]">
+                    <span key={tag} className="text-[11px] font-bold uppercase tracking-wide border border-black px-2 py-0.5 text-text bg-[#F3F4F6]">
                       {tag}
                     </span>
                   ))}
@@ -71,7 +71,7 @@ const Projects = () => {
                 <div className="flex flex-wrap gap-3 pt-2 border-t border-neutral-100 mt-auto">
                   <Link
                     href={`/projects/${project.slug}`}
-                    className="text-[13px] font-bold text-primary hover:text-[#171717] transition-colors uppercase tracking-wide"
+                    className="text-[13px] font-bold text-primary hover:text-text transition-colors uppercase tracking-wide"
                   >
                     Case Study
                   </Link>
@@ -81,7 +81,7 @@ const Projects = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[13px] font-bold text-[#171717] hover:text-primary transition-colors uppercase tracking-wide"
+                      className="text-[13px] font-bold text-text hover:text-primary transition-colors uppercase tracking-wide"
                     >
                       {link.label}
                       <ExternalIcon />
@@ -96,7 +96,7 @@ const Projects = () => {
         <div className="flex justify-center mt-14">
           <Link
             href="/projects"
-            className="inline-flex items-center justify-center border-[3px] border-black bg-white text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
+            className="inline-flex items-center justify-center border-[3px] border-black bg-white text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-1 active:translate-y-1 active:shadow-none"
           >
             View All Projects
           </Link>

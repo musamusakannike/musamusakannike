@@ -43,7 +43,7 @@ const statCards = [
 const About = () => {
   return (
     <section id="about" className="bg-[#FAFAFA] py-20 lg:py-24 px-6 sm:px-8 lg:px-14 w-full box-border">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* Left — Content */}
         <div className="flex flex-col">
@@ -51,12 +51,12 @@ const About = () => {
             // WHO I AM
           </span>
 
-          <h2 className="text-4xl lg:text-[42px] font-bold leading-[1.2] text-[#171717] m-0 mb-5" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
+          <h2 className="text-4xl lg:text-[42px] font-bold leading-[1.2] text-text m-0 mb-5" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
             Software & Product Engineer<br />with Founder Empathy
           </h2>
 
           <p className="text-[17px] font-medium leading-[1.75] text-[#525252] m-0 mb-5">
-            I&apos;m <strong className="text-[#171717]">Musa Musa Kannike</strong>, also known online as <strong className="text-primary">Codiac</strong> — a Software and Product Engineer with <strong className="text-[#171717]">4+ years</strong> of experience turning complex product concepts into scalable, user-centric production software.
+            I&apos;m <strong className="text-text">Musa Musa Kannike</strong>, also known online as <strong className="text-primary">Codiac</strong> — a Software and Product Engineer with <strong className="text-text">4+ years</strong> of experience turning complex product concepts into scalable, user-centric production software.
           </p>
           <p className="text-[17px] font-medium leading-[1.75] text-[#525252] m-0 mb-9">
             I don&apos;t just write code; I partner closely with founders, designers, and engineering teams to solve real customer friction. From scoping MVPs to shipping mission-critical cross-platform mobile apps, web applications, and resilient payment workflows, I treat software engineering as a discipline in service of customer value and product growth.
@@ -67,12 +67,12 @@ const About = () => {
             {techStack.map((skill) => (
               <div key={skill.label} className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-[15px] font-semibold text-[#171717]">{skill.label}</span>
+                  <span className="text-[15px] font-semibold text-text">{skill.label}</span>
                   <span className="text-[13px] font-bold text-primary">{skill.percent}%</span>
                 </div>
-                <div className="w-full h-[8px] bg-[#E5E7EB] border border-black overflow-hidden">
+                <div className="w-full h-2 bg-[#E5E7EB] border border-black overflow-hidden">
                   <div
-                    className="h-[8px] bg-primary transition-[width] duration-1000 ease-out"
+                    className="h-2 bg-primary transition-[width] duration-1000 ease-out"
                     style={{ width: `${skill.percent}%` }}
                   />
                 </div>
@@ -85,7 +85,7 @@ const About = () => {
             <a
               href="/musa-musa-kannike-fullstack-cv.pdf"
               download
-              className="inline-flex items-center gap-2 border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[15px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none cursor-pointer select-none"
+              className="inline-flex items-center gap-2 border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[15px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer select-none"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

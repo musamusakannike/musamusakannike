@@ -36,7 +36,7 @@ const footerLinks = [
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-16 px-6 sm:px-8 lg:px-14 border-t border-neutral-900 w-full box-border">
-      <div className="max-w-[1200px] mx-auto flex flex-col gap-12">
+      <div className="max-w-300 mx-auto flex flex-col gap-12">
 
         {/* Top Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
@@ -79,7 +79,7 @@ const Footer = () => {
               <h3 className="font-extrabold text-white text-[16px] tracking-wider uppercase" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                 {section.title}
               </h3>
-              <div className="w-[40px] h-[2.5px] bg-primary mt-2 mb-6" />
+              <div className="w-10 h-[2.5px] bg-primary mt-2 mb-6" />
               <ul className="flex flex-col gap-3.5 w-full">
                 {section.links.map((link) => (
                   <li key={link.name}>

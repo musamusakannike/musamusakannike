@@ -99,7 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${rajdhani.variable} ${spaceGrotesk.variable}`}
     >
-      <body className="min-h-full flex flex-col bg-white text-[#171717]" style={{ fontFamily: "var(--font-space-grotesk), sans-serif" }}>
+      <body className="min-h-full flex flex-col bg-white text-text" style={{ fontFamily: "var(--font-space-grotesk), sans-serif" }}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
