@@ -120,4 +120,25 @@ export const projects: Project[] = [
       { label: "Website", href: "https://www.cloudstech.org/" },
     ],
   },
+  {
+    id: 6,
+    slug: "sabilearn",
+    name: "SabiLearn",
+    tagline: "Interactive EdTech & AI Study Platform",
+    description:
+      "A comprehensive Nigerian EdTech platform built to make learning practical tech and vocational skills engaging. Combines interactive lessons, practice quizzes, offline-resilient study tools, and AI-powered learning assistance.",
+    detail: [
+      "SabiLearn is an all-in-one EdTech and skills mastery platform built specifically for Nigerian and African learners. The ecosystem delivers structured curriculum paths across technology, business, and vocational skills, accompanied by checkpoint quizzes, interactive exercises, and verified digital certificates of completion.",
+      "To accelerate learning retention, the platform features an AI Study Assistant that automates note summaries, generates custom multiple-choice quizzes on the fly, and delivers instant, step-by-step explanations for complex coursework questions. It also includes an in-browser code execution playground supporting HTML, CSS, JavaScript, and Python.",
+      "The platform was engineered as an omnichannel experience with full web availability and a native iOS mobile application, featuring localized Naira (₦) payment integration and offline-friendly architecture tailored for varying mobile data conditions.",
+    ],
+    image: "/projects/sabilearn.png",
+    tags: ["Next.js", "React Native", "AI Integration", "TypeScript", "EdTech", "Tailwind CSS"],
+    role: "Lead Fullstack & Product Engineer",
+    year: "2025",
+    links: [
+      { label: "Website", href: "https://www.sabilearn.online" },
+      { label: "App Store", href: "https://apps.apple.com/us/app/sabilearn/id6800027018" },
+    ],
+  },
 ];

@@ -49,6 +49,7 @@ const Footer = ({ lang, dict, navDict }: FooterProps) => {
         { name: "A1 Info Tech", href: "https://www.a1info.tech/", external: true },
         { name: "GlamConnect", href: "https://glam-sync-mvp.vercel.app/", external: true },
         { name: "Cloudstech", href: "https://www.cloudstech.org/", external: true },
+        { name: "SabiLearn", href: "https://www.sabilearn.online", external: true },
       ],
     },
     {

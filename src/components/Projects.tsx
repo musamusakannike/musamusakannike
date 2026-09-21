@@ -35,7 +35,7 @@ const Projects = ({ lang, dict, projectItems }: ProjectsProps) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.slice(0, 5).map((project) => {
+          {projectsData.slice(0, 6).map((project) => {
             const localized = projectItems[project.slug as keyof typeof projectItems] || project;
             return (
               <div
