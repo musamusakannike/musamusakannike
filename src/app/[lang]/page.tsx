@@ -25,7 +25,7 @@ export default async function Home({ params }: PageProps) {
   const currentLang = lang as Locale;
 
   return (
-    <main className="min-h-screen bg-white text-[#171717]">
+    <main className="min-h-screen bg-white text-text">
       <Navbar lang={currentLang} dict={dict.nav} />
       <Hero lang={currentLang} dict={dict.hero} />
       <Marquee skills={dict.marquee} />

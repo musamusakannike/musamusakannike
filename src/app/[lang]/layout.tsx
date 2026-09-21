@@ -94,7 +94,6 @@ export default async function RootLayout({ children, params }: LayoutProps) {
   }
 
   const isRtl = lang === "ar";
-  const dict = await getDictionaryForLocale(lang as Locale);
 
   const personJsonLd = {
     "@context": "https://schema.org",
