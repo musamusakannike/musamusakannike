@@ -1,13 +1,5 @@
 import React from "react";
-
-const techStack = [
-  { label: "TypeScript / JavaScript", percent: 95 },
-  { label: "React.js / Next.js", percent: 92 },
-  { label: "React Native (Expo)", percent: 88 },
-  { label: "Node.js / Express / NestJS", percent: 85 },
-  { label: "MongoDB / Prisma", percent: 80 },
-  { label: "Python", percent: 72 },
-];
+import type { Locale, Dictionary } from "@/app/[lang]/dictionaries";
 
 const AwardIcon = () => (
   <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
@@ -33,38 +25,41 @@ const DevicesIcon = () => (
   </svg>
 );
 
-const statCards = [
-  { icon: <AwardIcon />, value: "4+", label: "Years of Experience", color: "var(--color-primary)" },
-  { icon: <RocketIcon />, value: "10+", label: "Products Shipped", color: "#0A0E11" },
-  { icon: <BuildingIcon />, value: "5+", label: "Startups & Teams", color: "var(--color-primary)" },
-  { icon: <DevicesIcon />, value: "3", label: "Platforms (Web, Mobile, Cloud)", color: "#0A0E11" },
-];
+const statIcons = [<AwardIcon key="award" />, <RocketIcon key="rocket" />, <BuildingIcon key="building" />, <DevicesIcon key="devices" />];
+const statColors = ["var(--color-primary)", "#0A0E11", "var(--color-primary)", "#0A0E11"];
 
-const About = () => {
+type AboutProps = {
+  lang: Locale;
+  dict: Dictionary["about"];
+};
+
+const About = ({ lang, dict }: AboutProps) => {
+  const isRtl = lang === "ar";
+
   return (
     <section id="about" className="bg-[#FAFAFA] py-20 lg:py-24 px-6 sm:px-8 lg:px-14 w-full box-border">
       <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        {/* Left — Content */}
+        {/* Left / Start — Content */}
         <div className="flex flex-col">
-          <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-4">
-            // WHO I AM
+          <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-4 font-heading">
+            {dict.tag}
           </span>
 
-          <h2 className="text-4xl lg:text-[42px] font-bold leading-[1.2] text-text m-0 mb-5" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
-            Software & Product Engineer<br />with Founder Empathy
+          <h2 className="text-4xl lg:text-[42px] font-bold leading-[1.2] text-text m-0 mb-5 font-heading whitespace-pre-line">
+            {dict.heading}
           </h2>
 
           <p className="text-[17px] font-medium leading-[1.75] text-[#525252] m-0 mb-5">
-            I&apos;m <strong className="text-text">Musa Musa Kannike</strong>, also known online as <strong className="text-primary">Codiac</strong> — a Software and Product Engineer with <strong className="text-text">4+ years</strong> of experience turning complex product concepts into scalable, user-centric production software.
+            {dict.bio1}
           </p>
           <p className="text-[17px] font-medium leading-[1.75] text-[#525252] m-0 mb-9">
-            I don&apos;t just write code; I partner closely with founders, designers, and engineering teams to solve real customer friction. From scoping MVPs to shipping mission-critical cross-platform mobile apps, web applications, and resilient payment workflows, I treat software engineering as a discipline in service of customer value and product growth.
+            {dict.bio2}
           </p>
 
           {/* Skill bars */}
           <div className="flex flex-col gap-5">
-            {techStack.map((skill) => (
+            {dict.skills.map((skill) => (
               <div key={skill.label} className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
                   <span className="text-[15px] font-semibold text-text">{skill.label}</span>
@@ -85,28 +80,28 @@ const About = () => {
             <a
               href="/musa-musa-kannike-fullstack-cv.pdf"
               download
-              className="inline-flex items-center gap-2 border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[15px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer select-none"
+              className="inline-flex items-center gap-2 border-[3px] border-black bg-primary text-black font-bold uppercase tracking-wider text-[15px] px-7 py-3 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer select-none font-heading"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              DOWNLOAD CV
+              {dict.downloadCv}
             </a>
           </div>
         </div>
 
-        {/* Right — Stats & Info Cards */}
+        {/* Right / End — Stats & Info Cards */}
         <div className="grid grid-cols-2 gap-5">
-          {statCards.map((item, i) => (
+          {dict.statCards.map((item, i) => (
             <div
               key={i}
               className="flex flex-col gap-3 bg-white border-2 border-black p-6"
-              style={{ boxShadow: `4px 4px 0px ${item.color}` }}
+              style={{ boxShadow: `4px 4px 0px ${statColors[i] || "#0A0E11"}` }}
             >
-              <div className="w-10 h-10 flex items-center justify-center" style={{ color: item.color === "#0A0E11" ? "#171717" : item.color }}>
-                {item.icon}
+              <div className="w-10 h-10 flex items-center justify-center" style={{ color: statColors[i] === "#0A0E11" ? "#171717" : statColors[i] }}>
+                {statIcons[i]}
               </div>
-              <span className="text-[42px] font-bold leading-none" style={{ fontFamily: "var(--font-rajdhani), sans-serif", color: item.color }}>
+              <span className="text-[42px] font-bold leading-none font-heading" style={{ color: statColors[i] || "#0A0E11" }}>
                 {item.value}
               </span>
               <span className="text-[13px] font-semibold text-[#525252] uppercase tracking-wide leading-tight">
@@ -120,13 +115,13 @@ const About = () => {
             className="col-span-2 flex flex-col gap-2 bg-black border-2 border-primary p-6"
             style={{ boxShadow: "4px 4px 0px var(--color-primary)" }}
           >
-            <span className="text-primary font-bold text-xs uppercase tracking-widest mb-2" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
-              QUICK CONTACT
+            <span className="text-primary font-bold text-xs uppercase tracking-widest mb-2 font-heading">
+              {dict.quickContact}
             </span>
             {[
-              { label: "Email", value: "musamusakannike@gmail.com", href: "mailto:musamusakannike@gmail.com" },
-              { label: "GitHub", value: "github.com/musamusakannike", href: "https://github.com/musamusakannike" },
-              { label: "LinkedIn", value: "linkedin.com/in/musa-musa-kannike", href: "https://www.linkedin.com/in/musa-musa-kannike-02604b418/" },
+              { label: dict.contacts.email, value: "musamusakannike@gmail.com", href: "mailto:musamusakannike@gmail.com" },
+              { label: dict.contacts.github, value: "github.com/musamusakannike", href: "https://github.com/musamusakannike" },
+              { label: dict.contacts.linkedin, value: "linkedin.com/in/musa-musa-kannike", href: "https://www.linkedin.com/in/musa-musa-kannike-02604b418/" },
             ].map((item) => (
               <a
                 key={item.label}
@@ -135,8 +130,8 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-[14px] text-[#A3A3A3] hover:text-primary transition-colors font-medium"
               >
-                <span className="text-primary font-bold w-14 shrink-0">{item.label}:</span>
-                <span className="truncate">{item.value}</span>
+                <span className={`text-primary font-bold ${isRtl ? "w-16" : "w-14"} shrink-0`}>{item.label}:</span>
+                <span className="truncate" dir="ltr">{item.value}</span>
               </a>
             ))}
           </div>

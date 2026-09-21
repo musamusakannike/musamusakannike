@@ -1,4 +1,5 @@
 import React from "react";
+import type { Locale, Dictionary } from "@/app/[lang]/dictionaries";
 
 const socials = [
   {
@@ -30,7 +31,12 @@ const socials = [
   },
 ];
 
-const CTA = () => {
+type CTAProps = {
+  lang: Locale;
+  dict: Dictionary["cta"];
+};
+
+const CTA = ({ dict }: CTAProps) => {
   return (
     <section
       id="contact"
@@ -46,8 +52,8 @@ const CTA = () => {
       {/* Tag */}
       <div className="inline-flex items-center gap-2">
         <span className="block w-2 h-2 bg-primary rotate-45" />
-        <span className="font-bold text-primary uppercase tracking-widest text-sm" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
-          LET&apos;S WORK TOGETHER
+        <span className="font-bold text-primary uppercase tracking-widest text-sm font-heading">
+          {dict.tag}
         </span>
         <span className="block w-2 h-2 bg-primary rotate-45" />
       </div>
@@ -55,25 +61,24 @@ const CTA = () => {
       {/* Heading */}
       <div className="flex flex-col gap-4 text-center">
         <h2
-          className="text-[42px] sm:text-[52px] lg:text-[60px] text-white font-bold leading-[1.1] uppercase"
-          style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}
+          className="text-[40px] sm:text-[50px] lg:text-[58px] text-white font-bold leading-[1.15] uppercase font-heading"
         >
-          Got a project in mind?
+          {dict.heading}
         </h2>
         <p className="font-medium text-[#D4D4D4] text-center max-w-145 mx-auto text-[17px] leading-relaxed">
-          I&apos;m open to software & product engineering roles, high-impact consulting, and startup collaborations. Let&apos;s build scalable products that drive real results.
+          {dict.description}
         </p>
       </div>
 
       {/* Primary CTA */}
       <a
         href="mailto:musamusakannike@gmail.com"
-        className="inline-flex items-center justify-center gap-3 border-[3px] border-white bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-10 py-4 transition-all duration-100 ease-out shadow-[4px_4px_0px_var(--color-primary)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_var(--color-primary)] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer select-none"
+        className="inline-flex items-center justify-center gap-3 border-[3px] border-white bg-primary text-black font-bold uppercase tracking-wider text-[16px] px-10 py-4 transition-all duration-100 ease-out shadow-[4px_4px_0px_var(--color-primary)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_var(--color-primary)] active:translate-x-1 active:translate-y-1 active:shadow-none cursor-pointer select-none font-heading"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
-        SEND ME AN EMAIL
+        {dict.sendEmail}
       </a>
 
       {/* Social Links */}
@@ -93,12 +98,12 @@ const CTA = () => {
         <a
           href="/musa-musa-kannike-fullstack-cv.pdf"
           download
-          className="border-2 border-[#525252] text-[#A3A3A3] hover:border-primary hover:text-primary flex items-center gap-2 px-4 py-2 text-[13px] font-bold uppercase tracking-wide transition-colors duration-200"
+          className="border-2 border-[#525252] text-[#A3A3A3] hover:border-primary hover:text-primary flex items-center gap-2 px-4 py-2 text-[13px] font-bold uppercase tracking-wide transition-colors duration-200 font-heading"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
           </svg>
-          CV
+          {dict.cv}
         </a>
       </div>
     </section>
