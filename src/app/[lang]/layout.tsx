@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Rajdhani, Space_Grotesk, Cairo, Tajawal } from "next/font/google";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import "@/app/globals.css";
 import { locales, hasLocale, getDictionaryForLocale, type Locale } from "./dictionaries";
+import type { PortfolioTrack } from "@/data/tracks";
+import { applyTrackToDictionary } from "@/data/trackContent";
 
 const rajdhani = Rajdhani({
   weight: ["400", "500", "600", "700"],
@@ -47,7 +50,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
 
-  const dict = await getDictionaryForLocale(lang as Locale);
+  const rawDict = await getDictionaryForLocale(lang as Locale);
+  const headerList = await headers();
+  const track = (headerList.get("x-portfolio-track") as PortfolioTrack) || "all";
+  const dict = applyTrackToDictionary(rawDict, track, lang);
   const isArabic = lang === "ar";
   const url = `${SITE_URL}/${lang}`;
 

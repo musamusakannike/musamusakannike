@@ -1,3 +1,5 @@
+import type { PortfolioTrack } from "./tracks";
+
 export type Project = {
   id: number;
   slug: string;
@@ -9,6 +11,7 @@ export type Project = {
   tags: string[];
   role: string;
   year: string;
+  tracks: PortfolioTrack[];
   links: { label: string; href: string }[];
 };
 
@@ -29,6 +32,7 @@ export const projects: Project[] = [
     tags: ["React Native", "Expo", "Mobile UX", "Product Engineering"],
     role: "Product & Mobile App Developer",
     year: "2023",
+    tracks: ["mobile", "frontend"],
     links: [
       { label: "Website", href: "https://www.terrachow.com/" },
       { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.terrachow.terrachow" },
@@ -51,6 +55,7 @@ export const projects: Project[] = [
     tags: ["React Native", "Next.js", "Node.js", "MongoDB", "Paystack", "Product Strategy"],
     role: "Lead Product & Fullstack Engineer",
     year: "2023",
+    tracks: ["mobile", "frontend", "backend"],
     links: [
       { label: "Website", href: "https://360gadgetsafrica.com/" },
       { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.gadgetsafrica.gadgetsafrica" },
@@ -73,6 +78,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Product Architecture"],
     role: "Lead Product Engineer",
     year: "2024",
+    tracks: ["frontend", "backend"],
     links: [
       { label: "Main Site", href: "https://www.a1info.tech/" },
       { label: "Academy", href: "https://academy.a1info.tech/" },
@@ -86,7 +92,7 @@ export const projects: Project[] = [
     description:
       "A Saudi Arabian marketplace connecting beauty professionals with clients. Engineered the core booking availability algorithms, multi-platform REST API, and transactional flows powering mobile and web clients.",
     detail: [
-      "GlamConnect is a on-demand beauty services marketplace operating in Saudi Arabia, connecting independent beauty specialists and salons with clients. As Backend & Systems Product Engineer, I built the unified REST API backend that powers both native mobile clients and the web application.",
+      "GlamConnect is an on-demand beauty services marketplace operating in Saudi Arabia, connecting independent beauty specialists and salons with clients. As Backend & Systems Product Engineer, I built the unified REST API backend that powers both native mobile clients and the web application.",
       "Marketplace dynamics required rock-solid scheduling logic: preventing overlapping appointments across varying time zones, handling multi-service bookings, and supporting localized payment settlements. Using Node.js, Express, and MongoDB, I engineered a high-concurrency booking engine with real-time slot reservation locks.",
       "The backend serves as the single source of truth for GlamConnect's Play Store, App Store, and web applications, ensuring consistent business logic, sub-100ms API responses, and zero double-bookings.",
     ],
@@ -94,6 +100,7 @@ export const projects: Project[] = [
     tags: ["Node.js", "Express", "MongoDB", "REST API", "System Design"],
     role: "Backend & Systems Product Engineer",
     year: "2024",
+    tracks: ["backend", "mobile"],
     links: [
       { label: "Web App", href: "https://glam-sync-mvp.vercel.app/" },
       { label: "Play Store", href: "https://play.google.com/store/apps/details?id=sa.aba.glam_connect" },
@@ -116,6 +123,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Three.js", "GSAP", "TypeScript", "UX & Interaction"],
     role: "Frontend & Interactive Product Engineer",
     year: "2024",
+    tracks: ["frontend"],
     links: [
       { label: "Website", href: "https://www.cloudstech.org/" },
     ],
@@ -136,6 +144,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "React Native", "AI Integration", "TypeScript", "EdTech", "Tailwind CSS"],
     role: "Lead Fullstack & Product Engineer",
     year: "2025",
+    tracks: ["mobile", "frontend"],
     links: [
       { label: "Website", href: "https://www.sabilearn.online" },
       { label: "App Store", href: "https://apps.apple.com/us/app/sabilearn/id6800027018" },

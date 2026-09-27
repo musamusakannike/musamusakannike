@@ -10,14 +10,21 @@ const ExternalIcon = ({ isRtl }: { isRtl: boolean }) => (
   </svg>
 );
 
+import type { PortfolioTrack } from "@/data/tracks";
+
 type ProjectsProps = {
   lang: Locale;
   dict: Dictionary["projects"];
   projectItems: Dictionary["projectItems"];
+  track?: PortfolioTrack;
 };
 
-const Projects = ({ lang, dict, projectItems }: ProjectsProps) => {
+const Projects = ({ lang, dict, projectItems, track = "all" }: ProjectsProps) => {
   const isRtl = lang === "ar";
+
+  const relevantProjects = projectsData.filter(
+    (p) => track === "all" || p.tracks.includes(track)
+  );
 
   return (
     <section id="projects" className="py-20 lg:py-24 px-6 sm:px-8 lg:px-14 bg-[#ece0e0] w-full">
@@ -35,7 +42,7 @@ const Projects = ({ lang, dict, projectItems }: ProjectsProps) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.slice(0, 6).map((project) => {
+          {relevantProjects.slice(0, 6).map((project) => {
             const localized = projectItems[project.slug as keyof typeof projectItems] || project;
             return (
               <div

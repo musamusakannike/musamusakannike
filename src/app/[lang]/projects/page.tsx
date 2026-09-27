@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { projects as projectsData } from "@/data/projects";
 import { getDictionary, hasLocale, getDictionaryForLocale, type Locale } from "../dictionaries";
+import type { PortfolioTrack } from "@/data/tracks";
 
 const SITE_URL = "https://www.codiac.online";
 
@@ -66,6 +68,13 @@ export default async function ProjectsPage({ params }: Props) {
   const currentLang = lang as Locale;
   const isRtl = lang === "ar";
 
+  const headerList = await headers();
+  const track = (headerList.get("x-portfolio-track") as PortfolioTrack) || "all";
+
+  const displayedProjects = projectsData.filter(
+    (p) => track === "all" || p.tracks.includes(track)
+  );
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -110,7 +119,7 @@ export default async function ProjectsPage({ params }: Props) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projectsData.map((project) => {
+            {displayedProjects.map((project) => {
               const localized = dict.projectItems[project.slug as keyof typeof dict.projectItems] || project;
               return (
                 <div

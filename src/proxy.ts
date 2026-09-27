@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { getTrackFromHostname } from "./data/tracks";
 
 export const locales = ["en", "ar"] as const;
 export type Locale = (typeof locales)[number];
@@ -81,14 +82,23 @@ function getLocale(request: NextRequest): Locale {
 
 export function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
+  const hostname = request.headers.get("host") || request.nextUrl.hostname;
+  const track = getTrackFromHostname(hostname);
 
   // Check if pathname starts with any supported locale
   const pathnameHasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );
 
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-portfolio-track", track);
+
   if (pathnameHasLocale) {
-    return NextResponse.next();
+    return NextResponse.next({
+      request: {
+        headers: requestHeaders,
+      },
+    });
   }
 
   // Redirect to localized path if none present
