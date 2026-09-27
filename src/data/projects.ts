@@ -64,6 +64,29 @@ export const projects: Project[] = [
   },
   {
     id: 3,
+    slug: "africlana",
+    name: "Africlana",
+    tagline: "Multi-Vendor African Cultural Marketplace & Escrow Logistics Platform",
+    description:
+      "A cross-border multi-vendor e-commerce and logistics platform connecting African artisans and creators with global consumers. Engineered with centralized escrow-protected checkout, automated cart splitting, and integrated delivery dispatch.",
+    detail: [
+      "Africlana is an omnichannel multi-vendor commerce and logistics platform built to connect African artisans, designers, and cultural creators with global buyers across 45+ countries. As Product & Fullstack Engineer, I drove end-to-end feature architecture across the native mobile applications (React Native/Expo), customer web platform, and administrative operations system.",
+      "To overcome trust deficits and payment friction in cross-border commerce, I architected a centralized escrow holding engine with multi-gateway payment processing (Stripe, Paystack). The checkout flow splits multi-merchant orders into independent sub-orders, securing funds until buyers inspect and confirm delivery. The system seamlessly handles seller self-fulfillment alongside Africlana Logistics fleet dispatch, complete with automated 48-hour auto-release crons and dispute arbitration workflows.",
+      "On the client, I developed production-grade mobile applications with Expo Router, featuring dual Buyer and Creator/Seller workspaces, Google/Apple biometric auth, real-time OneSignal notifications, KYC verification, and dynamic safe area ergonomics. Africlana was successfully shipped to both Google Play and the Apple App Store, supported by a scalable Node.js/Express backend and Next.js operations portal.",
+    ],
+    image: "/projects/africlana.png",
+    tags: ["React Native", "Expo", "TypeScript", "Node.js", "MongoDB", "Stripe", "Next.js"],
+    role: "Product & Fullstack Engineer",
+    year: "2026",
+    tracks: ["mobile", "frontend", "backend"],
+    links: [
+      { label: "Website", href: "https://africlana.com/" },
+      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.fluenttera.africlana&pcampaignid=web_share" },
+      { label: "App Store", href: "https://apps.apple.com/us/app/africlana/id6804200963" },
+    ],
+  },
+  {
+    id: 4,
     slug: "a1-information-technology",
     name: "A1 Information Technology",
     tagline: "Tech Education & Service Ecosystem",
@@ -85,7 +108,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     slug: "glamconnect",
     name: "GlamConnect",
     tagline: "Beauty Professionals Marketplace (Saudi Arabia)",
@@ -108,7 +131,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     slug: "cloudstech",
     name: "Cloudstech",
     tagline: "International Software & AI Agency Platform",
@@ -129,7 +152,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     slug: "sabilearn",
     name: "SabiLearn",
     tagline: "Interactive EdTech & AI Study Platform",
