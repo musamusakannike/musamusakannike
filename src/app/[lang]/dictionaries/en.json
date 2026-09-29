@@ -240,7 +240,7 @@
       "detail": [
         "Terrachow is an on-demand food delivery mobile platform connecting everyday consumers with local culinary vendors across Nigeria. As Mobile App Developer, I took full ownership of the customer-facing mobile application built in React Native (Expo), focusing on user discovery, frictionless cart-to-checkout flows, and order placement ergonomics.",
         "To ensure high retention and customer trust in a market where delivery reliability is paramount, I engineered real-time GPS courier tracking and live status updates from kitchen dispatch to doorstep. I also implemented resilient in-app payment handling tuned for fluctuating mobile networks, providing an intuitive, native-feeling user experience.",
-        "Terrachow was launched to production on both Google Play and the Apple App Store, successfully processing customer orders across multiple Nigerian urban centers.",
+        "Terrachow was launched to production on both Google Play and the Apple App Store, successfully processing customer orders across multiple Nigerian urban centers."
       ],
       "role": "Mobile App Developer",
       "year": "2023",
@@ -258,7 +258,7 @@
       "detail": [
         "360Gadgets Africa is an omnichannel commerce platform providing consumer electronics alongside high-frequency digital services including instant airtime and data subscriptions (VTU). As Lead Fullstack & Mobile Developer, I bridged the gap between commercial strategy and engineering execution across mobile (React Native), web (Next.js), and backend micro-services.",
         "A primary product bottleneck was payment abandonment. To address this, I architected dual-gateway integration with Paystack and Flutterwave featuring intelligent fallback logic, reducing failed checkouts and boosting transaction completion rates. On the backend, I designed transactional workflows in Node.js and MongoDB to automate digital service dispatch within seconds.",
-        "The product shipped concurrently to the Google Play Store, Apple App Store, and responsive web, establishing a scalable foundation that drove reliable revenue across both physical merchandise and recurring digital top-ups.",
+        "The product shipped concurrently to the Google Play Store, Apple App Store, and responsive web, establishing a scalable foundation that drove reliable revenue across both physical merchandise and recurring digital top-ups."
       ],
       "role": "Lead Fullstack & Mobile Developer",
       "year": "2023",
@@ -276,7 +276,7 @@
       "detail": [
         "A1 Information Technology operates at the intersection of technical vocational education and hardware repair services. Previously reliant on fragmented physical workflows, the organization needed a unified digital ecosystem to scale its physical academy, online courses, and customer repair intake. As Lead Fullstack Developer, I owned the 0-to-1 build of their digital infrastructure.",
         "I designed and architected two deeply integrated properties: a high-converting customer service portal for booking hardware repairs and tool purchasing, and a dedicated academy web application enabling student onboarding, curriculum management, and online tuition payments. Both applications were engineered with Next.js, TypeScript, Node.js, and MongoDB.",
-        "By establishing clean user funnels and clear information architecture, the new platform eliminated operational bottlenecks for staff and allowed prospective students across Nigeria to discover, enroll, and pay for courses completely online.",
+        "By establishing clean user funnels and clear information architecture, the new platform eliminated operational bottlenecks for staff and allowed prospective students across Nigeria to discover, enroll, and pay for courses completely online."
       ],
       "role": "Lead Fullstack Developer",
       "year": "2024",
@@ -293,7 +293,7 @@
       "detail": [
         "GlamConnect is an on-demand beauty services marketplace operating in Saudi Arabia, connecting independent beauty specialists and salons with clients. As Backend & Systems Developer, I built the unified REST API backend that powers both native mobile clients and the web application.",
         "Marketplace dynamics required rock-solid scheduling logic: preventing overlapping appointments across varying time zones, handling multi-service bookings, and supporting localized payment settlements. Using Node.js, Express, and MongoDB, I engineered a high-concurrency booking engine with real-time slot reservation locks.",
-        "The backend serves as the single source of truth for GlamConnect's Play Store, App Store, and web applications, ensuring consistent business logic, sub-100ms API responses, and zero double-bookings.",
+        "The backend serves as the single source of truth for GlamConnect's Play Store, App Store, and web applications, ensuring consistent business logic, sub-100ms API responses, and zero double-bookings."
       ],
       "role": "Backend & Systems Developer",
       "year": "2024",
@@ -311,7 +311,7 @@
       "detail": [
         "Cloudstech is an international software and artificial intelligence agency providing custom enterprise solutions. To position the agency effectively in a competitive global market, the firm required a flagship web presence that conveyed technical sophistication while driving qualified inbound client leads. As Frontend & Interactive Web Developer, I built the platform from concept to deployment.",
         "I engineered interactive 3D elements using Three.js and choreographed scroll-driven animations with GSAP, ensuring 60fps rendering across desktop and mobile devices without degrading Core Web Vitals or search engine indexability.",
-        "The resulting experience balances high visual craft with clear conversion paths, significantly increasing inquiry conversions and presenting an agency image on par with world-class digital product studios.",
+        "The resulting experience balances high visual craft with clear conversion paths, significantly increasing inquiry conversions and presenting an agency image on par with world-class digital product studios."
       ],
       "role": "Frontend & Interactive Web Developer",
       "year": "2024",
@@ -327,7 +327,7 @@
       "detail": [
         "SabiLearn is an all-in-one EdTech and skills mastery platform built specifically for Nigerian and African learners. The ecosystem delivers structured curriculum paths across technology, business, and vocational skills, accompanied by checkpoint quizzes, interactive exercises, and verified digital certificates of completion.",
         "To accelerate learning retention, the platform features an AI Study Assistant that automates note summaries, generates custom multiple-choice quizzes on the fly, and delivers instant, step-by-step explanations for complex coursework questions. It also includes an in-browser code execution playground supporting HTML, CSS, JavaScript, and Python.",
-        "The platform was engineered as an omnichannel experience with full web availability and a native iOS mobile application, featuring localized Naira (₦) payment integration and offline-friendly architecture tailored for varying mobile data conditions.",
+        "The platform was engineered as an omnichannel experience with full web availability and a native iOS mobile application, featuring localized Naira (₦) payment integration and offline-friendly architecture tailored for varying mobile data conditions."
       ],
       "role": "Lead Fullstack & Mobile Developer",
       "year": "2025",
