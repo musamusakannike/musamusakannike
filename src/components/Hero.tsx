@@ -146,7 +146,7 @@ const Hero = ({ lang, dict }: HeroProps) => {
               <div className="relative w-full aspect-4/4.5 border-4 border-black bg-white shadow-[10px_10px_0px_#0A0E11] overflow-hidden">
                 <Image
                   src="/profile.jpg"
-                  alt="Musa Musa Kannike — Software & Product Engineer, Codiac"
+                  alt="Musa Musa Kannike — Fullstack Web & Mobile App Developer, Codiac"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover"

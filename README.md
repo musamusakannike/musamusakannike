@@ -1,8 +1,8 @@
 <h1 align="center">Hi, I'm Musa Musa Kannike</h1>
-<h3 align="center">Software & Product Engineer, also known online as <a href="https://github.com/musamusakannike">Codiac</a></h3>
+<h3 align="center">Fullstack Web & Mobile App Developer, also known online as <a href="https://github.com/musamusakannike">Codiac</a></h3>
 
 <p align="center">
-  4+ years bridging product strategy, user experience, and technical execution. Building scalable web, mobile & cloud applications for startups and scale-ups across Nigeria, Saudi Arabia, and globally.
+  4+ years crafting scalable web, mobile & cloud applications for startups and scale-ups across Nigeria, Saudi Arabia, and globally.
 </p>
 
 <p align="center">
@@ -15,8 +15,8 @@
 
 ### About Me
 
-- Currently driving product engineering at **Africlana Ltd** and **Cloudstech**, an international software & AI agency
-- I specialize in **full-cycle product development** with **React, Next.js, React Native (Expo), and Node.js** — owning features from concept and UX architecture to production deployment
+- Currently driving fullstack web & mobile development at **Africlana Ltd** and **Cloudstech**, an international software & AI agency
+- I specialize in **fullstack web and mobile application development** with **React, Next.js, React Native (Expo), and Node.js** — owning features from concept and UX architecture to production deployment
 - I've shipped products used by thousands of people — Nigerian food delivery apps, multi-currency e-commerce platforms, and a Saudi Arabian beauty marketplace
 - Production experience across **3 platforms**: Web, Mobile, and Desktop/Cloud
 - **10+** production products shipped, **5+** companies and startups partnered with
@@ -58,11 +58,11 @@
 
 ### Experience
 
-- **Product & Fullstack Engineer** @ Africlana Ltd — *Aug 2026 – Present*
-- **Frontend & Interactive Product Engineer** @ Cloudstech — *Jan 2026 – Present*
-- **Lead Product Engineer** @ A1 Information Technology — *May 2026 – Aug 2026*
-- **Fullstack & Product Engineer** @ 360Gadgets Africa — *Apr 2025 – Jan 2026*
-- **Product & Mobile App Developer** @ Terrachow — *Jun 2024 – Mar 2025*
+- **Lead Fullstack & Mobile Developer** @ Africlana Ltd — *Aug 2026 – Present*
+- **Frontend & Interactive Web Developer** @ Cloudstech — *Jan 2026 – Present*
+- **Lead Fullstack Developer** @ A1 Information Technology — *May 2026 – Aug 2026*
+- **Fullstack Web & Mobile Developer** @ 360Gadgets Africa — *Apr 2025 – Jan 2026*
+- **Mobile App Developer** @ Terrachow — *Jun 2024 – Mar 2025*
 
 ### Reach Me
 

@@ -109,14 +109,15 @@ export default async function RootLayout({ children, params }: LayoutProps) {
     alternateName: isRtl ? "كودياك" : "Codiac",
     url: `${SITE_URL}/${lang}`,
     image: `${SITE_URL}/profile.jpg`,
-    jobTitle: isRtl ? "مهندس برمجيات ومنتجات رقمية" : "Software & Product Engineer",
+    jobTitle: isRtl ? "مطور فل ستاك للويب وتطبيقات الجوال" : "Fullstack Web & Mobile App Developer",
     sameAs: [
       "https://github.com/musamusakannike",
       "https://x.com/musa_codes",
       "https://www.linkedin.com/in/musa-musa-kannike-02604b418/",
     ],
     knowsAbout: [
-      "Product Engineering",
+      "Fullstack Web Development",
+      "Mobile App Development",
       "TypeScript",
       "React",
       "Next.js",

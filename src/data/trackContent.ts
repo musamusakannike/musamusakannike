@@ -33,12 +33,12 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
   all: {},
   mobile: {
     hero: {
-      badge: "MOBILE APP & PRODUCT ENGINEER — CODIAC",
+      badge: "MOBILE APP DEVELOPER — CODIAC",
       titleLine1: "SHIPPING INTUITIVE",
       titleLine2: "CROSS-PLATFORM",
       titleLine3: "MOBILE APPS.",
       description: "4+ years engineering production iOS and Android apps with React Native & Expo. From gesture-driven 60fps UX to offline-first architectures, low-bandwidth resilience, and native payment flows across Africa and the Middle East.",
-      productEngineer: "Mobile App Engineer",
+      productEngineer: "Mobile App Developer",
     },
     marquee: [
       "React Native",
@@ -55,8 +55,8 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
       "Push Notifications",
     ],
     about: {
-      heading: "Mobile Product Engineer\nBuilding for Frictionless Hands-On UX",
-      bio1: "I'm Musa Musa Kannike (Codiac) — a Mobile Product Engineer specializing in high-performance cross-platform applications with React Native and Expo.",
+      heading: "Mobile App Developer\nBuilding for Frictionless Hands-On UX",
+      bio1: "I'm Musa Musa Kannike (Codiac) — a Mobile App Developer specializing in high-performance cross-platform applications with React Native and Expo.",
       bio2: "I design and build mobile apps that thrive under real-world conditions: erratic networks, varying screen sizes, and strict latency demands. Having shipped products to thousands of users on both Google Play and the Apple App Store, I focus on instant responsiveness, smooth animations, and bulletproof user checkout flows.",
       skills: [
         { label: "React Native / Expo", percent: 96 },
@@ -73,12 +73,12 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
   },
   frontend: {
     hero: {
-      badge: "FRONTEND & INTERACTIVE ENGINEER — CODIAC",
+      badge: "FRONTEND & INTERACTIVE DEVELOPER — CODIAC",
       titleLine1: "CRAFTING ENGAGING",
       titleLine2: "HIGH-PERFORMANCE",
       titleLine3: "WEB EXPERIENCES.",
       description: "4+ years creating pixel-perfect, accessible, and fast web applications using React, Next.js, and TypeScript. Specializing in interactive 3D with Three.js, GSAP motion choreography, and high-converting product UI.",
-      productEngineer: "Frontend Engineer",
+      productEngineer: "Frontend Developer",
     },
     marquee: [
       "React.js",
@@ -95,8 +95,8 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
       "Accessible UI",
     ],
     about: {
-      heading: "Frontend & UI Engineer\nObsessed with Craft & Performance",
-      bio1: "I'm Musa Musa Kannike (Codiac) — a Frontend & Interactive Product Engineer passionate about building engaging, fluid, and scalable web interfaces.",
+      heading: "Frontend & UI Developer\nObsessed with Craft & Performance",
+      bio1: "I'm Musa Musa Kannike (Codiac) — a Frontend & Interactive Web Developer passionate about building engaging, fluid, and scalable web interfaces.",
       bio2: "I blend visual artistry with solid engineering practices. From interactive 3D WebGL scenes to sub-second page loads and robust component design systems, I ensure digital products not only look world-class but feel effortless and convert visitors into active users.",
       skills: [
         { label: "React.js / Next.js", percent: 96 },
@@ -107,18 +107,18 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
         { label: "Accessibility (a11y) & SEO", percent: 86 },
       ],
     },
-    stackHeading: "Frontend Engineering & Interactive UX",
+    stackHeading: "Frontend Architecture & Interactive UX",
     stackIndices: [0, 1, 2],
     preferredProjects: ["cloudstech", "a1-information-technology", "sabilearn", "360gadgets-africa"],
   },
   backend: {
     hero: {
-      badge: "BACKEND & SYSTEMS ENGINEER — CODIAC",
+      badge: "BACKEND & SYSTEMS DEVELOPER — CODIAC",
       titleLine1: "ENGINEERING RESILIENT",
       titleLine2: "HIGH-CONCURRENCY",
       titleLine3: "APIs & PLATFORMS.",
       description: "4+ years architecting reliable backend services, transactional databases, and payment failover engines using Node.js, Express, NestJS, and MongoDB. Delivering sub-100ms response times and zero double-bookings.",
-      productEngineer: "Backend Engineer",
+      productEngineer: "Backend Developer",
     },
     marquee: [
       "Node.js",
@@ -135,8 +135,8 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
       "Cloud Deployment",
     ],
     about: {
-      heading: "Backend & Systems Engineer\nFocused on Reliability and Scale",
-      bio1: "I'm Musa Musa Kannike (Codiac) — a Backend and Systems Engineer building mission-critical services, automated dispatch pipelines, and high-concurrency scheduling systems.",
+      heading: "Backend & Systems Developer\nFocused on Reliability and Scale",
+      bio1: "I'm Musa Musa Kannike (Codiac) — a Backend and Systems Developer building mission-critical services, automated dispatch pipelines, and high-concurrency scheduling systems.",
       bio2: "Behind great customer-facing interfaces lies rock-solid server architecture. I specialize in designing transactional database schemas, implementing fault-tolerant payment flows with multi-gateway routing, and structuring clean APIs that power mobile and web frontends with high speed and zero data corruption.",
       skills: [
         { label: "Node.js / Express / NestJS", percent: 95 },
@@ -157,12 +157,12 @@ export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
   all: {},
   mobile: {
     hero: {
-      badge: "مهندس تطبيقات الجوال والمنتجات — كودياك",
+      badge: "مطور تطبيقات الجوال — كودياك",
       titleLine1: "أطور تطبيقات جوال",
       titleLine2: "عالية الأداء",
       titleLine3: "وسلسة الاستخدام.",
       description: "أكثر من 4 سنوات في تطوير تطبيقات iOS وAndroid المتقنة باستخدام React Native وExpo. من تجارب تفاعلية بمعدل 60 إطاراً في الثانية إلى بنى معمارية تعمل دون اتصال بالإنترنت وحلول دفع مرنة.",
-      productEngineer: "مهندس تطبيقات الجوال",
+      productEngineer: "مطور تطبيقات الجوال",
     },
     marquee: [
       "React Native",
@@ -179,8 +179,8 @@ export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
       "الإشعارات الفورية",
     ],
     about: {
-      heading: "مهندس تطبيقات الجوال\nيركز على تجربة مستخدم سلسة واستثنائية",
-      bio1: "أنا موسى موسى كانيكي (كودياك) — مهندس برمجيات متخصص في بناء تطبيقات الجوال متعددة المنصات باستخدام React Native وExpo.",
+      heading: "مطور تطبيقات الجوال\nيركز على تجربة مستخدم سلسة واستثنائية",
+      bio1: "أنا موسى موسى كانيكي (كودياك) — مطور برمجيات وتطبيقات متخصص في بناء تطبيقات الجوال متعددة المنصات باستخدام React Native وExpo.",
       bio2: "أركز على بناء تطبيقات تعمل بكفاءة تحت ظروف الاستخدام الحقيقية: تقلبات الشبكة، تنوع الشاشات، وسرعة الاستجابة اللحظية. أطلقت تطبيقات ناجحة على متجري Google Play وApp Store تخدم آلاف المستخدمين.",
       skills: [
         { label: "React Native / Expo", percent: 96 },
@@ -197,12 +197,12 @@ export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
   },
   frontend: {
     hero: {
-      badge: "مهندس الواجهات الأمامية والتفاعلية — كودياك",
+      badge: "مطور الواجهات الأمامية والتفاعلية — كودياك",
       titleLine1: "أصمم تجارب ويب",
       titleLine2: "سريعة الاستجابة",
       titleLine3: "وفريدة التصميم.",
       description: "أكثر من 4 سنوات في هندسة واجهات ويب تفاعلية وسريعة باستخدام React وNext.js وTypeScript. متخصص في المؤثرات ثلاثية الأبعاد (Three.js)، حركات GSAP الانسيابية، وأنظمة التصميم القابلة للتوسع.",
-      productEngineer: "مهندس واجهات أمامية",
+      productEngineer: "مطور واجهات أمامية",
     },
     marquee: [
       "React.js",
@@ -219,8 +219,8 @@ export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
       "إمكانية الوصول (a11y)",
     ],
     about: {
-      heading: "مهندس الواجهات الأمامية\nيجمع بين الشغف البصري والدقة الهندسية",
-      bio1: "أنا موسى موسى كانيكي (كودياك) — مهندس واجهات أمامية ومصمم تجارب تفاعلية أبتكر واجهات ويب تترك انطباعاً مبهراً.",
+      heading: "مطور الواجهات الأمامية\nيجمع بين الشغف البصري والدقة التقنية",
+      bio1: "أنا موسى موسى كانيكي (كودياك) — مطور واجهات أمامية ومصمم تجارب تفاعلية أبتكر واجهات ويب تترك انطباعاً مبهراً.",
       bio2: "أدمج الحرفية البصرية مع أفضل الممارسات الهندسية. من المشاهد ثلاثية الأبعاد WebGL إلى سرعة تحميل لا تتجاوز الثانية، أضمن أن تكون منصتك الرقمية متميزة عالمياً وسهلة الاستخدام لكل زائر.",
       skills: [
         { label: "React.js / Next.js", percent: 96 },
@@ -231,18 +231,18 @@ export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
         { label: "إمكانية الوصول (a11y) وSEO", percent: 86 },
       ],
     },
-    stackHeading: "هندسة الواجهات الأمامية والتجارب التفاعلية",
+    stackHeading: "تطوير الواجهات الأمامية والتجارب التفاعلية",
     stackIndices: [0, 1, 2],
     preferredProjects: ["cloudstech", "a1-information-technology", "sabilearn", "360gadgets-africa"],
   },
   backend: {
     hero: {
-      badge: "مهندس البنى التحتية والخوادم — كودياك",
+      badge: "مطور البنى التحتية والخوادم — كودياك",
       titleLine1: "أبني بنى تحتية",
       titleLine2: "قوية وموثوقة",
       titleLine3: "عالية التحمل.",
       description: "أكثر من 4 سنوات في تصميم خوادم وخدمات REST APIs وقواعد بيانات موثوقة باستخدام Node.js وExpress وNestJS وMongoDB. مع استجابة أقل من 100 ملي ثانية وحلول دفع مخصصة.",
-      productEngineer: "مهندس خوادم وأنظمة",
+      productEngineer: "مطور خوادم وأنظمة",
     },
     marquee: [
       "Node.js",
@@ -259,8 +259,8 @@ export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
       "النشر السحابي",
     ],
     about: {
-      heading: "مهندس خوادم ونظم\nمكرس للأمان والموثوقية والتوسع العالي",
-      bio1: "أنا موسى موسى كانيكي (كودياك) — مهندس خوادم ونظم معمارية متخصص في بناء خدمات الويب الأساسية وأنظمة الحجز والمدفوعات عالية الحركة.",
+      heading: "مطور خوادم ونظم\nمكرس للأمان والموثوقية والتوسع العالي",
+      bio1: "أنا موسى موسى كانيكي (كودياك) — مطور خوادم ونظم معمارية متخصص في بناء خدمات الويب الأساسية وأنظمة الحجز والمدفوعات عالية الحركة.",
       bio2: "خلف كل واجهة مستخدم ممتازة تكمن بنية خوادم متينة. أتخصص في تصميم مخططات قواعد بيانات محكمة، دمج بوابات الدفع مع أنظمة التبديل التلقائي عند الفشل، وبناء واجهات برمجة تطبيقات (APIs) سريعة ومحمية تدعم منصات الويب والجوال.",
       skills: [
         { label: "Node.js / Express / NestJS", percent: 95 },

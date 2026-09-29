@@ -5,7 +5,7 @@ type MarqueeProps = {
 };
 
 const defaultSkills = [
-  "Product Engineering", "TypeScript", "Next.js", "React.js",
+  "Fullstack Development", "TypeScript", "Next.js", "React.js",
   "React Native", "Expo", "Node.js", "Express.js", "Nest.js",
   "System Design", "MongoDB", "Prisma", "REST APIs", "GraphQL",
   "Paystack", "Flutterwave", "UX & Interaction", "Three.js", "GSAP",

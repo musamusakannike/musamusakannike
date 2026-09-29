@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Musa Musa Kannike — Codiac",
     short_name: "Codiac",
     description:
-      "Musa Musa Kannike (Codiac) — Software & Product Engineer building web, mobile, and cloud products.",
+      "Musa Musa Kannike (Codiac) — Fullstack Web & Mobile App Developer building web, mobile, and cloud products.",
     start_url: "/",
     display: "standalone",
     background_color: "#000000",

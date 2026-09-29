@@ -1,20 +1,19 @@
 {
   "meta": {
-    "titleDefault": "Musa Musa Kannike | Software & Product Engineer — Codiac",
+    "titleDefault": "Musa Musa Kannike | Fullstack Web & Mobile App Developer — Codiac",
     "titleTemplate": "%s | Musa Musa Kannike",
-    "description": "Musa Musa Kannike (Codiac) — Software & Product Engineer with 4+ years of experience building web, mobile, and cloud products. Bridging product vision, UX architecture, and scalable fullstack engineering with React, Next.js, React Native, and Node.js.",
-    "ogTitle": "Musa Musa Kannike | Software & Product Engineer",
-    "ogDescription": "4+ years bridging product vision and engineering execution across web, mobile & cloud. React, Next.js, React Native, Node.js, TypeScript.",
+    "description": "Musa Musa Kannike (Codiac) — Fullstack Web & Mobile App Developer with 4+ years of experience building web, mobile, and cloud products. Delivering scalable fullstack architecture and seamless user experiences with React, Next.js, React Native, and Node.js.",
+    "ogTitle": "Musa Musa Kannike | Fullstack Web & Mobile App Developer",
+    "ogDescription": "4+ years delivering scalable fullstack architecture and seamless user experiences across web, mobile & cloud. React, Next.js, React Native, Node.js, TypeScript.",
     "keywords": [
       "Musa Musa Kannike",
       "Codiac",
-      "product engineer",
-      "software engineer",
-      "product-minded engineer",
+      "fullstack web developer",
+      "mobile app developer",
+      "web and mobile developer",
       "fullstack developer",
       "React Native developer",
       "Next.js developer",
-      "mobile app developer",
       "web developer",
       "fullstack engineer Saudi Arabia",
       "fullstack engineer Nigeria"
@@ -33,11 +32,11 @@
     "targetLang": "ar"
   },
   "hero": {
-    "badge": "SOFTWARE & PRODUCT ENGINEER — CODIAC",
+    "badge": "FULLSTACK WEB & MOBILE DEVELOPER — CODIAC",
     "titleLine1": "BUILDING THINGS",
     "titleLine2": "THAT ACTUALLY",
     "titleLine3": "WORK.",
-    "description": "4+ years bridging product vision and engineering execution. Crafting production-grade web, mobile, and cloud applications for startups and scale-ups — from 0 to 1 and beyond. Specializing in React, Next.js, React Native (Expo), and Node.js.",
+    "description": "4+ years crafting production-grade web, mobile, and cloud applications for startups and scale-ups — from 0 to 1 and beyond. Specializing in React, Next.js, React Native (Expo), and Node.js.",
     "viewWork": "VIEW MY WORK",
     "hireMe": "HIRE ME",
     "stats": [
@@ -46,10 +45,10 @@
       { "value": "5+", "label": "Startups & Teams" }
     ],
     "availableForHire": "Available for hire",
-    "productEngineer": "Product Engineer"
+    "productEngineer": "Fullstack Developer"
   },
   "marquee": [
-    "Product Engineering",
+    "Fullstack Development",
     "TypeScript",
     "Next.js",
     "React.js",
@@ -71,9 +70,9 @@
   ],
   "about": {
     "tag": "// WHO I AM",
-    "heading": "Software & Product Engineer\nwith Founder Empathy",
-    "bio1": "I'm Musa Musa Kannike, also known online as Codiac — a Software and Product Engineer with 4+ years of experience turning complex product concepts into scalable, user-centric production software.",
-    "bio2": "I don't just write code; I partner closely with founders, designers, and engineering teams to solve real customer friction. From scoping MVPs to shipping mission-critical cross-platform mobile apps, web applications, and resilient payment workflows, I treat software engineering as a discipline in service of customer value and product growth.",
+    "heading": "Fullstack Web & Mobile Developer\nBuilding Scalable Digital Products",
+    "bio1": "I'm Musa Musa Kannike, also known online as Codiac — a Fullstack Web & Mobile App Developer with 4+ years of experience turning complex product concepts into scalable, user-centric production software.",
+    "bio2": "I don't just write code; I partner closely with founders, designers, and engineering teams to solve real customer friction. From scoping MVPs to shipping mission-critical cross-platform mobile apps, web applications, and resilient payment workflows, I build end-to-end digital solutions that drive customer value and business growth.",
     "skills": [
       { "label": "TypeScript / JavaScript", "percent": 95 },
       { "label": "React.js / Next.js", "percent": 92 },
@@ -101,9 +100,9 @@
     "heading": "My Specializations",
     "items": [
       {
-        "title": "Full-Cycle Product Engineering",
+        "title": "Full-Cycle Web & Mobile Development",
         "description": "Translating product specs, user stories, and customer feedback into intuitive, high-converting digital interfaces. I own features end-to-end — from wireframe prototyping to production rollouts, accessibility, and UX polish.",
-        "tags": ["Product Strategy", "UX Architecture", "Design Systems", "Next.js", "TypeScript"]
+        "tags": ["Fullstack Strategy", "UX Architecture", "Design Systems", "Next.js", "TypeScript"]
       },
       {
         "title": "Cross-Platform Mobile & Web",
@@ -122,25 +121,25 @@
     "heading": "Work Experience",
     "items": [
       {
-        "role": "Product & Fullstack Engineer",
+        "role": "Lead Fullstack & Mobile Developer",
         "company": "Africlana Ltd",
         "period": "Aug 2026 – Present",
         "type": "Current",
         "typeLabel": "Current",
-        "description": "Driving end-to-end product features and user experience across Africlana's web and mobile platforms. Collaborating closely with product stakeholders to rapidly iterate on feedback loops, improve user retention, and ensure scalable application architecture.",
-        "tags": ["Product Engineering", "Fullstack", "Web", "Mobile"]
+        "description": "Driving end-to-end fullstack features and user experience across Africlana's web and mobile platforms. Collaborating closely with product stakeholders to rapidly iterate on feedback loops, improve user retention, and ensure scalable application architecture.",
+        "tags": ["Fullstack Development", "Mobile Apps", "Web", "React Native"]
       },
       {
-        "role": "Lead Product Engineer",
+        "role": "Lead Fullstack Developer",
         "company": "A1 Information Technology",
         "period": "May 2026 – Aug 2026",
         "type": "Contract",
         "typeLabel": "Contract",
         "description": "Spearheaded the 0-to-1 digital transformation for A1 Info Tech. Designed and built a dual-portal ecosystem uniting customer hardware repair intake with an interactive training academy for students, complete with curriculum delivery and automated tuition checkout.",
-        "tags": ["Next.js", "TypeScript", "Node.js", "MongoDB", "Product Architecture"]
+        "tags": ["Next.js", "TypeScript", "Node.js", "MongoDB", "Fullstack Architecture"]
       },
       {
-        "role": "Frontend & Interactive Product Engineer",
+        "role": "Frontend & Interactive Web Developer",
         "company": "Cloudstech",
         "period": "Jan 2026 – Present",
         "type": "Current",
@@ -149,7 +148,7 @@
         "tags": ["Next.js", "Three.js", "GSAP", "TypeScript", "Interactive UX"]
       },
       {
-        "role": "Fullstack & Product Engineer",
+        "role": "Fullstack Web & Mobile Developer",
         "company": "360Gadgets Africa",
         "period": "Apr 2025 – Jan 2026",
         "type": "Hybrid",
@@ -158,7 +157,7 @@
         "tags": ["React Native", "Next.js", "Node.js", "Paystack", "Flutterwave", "Checkout UX"]
       },
       {
-        "role": "Product & Mobile App Developer",
+        "role": "Mobile App Developer",
         "company": "Terrachow",
         "period": "Jun 2024 – Mar 2025",
         "type": "Remote",
@@ -219,12 +218,12 @@
   "cta": {
     "tag": "LET'S WORK TOGETHER",
     "heading": "Got a project in mind?",
-    "description": "I'm open to software & product engineering roles, high-impact consulting, and startup collaborations. Let's build scalable products that drive real results.",
+    "description": "I'm open to fullstack web & mobile development roles, high-impact consulting, and startup collaborations. Let's build scalable products that drive real results.",
     "sendEmail": "SEND ME AN EMAIL",
     "cv": "CV"
   },
   "footer": {
-    "tagline": "Software & Product Engineer building production-grade web, mobile & cloud products for startups and companies worldwide.",
+    "tagline": "Fullstack Web & Mobile Developer building production-grade web, mobile & cloud products for startups and companies worldwide.",
     "downloadCv": "DOWNLOAD CV",
     "navTitle": "NAVIGATION",
     "projectsTitle": "PROJECTS",
@@ -239,13 +238,13 @@
       "tagline": "Nigerian Food Delivery & Logistics Platform",
       "description": "An on-demand food delivery platform connecting hungry users with local restaurants across Nigeria. Designed with a mobile-first checkout flow, real-time order tracking, and friction-free payments tuned for Nigerian network conditions.",
       "detail": [
-        "Terrachow is an on-demand food delivery mobile platform connecting everyday consumers with local culinary vendors across Nigeria. As Product & Mobile App Developer, I took full ownership of the customer-facing mobile application built in React Native (Expo), focusing on user discovery, frictionless cart-to-checkout flows, and order placement ergonomics.",
+        "Terrachow is an on-demand food delivery mobile platform connecting everyday consumers with local culinary vendors across Nigeria. As Mobile App Developer, I took full ownership of the customer-facing mobile application built in React Native (Expo), focusing on user discovery, frictionless cart-to-checkout flows, and order placement ergonomics.",
         "To ensure high retention and customer trust in a market where delivery reliability is paramount, I engineered real-time GPS courier tracking and live status updates from kitchen dispatch to doorstep. I also implemented resilient in-app payment handling tuned for fluctuating mobile networks, providing an intuitive, native-feeling user experience.",
-        "Terrachow was launched to production on both Google Play and the Apple App Store, successfully processing customer orders across multiple Nigerian urban centers."
+        "Terrachow was launched to production on both Google Play and the Apple App Store, successfully processing customer orders across multiple Nigerian urban centers.",
       ],
-      "role": "Product & Mobile App Developer",
+      "role": "Mobile App Developer",
       "year": "2023",
-      "tags": ["React Native", "Expo", "Mobile UX", "Product Engineering"],
+      "tags": ["React Native", "Expo", "Mobile UX", "Mobile Development"],
       "links": [
         { "label": "Website", "href": "https://www.terrachow.com/" },
         { "label": "Play Store", "href": "https://play.google.com/store/apps/details?id=com.terrachow.terrachow" },
@@ -257,13 +256,13 @@
       "tagline": "E-commerce & Instant Digital Services Platform",
       "description": "An omnichannel e-commerce and digital services (VTU) platform. Built to optimize checkout conversion by pairing multi-gateway payment failover (Paystack & Flutterwave) with instant automated digital top-up delivery.",
       "detail": [
-        "360Gadgets Africa is an omnichannel commerce platform providing consumer electronics alongside high-frequency digital services including instant airtime and data subscriptions (VTU). As Lead Product & Fullstack Engineer, I bridged the gap between commercial strategy and engineering execution across mobile (React Native), web (Next.js), and backend micro-services.",
+        "360Gadgets Africa is an omnichannel commerce platform providing consumer electronics alongside high-frequency digital services including instant airtime and data subscriptions (VTU). As Lead Fullstack & Mobile Developer, I bridged the gap between commercial strategy and engineering execution across mobile (React Native), web (Next.js), and backend micro-services.",
         "A primary product bottleneck was payment abandonment. To address this, I architected dual-gateway integration with Paystack and Flutterwave featuring intelligent fallback logic, reducing failed checkouts and boosting transaction completion rates. On the backend, I designed transactional workflows in Node.js and MongoDB to automate digital service dispatch within seconds.",
-        "The product shipped concurrently to the Google Play Store, Apple App Store, and responsive web, establishing a scalable foundation that drove reliable revenue across both physical merchandise and recurring digital top-ups."
+        "The product shipped concurrently to the Google Play Store, Apple App Store, and responsive web, establishing a scalable foundation that drove reliable revenue across both physical merchandise and recurring digital top-ups.",
       ],
-      "role": "Lead Product & Fullstack Engineer",
+      "role": "Lead Fullstack & Mobile Developer",
       "year": "2023",
-      "tags": ["React Native", "Next.js", "Node.js", "MongoDB", "Paystack", "Product Strategy"],
+      "tags": ["React Native", "Next.js", "Node.js", "MongoDB", "Paystack", "Fullstack"],
       "links": [
         { "label": "Website", "href": "https://360gadgetsafrica.com/" },
         { "label": "Play Store", "href": "https://play.google.com/store/apps/details?id=com.gadgetsafrica.gadgetsafrica" },
@@ -275,13 +274,13 @@
       "tagline": "Tech Education & Service Ecosystem",
       "description": "An end-to-end digital ecosystem unifying gadget repair services, technician training academies, and repair tool commerce. Engineered from 0 to 1 with self-serve enrollment and seamless service scheduling.",
       "detail": [
-        "A1 Information Technology operates at the intersection of technical vocational education and hardware repair services. Previously reliant on fragmented physical workflows, the organization needed a unified digital ecosystem to scale its physical academy, online courses, and customer repair intake. As Lead Product Engineer, I owned the 0-to-1 build of their digital infrastructure.",
+        "A1 Information Technology operates at the intersection of technical vocational education and hardware repair services. Previously reliant on fragmented physical workflows, the organization needed a unified digital ecosystem to scale its physical academy, online courses, and customer repair intake. As Lead Fullstack Developer, I owned the 0-to-1 build of their digital infrastructure.",
         "I designed and architected two deeply integrated properties: a high-converting customer service portal for booking hardware repairs and tool purchasing, and a dedicated academy web application enabling student onboarding, curriculum management, and online tuition payments. Both applications were engineered with Next.js, TypeScript, Node.js, and MongoDB.",
-        "By establishing clean user funnels and clear information architecture, the new platform eliminated operational bottlenecks for staff and allowed prospective students across Nigeria to discover, enroll, and pay for courses completely online."
+        "By establishing clean user funnels and clear information architecture, the new platform eliminated operational bottlenecks for staff and allowed prospective students across Nigeria to discover, enroll, and pay for courses completely online.",
       ],
-      "role": "Lead Product Engineer",
+      "role": "Lead Fullstack Developer",
       "year": "2024",
-      "tags": ["Next.js", "TypeScript", "Node.js", "MongoDB", "Product Architecture"],
+      "tags": ["Next.js", "TypeScript", "Node.js", "MongoDB", "Fullstack Architecture"],
       "links": [
         { "label": "Main Site", "href": "https://www.a1info.tech/" },
         { "label": "Academy", "href": "https://academy.a1info.tech/" }
@@ -292,11 +291,11 @@
       "tagline": "Beauty Professionals Marketplace (Saudi Arabia)",
       "description": "A Saudi Arabian marketplace connecting beauty professionals with clients. Engineered the core booking availability algorithms, multi-platform REST API, and transactional flows powering mobile and web clients.",
       "detail": [
-        "GlamConnect is an on-demand beauty services marketplace operating in Saudi Arabia, connecting independent beauty specialists and salons with clients. As Backend & Systems Product Engineer, I built the unified REST API backend that powers both native mobile clients and the web application.",
+        "GlamConnect is an on-demand beauty services marketplace operating in Saudi Arabia, connecting independent beauty specialists and salons with clients. As Backend & Systems Developer, I built the unified REST API backend that powers both native mobile clients and the web application.",
         "Marketplace dynamics required rock-solid scheduling logic: preventing overlapping appointments across varying time zones, handling multi-service bookings, and supporting localized payment settlements. Using Node.js, Express, and MongoDB, I engineered a high-concurrency booking engine with real-time slot reservation locks.",
-        "The backend serves as the single source of truth for GlamConnect's Play Store, App Store, and web applications, ensuring consistent business logic, sub-100ms API responses, and zero double-bookings."
+        "The backend serves as the single source of truth for GlamConnect's Play Store, App Store, and web applications, ensuring consistent business logic, sub-100ms API responses, and zero double-bookings.",
       ],
-      "role": "Backend & Systems Product Engineer",
+      "role": "Backend & Systems Developer",
       "year": "2024",
       "tags": ["Node.js", "Express", "MongoDB", "REST API", "System Design"],
       "links": [
@@ -310,11 +309,11 @@
       "tagline": "International Software & AI Agency Platform",
       "description": "A high-conversion interactive brand platform for an international software & AI agency. Merged custom 3D WebGL visuals and scroll-triggered motion choreography with fast Core Web Vitals to maximize inbound sales leads.",
       "detail": [
-        "Cloudstech is an international software and artificial intelligence agency providing custom enterprise solutions. To position the agency effectively in a competitive global market, the firm required a flagship web presence that conveyed technical sophistication while driving qualified inbound client leads. As Frontend & Interactive Product Engineer, I built the platform from concept to deployment.",
+        "Cloudstech is an international software and artificial intelligence agency providing custom enterprise solutions. To position the agency effectively in a competitive global market, the firm required a flagship web presence that conveyed technical sophistication while driving qualified inbound client leads. As Frontend & Interactive Web Developer, I built the platform from concept to deployment.",
         "I engineered interactive 3D elements using Three.js and choreographed scroll-driven animations with GSAP, ensuring 60fps rendering across desktop and mobile devices without degrading Core Web Vitals or search engine indexability.",
-        "The resulting experience balances high visual craft with clear conversion paths, significantly increasing inquiry conversions and presenting an agency image on par with world-class digital product studios."
+        "The resulting experience balances high visual craft with clear conversion paths, significantly increasing inquiry conversions and presenting an agency image on par with world-class digital product studios.",
       ],
-      "role": "Frontend & Interactive Product Engineer",
+      "role": "Frontend & Interactive Web Developer",
       "year": "2024",
       "tags": ["Next.js", "Three.js", "GSAP", "TypeScript", "UX & Interaction"],
       "links": [
@@ -328,9 +327,9 @@
       "detail": [
         "SabiLearn is an all-in-one EdTech and skills mastery platform built specifically for Nigerian and African learners. The ecosystem delivers structured curriculum paths across technology, business, and vocational skills, accompanied by checkpoint quizzes, interactive exercises, and verified digital certificates of completion.",
         "To accelerate learning retention, the platform features an AI Study Assistant that automates note summaries, generates custom multiple-choice quizzes on the fly, and delivers instant, step-by-step explanations for complex coursework questions. It also includes an in-browser code execution playground supporting HTML, CSS, JavaScript, and Python.",
-        "The platform was engineered as an omnichannel experience with full web availability and a native iOS mobile application, featuring localized Naira (₦) payment integration and offline-friendly architecture tailored for varying mobile data conditions."
+        "The platform was engineered as an omnichannel experience with full web availability and a native iOS mobile application, featuring localized Naira (₦) payment integration and offline-friendly architecture tailored for varying mobile data conditions.",
       ],
-      "role": "Lead Fullstack & Product Engineer",
+      "role": "Lead Fullstack & Mobile Developer",
       "year": "2025",
       "tags": ["Next.js", "React Native", "AI Integration", "TypeScript", "EdTech", "Tailwind CSS"],
       "links": [

@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: isArabic ? "ar_SA" : "en_US",
       title,
       description,
-      images: [{ url: "/profile.jpg", width: 1200, height: 630, alt: isArabic ? "موسى موسى كانيكي — مهندس برمجيات" : "Musa Musa Kannike — Software & Product Engineer" }],
+      images: [{ url: "/profile.jpg", width: 1200, height: 630, alt: isArabic ? "موسى موسى كانيكي — مطور فل ستاك للويب والجوال" : "Musa Musa Kannike — Fullstack Web & Mobile App Developer" }],
     },
     twitter: {
       card: "summary_large_image",
