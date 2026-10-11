@@ -121,7 +121,7 @@ const About = ({ lang, dict }: AboutProps) => {
             {[
               { label: dict.contacts.email, value: "musamusakannike@gmail.com", href: "mailto:musamusakannike@gmail.com" },
               { label: dict.contacts.github, value: "github.com/musamusakannike", href: "https://github.com/musamusakannike" },
-              { label: dict.contacts.linkedin, value: "linkedin.com/in/musa-musa-kannike", href: "https://www.linkedin.com/in/musa-musa-kannike-02604b418/" },
+              { label: dict.contacts.linkedin, value: "https://www.linkedin.com/in/musa-musa-kannike-02604b418/", href: "https://www.linkedin.com/in/musa-musa-kannike-02604b418/" },
             ].map((item) => (
               <a
                 key={item.label}
