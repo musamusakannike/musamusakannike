@@ -336,7 +336,26 @@
       "tags": ["Next.js", "React Native", "تكامل الذكاء الاصطناعي", "TypeScript", "تكنولوجيا التعليم", "Tailwind CSS"],
       "links": [
         { "label": "الموقع الإلكتروني", "href": "https://www.sabilearn.online" },
+        { "label": "Play Store", "href": "https://play.google.com/store/apps/details?id=com.codiac.sabilearn" },
         { "label": "App Store", "href": "https://apps.apple.com/us/app/sabilearn/id6800027018" }
+      ]
+    },
+    "quranic": {
+      "name": "Quranic",
+      "tagline": "تطبيق رفيق إسلامي حديث ومتكامل",
+      "description": "تطبيق إسلامي شامل وعالي الأداء يوفر تجربة مصحف رقمية خالية من الإعلانات، مع أوقات صلاة دقيقة مبنية على الموقع الجغرافي وتنبيهات الأذان، وبوصلة لتحديد اتجاه القبلة، والتقويم الهجري، وأذكار يومية مختارة.",
+      "detail": [
+        "Quranic هو تطبيق إسلامي متقدم مفتوح المصدر صُمم لخدمة المسلمين حول العالم. بصفتي مطور فل ستاك وتطبيقات جوال رئيسي، قمت بتطوير المنظومة متعددة المنصات التي تشمل تطبيق جوال مبني بـ Expo (React Native) ومنصة ويب بـ Next.js 15، مقدماً تجربة مصحف رقمي مريحة وهادئة بخطوط عربية واضحة وقابلة للتكبير مع دعم كامل للقراءة دون اتصال بالإنترنت.",
+        "لتوفير رفيق إيماني متكامل، قمت بهندسة حسابات فلكية دقيقة لمواقيت الصلاة باستخدام Adhan JS مع إشعارات صوتية للأذان، وبوصلة تفاعلية لتحديد القبلة في الوقت الفعلي عبر مستشعرات الجهاز، وتحويل ديناميكي بين التقويمين الميلادي والهجري، وأذكار الصباح والمساء مع عدادات تفاعلية، بالإضافة إلى تشغيل التلاوات الصوتية في الخلفية.",
+        "صُمم التطبيق بمعمارية حديثة تتضمن Expo Router وReanimated 3 وFlash List وTailwind CSS لتوفير تنقلات فائقة السرعة وانسيابية عالية. تم إطلاق التطبيق عالمياً على متجري Google Play وApple App Store بالإضافة إلى استضافته عبر Expo EAS على الرابط quranic.expo.app."
+      ],
+      "role": "مطور فل ستاك وتطبيقات جوال رئيسي",
+      "year": "2026",
+      "tags": ["React Native", "Expo", "Next.js", "TypeScript", "Tailwind CSS", "تطوير تطبيقات الجوال"],
+      "links": [
+        { "label": "الموقع الإلكتروني", "href": "https://quranic.expo.app" },
+        { "label": "Play Store", "href": "https://play.google.com/store/apps/details?id=com.codiac.quranic" },
+        { "label": "App Store", "href": "https://apps.apple.com/ng/app/quranic-read-listen/id6760474571" }
       ]
     }
   }

@@ -170,7 +170,31 @@ export const projects: Project[] = [
     tracks: ["mobile", "frontend"],
     links: [
       { label: "Website", href: "https://www.sabilearn.online" },
+      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.codiac.sabilearn" },
       { label: "App Store", href: "https://apps.apple.com/us/app/sabilearn/id6800027018" },
+    ],
+  },
+  {
+    id: 8,
+    slug: "quranic",
+    name: "Quranic",
+    tagline: "Modern & Premium Islamic Companion App",
+    description:
+      "A feature-rich, high-performance Islamic companion application delivering an ad-free digital Mushaf experience, accurate location-based prayer times with Adhan audio, Qiblah compass, Hijri calendar, and curated daily Adhkaar.",
+    detail: [
+      "Quranic is a high-performance open-source Islamic companion designed for Muslims worldwide. As Lead Fullstack & Mobile Developer, I engineered the multi-platform experience spanning an Expo (React Native) mobile application and a Next.js 15 web platform, delivering a tranquil, typography-first digital Mushaf rendered with crystal-clear Arabic font scaling and offline caching.",
+      "To provide an all-in-one spiritual companion, I implemented high-precision mathematical prayer time calculations using Adhan JS with localized audio notifications, a sensor-driven real-time Qiblah compass, dynamic Gregorian-to-Hijri calendar conversion, and curated daily morning/evening Adhkaar with haptic counters. Recitation audio streaming was integrated with background playback support.",
+      "Built with modern architecture including Expo Router, Reanimated 3, Flash List, and Tailwind CSS, Quranic delivers 60fps animations and instant screen transitions. The app is distributed globally on Google Play, the Apple App Store, and hosted on Expo EAS at quranic.expo.app.",
+    ],
+    image: "/projects/quranic.jpg",
+    tags: ["React Native", "Expo", "Next.js", "TypeScript", "Tailwind CSS", "Mobile Development"],
+    role: "Lead Fullstack & Mobile Developer",
+    year: "2026",
+    tracks: ["mobile", "frontend"],
+    links: [
+      { label: "Website", href: "https://quranic.expo.app" },
+      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.codiac.quranic" },
+      { label: "App Store", href: "https://apps.apple.com/ng/app/quranic-read-listen/id6760474571" },
     ],
   },
 ];

@@ -55,6 +55,8 @@
 | [**A1 Information Technology**](https://www.a1info.tech/) | Tech education & gadget repair ecosystem with self-serve student enrollment | Next.js, TypeScript, Node.js, MongoDB |
 | [**GlamConnect**](https://glam-sync-mvp.vercel.app/) | Saudi Arabia booking marketplace for beauty professionals and salons | Node.js, Express, MongoDB, REST API |
 | [**Cloudstech**](https://www.cloudstech.org/) | Interactive brand and lead-generation platform for an international software & AI agency | Next.js, Three.js, GSAP, TypeScript |
+| [**SabiLearn**](https://www.sabilearn.online) | Interactive Nigerian EdTech & AI study platform with practice quizzes & code playground | Next.js, React Native, AI Integration |
+| [**Quranic**](https://quranic.expo.app) | Modern & premium Islamic companion app with digital Mushaf, prayer times & Qiblah | React Native, Expo, Next.js, TypeScript |
 
 ### Experience
 
