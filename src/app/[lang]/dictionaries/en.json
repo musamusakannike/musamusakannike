@@ -55,11 +55,14 @@
     "React Native",
     "Expo",
     "Node.js",
+    "Next.js API Routes",
+    "PostgreSQL",
+    "Prisma",
+    "Redis",
     "Express.js",
     "Nest.js",
     "System Design",
     "MongoDB",
-    "Prisma",
     "REST APIs",
     "GraphQL",
     "Paystack",
@@ -77,9 +80,9 @@
       { "label": "TypeScript / JavaScript", "percent": 95 },
       { "label": "React.js / Next.js", "percent": 92 },
       { "label": "React Native (Expo)", "percent": 88 },
-      { "label": "Node.js / Express / NestJS", "percent": 85 },
-      { "label": "MongoDB / Prisma", "percent": 80 },
-      { "label": "Python", "percent": 72 }
+      { "label": "Node.js / Express / NestJS", "percent": 88 },
+      { "label": "PostgreSQL / MongoDB / Prisma", "percent": 85 },
+      { "label": "Redis / Next.js API Routes", "percent": 82 }
     ],
     "downloadCv": "DOWNLOAD CV",
     "statCards": [
@@ -111,8 +114,8 @@
       },
       {
         "title": "Scalable Systems & API Infrastructure",
-        "description": "Architecting resilient REST APIs, micro-services, and transactional databases with Node.js, Express, NestJS, and MongoDB. Extensive experience integrating payment infrastructure (Paystack, Flutterwave) with high reliability.",
-        "tags": ["Node.js", "Express", "NestJS", "MongoDB", "Payment Gateways"]
+        "description": "Architecting resilient REST APIs, Next.js API routes, and transactional databases with PostgreSQL, MongoDB, Prisma, and Redis. Extensive experience integrating payment infrastructure (Paystack, Flutterwave) with high reliability.",
+        "tags": ["Node.js", "Next.js API Routes", "PostgreSQL", "Prisma", "Redis", "MongoDB", "Payment Gateways"]
       }
     ]
   },

@@ -56,11 +56,14 @@
     "React Native",
     "Expo",
     "Node.js",
+    "Next.js API Routes",
+    "PostgreSQL",
+    "Prisma",
+    "Redis",
     "Express.js",
     "Nest.js",
     "تصميم الأنظمة السحابية",
     "MongoDB",
-    "Prisma",
     "واجهات برمجة التطبيقات REST",
     "GraphQL",
     "بوابات الدفع الإلكتروني",
@@ -79,9 +82,9 @@
       { "label": "TypeScript / JavaScript", "percent": 95 },
       { "label": "React.js / Next.js", "percent": 92 },
       { "label": "React Native (Expo)", "percent": 88 },
-      { "label": "Node.js / Express / NestJS", "percent": 85 },
-      { "label": "MongoDB / Prisma", "percent": 80 },
-      { "label": "Python", "percent": 72 }
+      { "label": "Node.js / Express / NestJS", "percent": 88 },
+      { "label": "قواعد البيانات (PostgreSQL / MongoDB / Prisma)", "percent": 85 },
+      { "label": "التخزين المؤقت وAPI Routes (Redis / Next.js)", "percent": 82 }
     ],
     "downloadCv": "تحميل السيرة الذاتية",
     "statCards": [
@@ -113,8 +116,8 @@
       },
       {
         "title": "أنظمة برمجية وبنية تحتية للواجهات قابلة للتوسع",
-        "description": "بناء واجهات برمجة تطبيقات REST متينة وخدمات مصغرة وقواعد بيانات للمعاملات باستخدام Node.js وExpress وNestJS وMongoDB. خبرة واسعة في ربط بوابات الدفع الإلكتروني (Paystack وFlutterwave) بأعلى درجات الموثوقية.",
-        "tags": ["Node.js", "Express", "NestJS", "MongoDB", "بوابات الدفع"]
+        "description": "بناء واجهات برمجة تطبيقات REST متينة وخدمات Next.js API Routes وقواعد بيانات معاملات باستخدام PostgreSQL وMongoDB وPrisma والتخزين المؤقت مع Redis. خبرة واسعة في ربط بوابات الدفع الإلكتروني (Paystack وFlutterwave) بأعلى درجات الموثوقية.",
+        "tags": ["Node.js", "Next.js API Routes", "PostgreSQL", "Prisma", "Redis", "MongoDB", "بوابات الدفع"]
       }
     ]
   },
