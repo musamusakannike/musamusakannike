@@ -42,6 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${SITE_URL}/${lang}/projects/${slug}`;
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: `${localized.name} — ${localized.tagline}`,
     description: localized.description,
     alternates: {

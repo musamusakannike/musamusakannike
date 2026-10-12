@@ -1,9 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Locale, Dictionary } from "@/app/[lang]/dictionaries";
+import {
+  PORTFOLIO_TRACKS,
+  TRACK_LIST,
+  TRACK_DEFINITIONS,
+  type PortfolioTrack,
+} from "@/data/tracks";
 
 const RulerTicks = () => (
   <svg
@@ -91,11 +97,14 @@ const Hamburger = ({
 type NavbarProps = {
   lang: Locale;
   dict: Dictionary["nav"];
+  currentTrack?: PortfolioTrack;
 };
 
-const Navbar = ({ lang, dict }: NavbarProps) => {
+const Navbar = ({ lang, dict, currentTrack = "all" }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isTrackDropdownOpen, setIsTrackDropdownOpen] = useState(false);
+  const trackDropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -103,6 +112,19 @@ const Navbar = ({ lang, dict }: NavbarProps) => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        trackDropdownRef.current &&
+        !trackDropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsTrackDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   useEffect(() => {
@@ -122,14 +144,24 @@ const Navbar = ({ lang, dict }: NavbarProps) => {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    const isHomePage =
-      pathname === `/${lang}` || pathname === `/${lang}/` || pathname === "/";
-    if (!isHomePage) {
-      router.push(`/${lang}${href}`);
-      return;
+    const isPortfolioPage =
+      pathname === `/${lang}` ||
+      pathname === `/${lang}/` ||
+      pathname === "/" ||
+      PORTFOLIO_TRACKS.some(
+        (t) => pathname === `/${lang}/${t}` || pathname === `/${lang}/${t}/`
+      );
+
+    if (isPortfolioPage) {
+      const el = document.querySelector(href);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
     }
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+
+    const trackPrefix = currentTrack && currentTrack !== "all" ? `/${currentTrack}` : "";
+    router.push(`/${lang}${trackPrefix}${href}`);
   };
 
   const handleLanguageSwitch = (targetLang: Locale) => {
@@ -205,7 +237,64 @@ const Navbar = ({ lang, dict }: NavbarProps) => {
           </div>
 
           {/* Desktop CTA & Language Switcher */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
+            {/* Track Switcher Dropdown */}
+            <div className="relative" ref={trackDropdownRef}>
+              <button
+                onClick={() => setIsTrackDropdownOpen(!isTrackDropdownOpen)}
+                aria-label="Select portfolio track"
+                aria-expanded={isTrackDropdownOpen}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-black bg-white hover:bg-[#F3F4F6] text-xs font-bold uppercase tracking-wider shadow-[2px_2px_0px_#0A0E11] transition-all font-heading cursor-pointer"
+              >
+                <span className="w-2 h-2 rounded-full bg-primary" />
+                <span>
+                  {isRtl
+                    ? TRACK_DEFINITIONS[currentTrack]?.shortLabelAr || "المسار"
+                    : TRACK_DEFINITIONS[currentTrack]?.shortLabelEn || "Track"}
+                </span>
+                <svg
+                  className={`w-3 h-3 text-black transition-transform ${
+                    isTrackDropdownOpen ? "rotate-180" : ""
+                  }`}
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              {isTrackDropdownOpen && (
+                <div
+                  className={`absolute top-full mt-1.5 ${
+                    isRtl ? "left-0" : "right-0"
+                  } w-52 bg-white border-2 border-black shadow-[4px_4px_0px_#0A0E11] z-50 flex flex-col p-1.5`}
+                >
+                  {TRACK_LIST.map((t) => {
+                    const isActive = currentTrack === t.id;
+                    return (
+                      <Link
+                        key={t.id}
+                        href={t.path(lang)}
+                        onClick={() => setIsTrackDropdownOpen(false)}
+                        className={`flex items-center justify-between px-3 py-2 text-xs font-bold uppercase tracking-wider transition-colors font-heading ${
+                          isActive
+                            ? "bg-primary text-black"
+                            : "text-text hover:bg-[#F3F4F6] hover:text-black"
+                        }`}
+                      >
+                        <span>{isRtl ? t.labelAr : t.labelEn}</span>
+                        {isActive && <span className="text-black font-extrabold">✓</span>}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+
             {/* Language Switcher Button */}
             <button
               onClick={() => handleLanguageSwitch(dict.targetLang as Locale)}
@@ -295,6 +384,32 @@ const Navbar = ({ lang, dict }: NavbarProps) => {
           >
             {dict.switchTo}
           </button>
+        </div>
+
+        {/* Portfolio Track Switcher in mobile menu */}
+        <div className="px-6 py-4 border-b-2 border-black bg-[#F9FAFB]">
+          <span className="block text-[11px] font-extrabold uppercase tracking-widest text-[#525252] mb-2 font-heading">
+            {isRtl ? "مسارات معرض الأعمال:" : "PORTFOLIO TRACKS:"}
+          </span>
+          <div className="grid grid-cols-2 gap-2">
+            {TRACK_LIST.map((t) => {
+              const isActive = currentTrack === t.id;
+              return (
+                <Link
+                  key={t.id}
+                  href={t.path(lang)}
+                  onClick={() => setIsOpen(false)}
+                  className={`flex items-center justify-center px-2.5 py-2 text-xs font-bold uppercase tracking-wider border-2 border-black transition-all font-heading text-center ${
+                    isActive
+                      ? "bg-primary text-black shadow-[2px_2px_0px_#0A0E11]"
+                      : "bg-white text-text hover:bg-neutral-100"
+                  }`}
+                >
+                  {isRtl ? t.shortLabelAr : t.shortLabelEn}
+                </Link>
+              );
+            })}
+          </div>
         </div>
         <div className="flex flex-col gap-1 p-6 pt-8">
           {navLinks.map((link) => (

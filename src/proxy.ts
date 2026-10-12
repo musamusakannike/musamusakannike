@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { getTrackFromHostname } from "./data/tracks";
+import { PORTFOLIO_TRACKS, type PortfolioTrack } from "./data/tracks";
 
 export const locales = ["en", "ar"] as const;
 export type Locale = (typeof locales)[number];
@@ -83,7 +83,48 @@ function getLocale(request: NextRequest): Locale {
 export function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
   const hostname = request.headers.get("host") || request.nextUrl.hostname;
-  const track = getTrackFromHostname(hostname);
+  const hostWithoutPort = hostname.split(":")[0].toLowerCase();
+
+  // If request arrives on legacy subdomains (e.g. frontend.codiac.online), redirect to canonical track page
+  let legacySubdomainTrack: PortfolioTrack | null = null;
+  if (hostWithoutPort.startsWith("frontend.") || hostWithoutPort === "frontend") {
+    legacySubdomainTrack = "frontend";
+  } else if (hostWithoutPort.startsWith("backend.") || hostWithoutPort === "backend") {
+    legacySubdomainTrack = "backend";
+  } else if (hostWithoutPort.startsWith("mobile.") || hostWithoutPort === "mobile") {
+    legacySubdomainTrack = "mobile";
+  }
+
+  if (legacySubdomainTrack) {
+    const locale = getLocale(request);
+    const localeInPath = locales.find(
+      (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)
+    );
+    const effectiveLocale = localeInPath || locale;
+    const pathWithoutLocale = localeInPath
+      ? pathname.slice(`/${localeInPath}`.length)
+      : pathname;
+    const cleanPath = pathWithoutLocale === "/" ? "" : pathWithoutLocale;
+
+    const isLocalhost = hostWithoutPort.includes("localhost");
+    const primaryHost = isLocalhost ? "localhost:3000" : "www.codiac.online";
+    const protocol = request.nextUrl.protocol || "https:";
+    const targetUrl = new URL(
+      `${protocol}//${primaryHost}/${effectiveLocale}/${legacySubdomainTrack}${cleanPath}${search}`
+    );
+    return NextResponse.redirect(targetUrl, 301);
+  }
+
+  // Detect track from pathname if on a track page (e.g. /en/frontend, /frontend)
+  const trackFromPath = PORTFOLIO_TRACKS.find(
+    (t) =>
+      pathname === `/${t}` ||
+      pathname.startsWith(`/${t}/`) ||
+      locales.some(
+        (l) => pathname === `/${l}/${t}` || pathname.startsWith(`/${l}/${t}/`)
+      )
+  );
+  const track = trackFromPath || "all";
 
   // Check if pathname starts with any supported locale
   const pathnameHasLocale = locales.some(
@@ -101,9 +142,12 @@ export function proxy(request: NextRequest) {
     });
   }
 
-  // Redirect to localized path if none present
+  // Redirect to localized path if none present (e.g. /frontend -> /en/frontend)
   const locale = getLocale(request);
-  const redirectUrl = new URL(`/${locale}${pathname === "/" ? "" : pathname}${search}`, request.url);
+  const redirectUrl = new URL(
+    `/${locale}${pathname === "/" ? "" : pathname}${search}`,
+    request.url
+  );
 
   return NextResponse.redirect(redirectUrl);
 }

@@ -4,14 +4,16 @@ import React from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Locale, Dictionary } from "@/app/[lang]/dictionaries";
+import { TRACK_LIST, type PortfolioTrack } from "@/data/tracks";
 
 type FooterProps = {
   lang: Locale;
   dict: Dictionary["footer"];
   navDict: Dictionary["nav"];
+  currentTrack?: PortfolioTrack;
 };
 
-const Footer = ({ lang, dict, navDict }: FooterProps) => {
+const Footer = ({ lang, dict, navDict, currentTrack = "all" }: FooterProps) => {
   const isRtl = lang === "ar";
   const pathname = usePathname();
   const router = useRouter();
@@ -31,6 +33,14 @@ const Footer = ({ lang, dict, navDict }: FooterProps) => {
   };
 
   const footerLinks = [
+    {
+      title: isRtl ? "المسارات" : "Specialties",
+      links: TRACK_LIST.map((t) => ({
+        name: isRtl ? t.labelAr : t.labelEn,
+        href: t.path(lang),
+        external: false,
+      })),
+    },
     {
       title: dict.navTitle,
       links: [
@@ -69,9 +79,9 @@ const Footer = ({ lang, dict, navDict }: FooterProps) => {
       <div className="max-w-300 mx-auto flex flex-col gap-12">
 
         {/* Top Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-6">
           {/* Brand column */}
-          <div className="lg:col-span-2 flex flex-col items-start gap-5">
+          <div className="sm:col-span-2 lg:col-span-2 flex flex-col items-start gap-5">
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-primary border-2 border-primary flex items-center justify-center" style={{ boxShadow: "3px 3px 0 #fff" }}>

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/data/projects";
 import { locales } from "./[lang]/dictionaries";
+import { PORTFOLIO_TRACKS } from "@/data/tracks";
 
 const SITE_URL = "https://www.codiac.online";
 
@@ -18,6 +19,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     });
+
+    for (const track of PORTFOLIO_TRACKS) {
+      routes.push({
+        url: `${SITE_URL}/${lang}/${track}`,
+        lastModified: SITE_LAST_MODIFIED,
+        changeFrequency: "monthly",
+        priority: 0.95,
+      });
+    }
 
     routes.push({
       url: `${SITE_URL}/${lang}/projects`,

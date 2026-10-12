@@ -7,32 +7,52 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { projects as projectsData } from "@/data/projects";
 import { getDictionary, hasLocale, getDictionaryForLocale, type Locale } from "../dictionaries";
-import type { PortfolioTrack } from "@/data/tracks";
+import {
+  PORTFOLIO_TRACKS,
+  TRACK_LIST,
+  TRACK_DEFINITIONS,
+  type PortfolioTrack,
+} from "@/data/tracks";
 
 const SITE_URL = "https://www.codiac.online";
 
 type Props = {
   params: Promise<{ lang: string }>;
+  searchParams?: Promise<{ track?: string }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
 
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const queryTrack = resolvedSearchParams.track;
+  const track =
+    queryTrack && (PORTFOLIO_TRACKS as readonly string[]).includes(queryTrack)
+      ? (queryTrack as PortfolioTrack)
+      : "all";
+
   const dict = await getDictionaryForLocale(lang as Locale);
   const isArabic = lang === "ar";
-  const title = isArabic ? "كافة المشاريع | موسى موسى كانيكي" : "Projects | Musa Musa Kannike";
+  const trackSuffix =
+    track !== "all"
+      ? ` — ${isArabic ? TRACK_DEFINITIONS[track]?.labelAr : TRACK_DEFINITIONS[track]?.labelEn}`
+      : "";
+  const title = isArabic
+    ? `كافة المشاريع${trackSuffix} | موسى موسى كانيكي`
+    : `Projects${trackSuffix} | Musa Musa Kannike`;
   const description = dict.projects.allWorkSubheading;
-  const url = `${SITE_URL}/${lang}/projects`;
+  const url = `${SITE_URL}/${lang}/projects${track !== "all" ? `?track=${track}` : ""}`;
 
   return {
-    title: isArabic ? "المشاريع" : "Projects",
+    metadataBase: new URL(SITE_URL),
+    title,
     description,
     alternates: {
       canonical: url,
       languages: {
-        en: `${SITE_URL}/en/projects`,
-        ar: `${SITE_URL}/ar/projects`,
+        en: `${SITE_URL}/en/projects${track !== "all" ? `?track=${track}` : ""}`,
+        ar: `${SITE_URL}/ar/projects${track !== "all" ? `?track=${track}` : ""}`,
       },
     },
     openGraph: {
@@ -58,21 +78,25 @@ const ExternalIcon = ({ isRtl }: { isRtl: boolean }) => (
   </svg>
 );
 
-export default async function ProjectsPage({ params }: Props) {
+export default async function ProjectsPage({ params, searchParams }: Props) {
   const { lang } = await params;
   if (!hasLocale(lang)) {
     notFound();
   }
 
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const queryTrack = resolvedSearchParams.track;
+  const currentTrack: PortfolioTrack =
+    queryTrack && (PORTFOLIO_TRACKS as readonly string[]).includes(queryTrack)
+      ? (queryTrack as PortfolioTrack)
+      : "all";
+
   const dict = await getDictionary();
   const currentLang = lang as Locale;
   const isRtl = lang === "ar";
 
-  const headerList = await headers();
-  const track = (headerList.get("x-portfolio-track") as PortfolioTrack) || "all";
-
   const displayedProjects = projectsData.filter(
-    (p) => track === "all" || p.tracks.includes(track)
+    (p) => currentTrack === "all" || p.tracks.includes(currentTrack)
   );
 
   const breadcrumbJsonLd = {
@@ -91,7 +115,7 @@ export default async function ProjectsPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <Navbar lang={currentLang} dict={dict.nav} />
+      <Navbar lang={currentLang} dict={dict.nav} currentTrack={currentTrack} />
 
       <section className="py-16 lg:py-20 px-6 sm:px-8 lg:px-14 bg-[#ece0e0] w-full">
         <div className="max-w-300 mx-auto">
@@ -102,9 +126,17 @@ export default async function ProjectsPage({ params }: Props) {
             </Link>
             <span className="mx-2">/</span>
             <span className="text-text">{dict.projects.breadcrumbProjects}</span>
+            {currentTrack !== "all" && (
+              <>
+                <span className="mx-2">/</span>
+                <span className="text-primary font-bold">
+                  {isRtl ? TRACK_DEFINITIONS[currentTrack]?.labelAr : TRACK_DEFINITIONS[currentTrack]?.labelEn}
+                </span>
+              </>
+            )}
           </nav>
 
-          <div className="mb-14">
+          <div className="mb-10">
             <span className="block text-base font-semibold tracking-[0.12em] uppercase text-primary mb-3 font-heading">
               {dict.projects.allWorkTag}
             </span>
@@ -116,6 +148,40 @@ export default async function ProjectsPage({ params }: Props) {
             <p className="text-[#525252] text-[17px] font-medium mt-3 max-w-2xl">
               {dict.projects.allWorkSubheading}
             </p>
+          </div>
+
+          {/* Track Filter Tabs */}
+          <div className="flex flex-wrap items-center gap-2 mb-10">
+            {TRACK_LIST.map((t) => {
+              const isActive = currentTrack === t.id;
+              const count = projectsData.filter(
+                (p) => t.id === "all" || p.tracks.includes(t.id)
+              ).length;
+              const href =
+                t.id === "all"
+                  ? `/${lang}/projects`
+                  : `/${lang}/projects?track=${t.id}`;
+              return (
+                <Link
+                  key={t.id}
+                  href={href}
+                  className={`inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-bold uppercase tracking-wider border-2 border-black transition-all font-heading ${
+                    isActive
+                      ? "bg-primary text-black shadow-[3px_3px_0px_#0A0E11]"
+                      : "bg-white text-text hover:bg-neutral-100 hover:shadow-[2px_2px_0px_#0A0E11]"
+                  }`}
+                >
+                  <span>{isRtl ? t.labelAr : t.labelEn}</span>
+                  <span
+                    className={`text-[11px] px-1.5 py-0.2 border border-black ${
+                      isActive ? "bg-black text-white" : "bg-[#F3F4F6] text-black"
+                    }`}
+                  >
+                    {count}
+                  </span>
+                </Link>
+              );
+            })}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -187,7 +253,12 @@ export default async function ProjectsPage({ params }: Props) {
         </div>
       </section>
 
-      <Footer lang={currentLang} dict={dict.footer} navDict={dict.nav} />
+      <Footer
+        lang={currentLang}
+        dict={dict.footer}
+        navDict={dict.nav}
+        currentTrack={currentTrack}
+      />
     </main>
   );
 }

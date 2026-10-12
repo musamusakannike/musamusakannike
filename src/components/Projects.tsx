@@ -114,7 +114,7 @@ const Projects = ({ lang, dict, projectItems, track = "all" }: ProjectsProps) =>
 
         <div className="flex justify-center mt-14">
           <Link
-            href={`/${lang}/projects`}
+            href={`/${lang}/projects${track && track !== "all" ? `?track=${track}` : ""}`}
             className="inline-flex items-center justify-center border-[3px] border-black bg-white text-black font-bold uppercase tracking-wider text-[16px] px-8 py-3.5 transition-all duration-100 ease-out shadow-[4px_4px_0px_#0A0E11] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#0A0E11] active:translate-x-1 active:translate-y-1 active:shadow-none font-heading"
           >
             {dict.viewAll}

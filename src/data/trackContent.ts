@@ -32,6 +32,12 @@ export type TrackContentOverrides = {
 export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
   all: {},
   mobile: {
+    meta: {
+      titleDefault: "Mobile App Developer | Musa Musa Kannike — Codiac",
+      description: "Specialized mobile app developer portfolio of Musa Musa Kannike (Codiac). 4+ years shipping production iOS and Android apps with React Native & Expo, 60fps UX, and offline-first architectures.",
+      ogTitle: "Mobile App Developer | Musa Musa Kannike (Codiac)",
+      ogDescription: "Shipping intuitive, high-performance cross-platform iOS & Android mobile apps with React Native and Expo.",
+    },
     hero: {
       badge: "MOBILE APP DEVELOPER — CODIAC",
       titleLine1: "SHIPPING INTUITIVE",
@@ -72,6 +78,12 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
     preferredProjects: ["terrachow", "360gadgets-africa", "sabilearn", "glamconnect"],
   },
   frontend: {
+    meta: {
+      titleDefault: "Frontend & Interactive Developer | Musa Musa Kannike — Codiac",
+      description: "Specialized frontend developer portfolio of Musa Musa Kannike (Codiac). Crafting high-performance web experiences, 3D WebGL (Three.js), GSAP motion, React, Next.js, and TypeScript.",
+      ogTitle: "Frontend & Interactive Developer | Musa Musa Kannike (Codiac)",
+      ogDescription: "Crafting engaging, high-performance web experiences with React, Next.js, TypeScript, Three.js, and GSAP.",
+    },
     hero: {
       badge: "FRONTEND & INTERACTIVE DEVELOPER — CODIAC",
       titleLine1: "CRAFTING ENGAGING",
@@ -112,6 +124,12 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
     preferredProjects: ["cloudstech", "a1-information-technology", "sabilearn", "360gadgets-africa"],
   },
   backend: {
+    meta: {
+      titleDefault: "Backend & Systems Developer | Musa Musa Kannike — Codiac",
+      description: "Specialized backend developer portfolio of Musa Musa Kannike (Codiac). Engineering resilient, high-concurrency APIs, payment gateways, and databases with Node.js, Express, NestJS, and MongoDB.",
+      ogTitle: "Backend & Systems Developer | Musa Musa Kannike (Codiac)",
+      ogDescription: "Engineering resilient, high-concurrency APIs & platforms with Node.js, Express, NestJS, MongoDB, and payment failover engines.",
+    },
     hero: {
       badge: "BACKEND & SYSTEMS DEVELOPER — CODIAC",
       titleLine1: "ENGINEERING RESILIENT",
@@ -156,6 +174,12 @@ export const trackContentEn: Record<PortfolioTrack, TrackContentOverrides> = {
 export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
   all: {},
   mobile: {
+    meta: {
+      titleDefault: "مطور تطبيقات الجوال | موسى موسى كانيكي — كودياك",
+      description: "معرض أعمال مطور تطبيقات الجوال موسى موسى كانيكي (كودياك). أكثر من 4 سنوات في تطوير تطبيقات iOS وAndroid عالية الأداء باستخدام React Native وExpo وبنى تعمل دون اتصال بالإنترنت.",
+      ogTitle: "مطور تطبيقات الجوال | موسى موسى كانيكي (كودياك)",
+      ogDescription: "تطوير تطبيقات جوال متطورة وعالية الأداء لنظامي iOS وAndroid باستخدام React Native وExpo.",
+    },
     hero: {
       badge: "مطور تطبيقات الجوال — كودياك",
       titleLine1: "أطور تطبيقات جوال",
@@ -196,6 +220,12 @@ export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
     preferredProjects: ["terrachow", "360gadgets-africa", "sabilearn", "glamconnect"],
   },
   frontend: {
+    meta: {
+      titleDefault: "مطور الواجهات الأمامية والتفاعلية | موسى موسى كانيكي — كودياك",
+      description: "معرض أعمال مطور الواجهات الأمامية موسى موسى كانيكي (كودياك). هندسة تجارب ويب تفاعلية فائقة السرعة، مؤثرات ثلاثية الأبعاد (Three.js)، حركات GSAP، وReact وNext.js وTypeScript.",
+      ogTitle: "مطور الواجهات الأمامية والتفاعلية | موسى موسى كانيكي (كودياك)",
+      ogDescription: "هندسة واجهات ويب تفاعلية وسريعة الاستجابة بأعلى معايير الأداء والجمالية الحرفية.",
+    },
     hero: {
       badge: "مطور الواجهات الأمامية والتفاعلية — كودياك",
       titleLine1: "أصمم تجارب ويب",
@@ -236,6 +266,12 @@ export const trackContentAr: Record<PortfolioTrack, TrackContentOverrides> = {
     preferredProjects: ["cloudstech", "a1-information-technology", "sabilearn", "360gadgets-africa"],
   },
   backend: {
+    meta: {
+      titleDefault: "مطور البنى التحتية والخوادم | موسى موسى كانيكي — كودياك",
+      description: "معرض أعمال مطور الخوادم والنظم موسى موسى كانيكي (كودياك). تصميم خوادم وقواعد بيانات وبنى تحتية عالية التحمل وبوابات دفع إلكتروني باستخدام Node.js وNestJS وMongoDB.",
+      ogTitle: "مطور البنى التحتية والخوادم | موسى موسى كانيكي (كودياك)",
+      ogDescription: "بناء خوادم وخدمات REST APIs موثوقة وعالية التحمل ومعالجة مدفوعات مرنة.",
+    },
     hero: {
       badge: "مطور البنى التحتية والخوادم — كودياك",
       titleLine1: "أبني بنى تحتية",
