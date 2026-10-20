@@ -1,13 +1,17 @@
 import React from "react";
 
-const skills = [
-  "TypeScript", "JavaScript", "Python", "React.js", "Next.js",
+type MarqueeProps = {
+  skills?: string[];
+};
+
+const defaultSkills = [
+  "Fullstack Development", "TypeScript", "Next.js", "React.js",
   "React Native", "Expo", "Node.js", "Express.js", "Nest.js",
-  "MongoDB", "Prisma", "Tailwind CSS", "REST APIs", "GraphQL",
-  "Paystack", "Flutterwave", "Git", "Three.js", "GSAP",
+  "System Design", "MongoDB", "Prisma", "REST APIs", "GraphQL",
+  "Paystack", "Flutterwave", "UX & Interaction", "Three.js", "GSAP",
 ];
 
-const MarqueeSection = () => {
+const MarqueeSection = ({ skills = defaultSkills }: MarqueeProps) => {
   const doubled = [...skills, ...skills];
 
   return (
@@ -17,8 +21,7 @@ const MarqueeSection = () => {
           <div key={i} className="flex items-center gap-4 mx-6">
             <span className="inline-block w-2 h-2 bg-primary rotate-45 shrink-0" />
             <span
-              className="font-bold text-white tracking-widest uppercase text-sm"
-              style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}
+              className="font-bold text-white tracking-widest uppercase text-sm font-heading"
             >
               {skill}
             </span>

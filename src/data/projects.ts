@@ -1,0 +1,177 @@
+import type { PortfolioTrack } from "./tracks";
+
+export type Project = {
+  id: number;
+  slug: string;
+  name: string;
+  tagline: string;
+  description: string;
+  detail: string[];
+  image: string;
+  tags: string[];
+  role: string;
+  year: string;
+  tracks: PortfolioTrack[];
+  links: { label: string; href: string }[];
+};
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    slug: "terrachow",
+    name: "Terrachow",
+    tagline: "Nigerian Food Delivery & Logistics Platform",
+    description:
+      "An on-demand food delivery platform connecting hungry users with local restaurants across Nigeria. Designed with a mobile-first checkout flow, real-time order tracking, and friction-free payments tuned for Nigerian network conditions.",
+    detail: [
+      "Terrachow is an on-demand food delivery mobile platform connecting everyday consumers with local culinary vendors across Nigeria. As Mobile App Developer, I took full ownership of the customer-facing mobile application built in React Native (Expo), focusing on user discovery, frictionless cart-to-checkout flows, and order placement ergonomics.",
+      "To ensure high retention and customer trust in a market where delivery reliability is paramount, I engineered real-time GPS courier tracking and live status updates from kitchen dispatch to doorstep. I also implemented resilient in-app payment handling tuned for fluctuating mobile networks, providing an intuitive, native-feeling user experience.",
+      "Terrachow was launched to production on both Google Play and the Apple App Store, successfully processing customer orders across multiple Nigerian urban centers.",
+    ],
+    image: "/projects/terrachow.jpeg",
+    tags: ["React Native", "Expo", "Mobile UX", "Mobile Development"],
+    role: "Mobile App Developer",
+    year: "2023",
+    tracks: ["mobile", "frontend"],
+    links: [
+      { label: "Website", href: "https://www.terrachow.com/" },
+      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.terrachow.terrachow" },
+      { label: "App Store", href: "https://apps.apple.com/us/app/terrachow/id1587526296" },
+    ],
+  },
+  {
+    id: 2,
+    slug: "360gadgets-africa",
+    name: "360Gadgets Africa",
+    tagline: "E-commerce & Instant Digital Services Platform",
+    description:
+      "An omnichannel e-commerce and digital services (VTU) platform. Built to optimize checkout conversion by pairing multi-gateway payment failover (Paystack & Flutterwave) with instant automated digital top-up delivery.",
+    detail: [
+      "360Gadgets Africa is an omnichannel commerce platform providing consumer electronics alongside high-frequency digital services including instant airtime and data subscriptions (VTU). As Lead Fullstack & Mobile Developer, I bridged the gap between commercial strategy and engineering execution across mobile (React Native), web (Next.js), and backend micro-services.",
+      "A primary product bottleneck was payment abandonment. To address this, I architected dual-gateway integration with Paystack and Flutterwave featuring intelligent fallback logic, reducing failed checkouts and boosting transaction completion rates. On the backend, I designed transactional workflows in Node.js and MongoDB to automate digital service dispatch within seconds.",
+      "The product shipped concurrently to the Google Play Store, Apple App Store, and responsive web, establishing a scalable foundation that drove reliable revenue across both physical merchandise and recurring digital top-ups.",
+    ],
+    image: "/projects/360gadgets.jpg",
+    tags: ["React Native", "Next.js", "Node.js", "MongoDB", "Paystack", "Fullstack"],
+    role: "Lead Fullstack & Mobile Developer",
+    year: "2023",
+    tracks: ["mobile", "frontend", "backend"],
+    links: [
+      { label: "Website", href: "https://360gadgetsafrica.com/" },
+      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.gadgetsafrica.gadgetsafrica" },
+      { label: "App Store", href: "https://apps.apple.com/us/app/360gadgetsafrica/id6736353137" },
+    ],
+  },
+  {
+    id: 3,
+    slug: "a1-information-technology",
+    name: "A1 Information Technology",
+    tagline: "Tech Education & Service Ecosystem",
+    description:
+      "An end-to-end digital ecosystem unifying gadget repair services, technician training academies, and repair tool commerce. Engineered from 0 to 1 with self-serve enrollment and seamless service scheduling.",
+    detail: [
+      "A1 Information Technology operates at the intersection of technical vocational education and hardware repair services. Previously reliant on fragmented physical workflows, the organization needed a unified digital ecosystem to scale its physical academy, online courses, and customer repair intake. As Lead Fullstack Developer, I owned the 0-to-1 build of their digital infrastructure.",
+      "I designed and architected two deeply integrated properties: a high-converting customer service portal for booking hardware repairs and tool purchasing, and a dedicated academy web application enabling student onboarding, curriculum management, and online tuition payments. Both applications were engineered with Next.js, TypeScript, Node.js, and MongoDB.",
+      "By establishing clean user funnels and clear information architecture, the new platform eliminated operational bottlenecks for staff and allowed prospective students across Nigeria to discover, enroll, and pay for courses completely online.",
+    ],
+    image: "/projects/a1infotech.jpg",
+    tags: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Fullstack Architecture"],
+    role: "Lead Fullstack Developer",
+    year: "2024",
+    tracks: ["frontend", "backend"],
+    links: [
+      { label: "Main Site", href: "https://www.a1info.tech/" },
+      { label: "Academy", href: "https://academy.a1info.tech/" },
+    ],
+  },
+  {
+    id: 5,
+    slug: "glamconnect",
+    name: "GlamConnect",
+    tagline: "Beauty Professionals Marketplace (Saudi Arabia)",
+    description:
+      "A Saudi Arabian marketplace connecting beauty professionals with clients. Engineered the core booking availability algorithms, multi-platform REST API, and transactional flows powering mobile and web clients.",
+    detail: [
+      "GlamConnect is an on-demand beauty services marketplace operating in Saudi Arabia, connecting independent beauty specialists and salons with clients. As Backend & Systems Developer, I built the unified REST API backend that powers both native mobile clients and the web application.",
+      "Marketplace dynamics required rock-solid scheduling logic: preventing overlapping appointments across varying time zones, handling multi-service bookings, and supporting localized payment settlements. Using Node.js, Express, and MongoDB, I engineered a high-concurrency booking engine with real-time slot reservation locks.",
+      "The backend serves as the single source of truth for GlamConnect's Play Store, App Store, and web applications, ensuring consistent business logic, sub-100ms API responses, and zero double-bookings.",
+    ],
+    image: "/projects/glamconnect.jpg",
+    tags: ["Node.js", "Express", "MongoDB", "REST API", "System Design"],
+    role: "Backend & Systems Developer",
+    year: "2024",
+    tracks: ["backend", "mobile"],
+    links: [
+      { label: "Web App", href: "https://glam-sync-mvp.vercel.app/" },
+      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=sa.aba.glam_connect" },
+      { label: "App Store", href: "https://apps.apple.com/us/app/glamconnect/id6755059933" },
+    ],
+  },
+  {
+    id: 6,
+    slug: "cloudstech",
+    name: "Cloudstech",
+    tagline: "International Software & AI Agency Platform",
+    description:
+      "A high-conversion interactive brand platform for an international software & AI agency. Merged custom 3D WebGL visuals and scroll-triggered motion choreography with fast Core Web Vitals to maximize inbound sales leads.",
+    detail: [
+      "Cloudstech is an international software and artificial intelligence agency providing custom enterprise solutions. To position the agency effectively in a competitive global market, the firm required a flagship web presence that conveyed technical sophistication while driving qualified inbound client leads. As Frontend & Interactive Web Developer, I built the platform from concept to deployment.",
+      "I engineered interactive 3D elements using Three.js and choreographed scroll-driven animations with GSAP, ensuring 60fps rendering across desktop and mobile devices without degrading Core Web Vitals or search engine indexability.",
+      "The resulting experience balances high visual craft with clear conversion paths, significantly increasing inquiry conversions and presenting an agency image on par with world-class digital product studios.",
+    ],
+    image: "/projects/cloudstech.jpg",
+    tags: ["Next.js", "Three.js", "GSAP", "TypeScript", "UX & Interaction"],
+    role: "Frontend & Interactive Web Developer",
+    year: "2024",
+    tracks: ["frontend"],
+    links: [
+      { label: "Website", href: "https://www.cloudstech.org/" },
+    ],
+  },
+  {
+    id: 7,
+    slug: "sabilearn",
+    name: "SabiLearn",
+    tagline: "Interactive EdTech & AI Study Platform",
+    description:
+      "A comprehensive Nigerian EdTech platform built to make learning practical tech and vocational skills engaging. Combines interactive lessons, practice quizzes, offline-resilient study tools, and AI-powered learning assistance.",
+    detail: [
+      "SabiLearn is an all-in-one EdTech and skills mastery platform built specifically for Nigerian and African learners. The ecosystem delivers structured curriculum paths across technology, business, and vocational skills, accompanied by checkpoint quizzes, interactive exercises, and verified digital certificates of completion.",
+      "To accelerate learning retention, the platform features an AI Study Assistant that automates note summaries, generates custom multiple-choice quizzes on the fly, and delivers instant, step-by-step explanations for complex coursework questions. It also includes an in-browser code execution playground supporting HTML, CSS, JavaScript, and Python.",
+      "The platform was engineered as an omnichannel experience with full web availability and a native iOS mobile application, featuring localized Naira (₦) payment integration and offline-friendly architecture tailored for varying mobile data conditions.",
+    ],
+    image: "/projects/sabilearn.png",
+    tags: ["Next.js", "React Native", "AI Integration", "TypeScript", "EdTech", "Tailwind CSS"],
+    role: "Lead Fullstack & Mobile Developer",
+    year: "2025",
+    tracks: ["mobile", "frontend"],
+    links: [
+      { label: "Website", href: "https://www.sabilearn.online" },
+      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.codiac.sabilearn" },
+      { label: "App Store", href: "https://apps.apple.com/us/app/sabilearn/id6800027018" },
+    ],
+  },
+  {
+    id: 8,
+    slug: "quranic",
+    name: "Quranic",
+    tagline: "Modern & Premium Islamic Companion App",
+    description:
+      "A feature-rich, high-performance Islamic companion application delivering an ad-free digital Mushaf experience, accurate location-based prayer times with Adhan audio, Qiblah compass, Hijri calendar, and curated daily Adhkaar.",
+    detail: [
+      "Quranic is a high-performance open-source Islamic companion designed for Muslims worldwide. As Lead Fullstack & Mobile Developer, I engineered the multi-platform experience spanning an Expo (React Native) mobile application and a Next.js 15 web platform, delivering a tranquil, typography-first digital Mushaf rendered with crystal-clear Arabic font scaling and offline caching.",
+      "To provide an all-in-one spiritual companion, I implemented high-precision mathematical prayer time calculations using Adhan JS with localized audio notifications, a sensor-driven real-time Qiblah compass, dynamic Gregorian-to-Hijri calendar conversion, and curated daily morning/evening Adhkaar with haptic counters. Recitation audio streaming was integrated with background playback support.",
+      "Built with modern architecture including Expo Router, Reanimated 3, Flash List, and Tailwind CSS, Quranic delivers 60fps animations and instant screen transitions. The app is distributed globally on Google Play, the Apple App Store, and hosted on Expo EAS at quranic.expo.app.",
+    ],
+    image: "/projects/quranic.jpg",
+    tags: ["React Native", "Expo", "Next.js", "TypeScript", "Tailwind CSS", "Mobile Development"],
+    role: "Lead Fullstack & Mobile Developer",
+    year: "2026",
+    tracks: ["mobile", "frontend"],
+    links: [
+      { label: "Website", href: "https://quranic.expo.app" },
+      { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.codiac.quranic" },
+      { label: "App Store", href: "https://apps.apple.com/ng/app/quranic-read-listen/id6760474571" },
+    ],
+  },
+];

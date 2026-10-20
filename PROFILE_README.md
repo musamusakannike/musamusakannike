@@ -1,8 +1,8 @@
-<h1 align="center">Hi, I'm Musa Musa Kannike 👋</h1>
-<h3 align="center">Fullstack Developer, also known online as <a href="https://github.com/musamusakannike">Codiac</a></h3>
+<h1 align="center">Hi, I'm Musa Musa Kannike</h1>
+<h3 align="center">Fullstack Web & Mobile App Developer, also known online as <a href="https://github.com/musamusakannike">Codiac</a></h3>
 
 <p align="center">
-  4+ years building production-grade web, mobile & desktop applications for startups and companies across Nigeria, Saudi Arabia, and beyond.
+  4+ years crafting scalable web, mobile & cloud applications for startups and scale-ups across Nigeria, Saudi Arabia, and globally.
 </p>
 
 <p align="center">
@@ -13,15 +13,15 @@
 
 ---
 
-### 🚀 About Me
+### About Me
 
-- 🔭 Currently building at **Africlana Ltd** and **Cloudstech**, an international software & AI agency
-- 🛠 I specialize in **React, Next.js, React Native (Expo), and Node.js** — from pixel-perfect frontends to robust backends and API integrations
-- 🌍 I've shipped products used by real people — Nigerian food delivery apps, e-commerce platforms, and a Saudi Arabian beauty-services marketplace
-- 📱 Comfortable across **3 platforms**: Web, Mobile, and Desktop
-- 💼 **10+** production projects, **5+** companies worked with
+- Currently driving fullstack web & mobile development at **Cloudstech**, an international software & AI agency
+- I specialize in **fullstack web and mobile application development** with **React, Next.js, React Native (Expo), and Node.js** — owning features from concept and UX architecture to production deployment
+- I've shipped products used by thousands of people — Nigerian food delivery apps, multi-currency e-commerce platforms, and a Saudi Arabian beauty marketplace
+- Production experience across **3 platforms**: Web, Mobile, and Desktop/Cloud
+- **10+** production products shipped, **5+** companies and startups partnered with
 
-### 🧰 Tech Stack
+### Tech Stack
 
 **Languages & Frameworks**
 
@@ -38,35 +38,37 @@
 
 **Databases & Tools**
 
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=threedotjs&logoColor=white)
 ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat&logo=greensock&logoColor=black)
 ![Paystack](https://img.shields.io/badge/Paystack-00C3F7?style=flat&logo=paystack&logoColor=white)
 ![Flutterwave](https://img.shields.io/badge/Flutterwave-F5A623?style=flat)
 
-### 🏗️ Featured Projects
+### Featured Projects
 
 | Project | Description | Stack |
 |---|---|---|
-| [**Terrachow**](https://store.terrachow.com/) | Nigerian food delivery platform with real-time order tracking and secure payments | React Native, Expo |
-| [**360Gadgets Africa**](https://360gadgetsafrica.com/) | E-commerce & digital services (VTU) platform with Paystack & Flutterwave integration | React Native, Next.js, Node.js, MongoDB |
-| [**A1 Information Technology**](https://www.a1info.tech/) | Tech training & gadget repair platform, built from the ground up | Next.js, TypeScript, Node.js, MongoDB |
-| [**GlamConnect**](https://glam-sync-mvp.vercel.app/) | Saudi Arabia-based booking platform for beauty professionals | Node.js, Express, MongoDB, REST API |
-| [**Cloudstech**](https://www.cloudstech.org/) | Marketing site for an international software & AI agency, with 3D effects and animation | Next.js, Three.js, GSAP, TypeScript |
+| [**Terrachow**](https://www.terrachow.com/) | Nigerian food delivery platform with real-time order tracking and resilient payments | React Native, Expo, Mobile UX |
+| [**360Gadgets Africa**](https://360gadgetsafrica.com/) | Omnichannel e-commerce & instant VTU platform with Paystack & Flutterwave failover | React Native, Next.js, Node.js, MongoDB |
+| [**A1 Information Technology**](https://www.a1info.tech/) | Tech education & gadget repair ecosystem with self-serve student enrollment | Next.js, TypeScript, Node.js, MongoDB |
+| [**GlamConnect**](https://glam-sync-mvp.vercel.app/) | Saudi Arabia booking marketplace for beauty professionals and salons | Node.js, Express, MongoDB, REST API |
+| [**Cloudstech**](https://www.cloudstech.org/) | Interactive brand and lead-generation platform for an international software & AI agency | Next.js, Three.js, GSAP, TypeScript |
+| [**SabiLearn**](https://www.sabilearn.online) | Interactive Nigerian EdTech & AI study platform with practice quizzes & code playground | Next.js, React Native, AI Integration |
+| [**Quranic**](https://quranic.expo.app) | Modern & premium Islamic companion app with digital Mushaf, prayer times & Qiblah | React Native, Expo, Next.js, TypeScript |
 
-### 💼 Experience
+### Experience
 
-- **Fullstack Engineer** @ Africlana Ltd — *Aug 2026 – Present*
-- **Fullstack Engineer** @ Cloudstech — *Jan 2026 – Present*
-- **Fullstack Engineer** @ A1 Information Technology — *May 2026 – Aug 2026*
-- **Fullstack Engineer** @ 360Gadgets Africa — *Apr 2025 – Jan 2026*
-- **Mobile App Developer Intern** @ Terrachow — *Jun 2024 – Mar 2025*
+- **Frontend & Interactive Web Developer** @ Cloudstech — *Jan 2026 – Present*
+- **Lead Fullstack Developer** @ A1 Information Technology — *May 2026 – Aug 2026*
+- **Fullstack Web & Mobile Developer** @ 360Gadgets Africa — *Apr 2025 – Jan 2026*
+- **Mobile App Developer** @ Terrachow — *Jun 2024 – Mar 2025*
 
-### 📫 Reach Me
+### Reach Me
 
 - Email: [musamusakannike@gmail.com](mailto:musamusakannike@gmail.com)
 - LinkedIn: [musa-musa-kannike](https://www.linkedin.com/in/musa-musa-kannike-02604b418/)
 - X / Twitter: [@musa_codes](https://x.com/musa_codes)
-</content>
