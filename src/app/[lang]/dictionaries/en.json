@@ -124,15 +124,6 @@
     "heading": "Work Experience",
     "items": [
       {
-        "role": "Lead Fullstack & Mobile Developer",
-        "company": "Africlana Ltd",
-        "period": "Aug 2026 – Present",
-        "type": "Current",
-        "typeLabel": "Current",
-        "description": "Driving end-to-end fullstack features and user experience across Africlana's web and mobile platforms. Collaborating closely with product stakeholders to rapidly iterate on feedback loops, improve user retention, and ensure scalable application architecture.",
-        "tags": ["Fullstack Development", "Mobile Apps", "Web", "React Native"]
-      },
-      {
         "role": "Lead Fullstack Developer",
         "company": "A1 Information Technology",
         "period": "May 2026 – Aug 2026",

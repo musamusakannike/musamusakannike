@@ -15,7 +15,7 @@
 
 ### About Me
 
-- Currently driving fullstack web & mobile development at **Africlana Ltd** and **Cloudstech**, an international software & AI agency
+- Currently driving fullstack web & mobile development at **Cloudstech**, an international software & AI agency
 - I specialize in **fullstack web and mobile application development** with **React, Next.js, React Native (Expo), and Node.js** — owning features from concept and UX architecture to production deployment
 - I've shipped products used by thousands of people — Nigerian food delivery apps, multi-currency e-commerce platforms, and a Saudi Arabian beauty marketplace
 - Production experience across **3 platforms**: Web, Mobile, and Desktop/Cloud
@@ -62,7 +62,6 @@
 
 ### Experience
 
-- **Lead Fullstack & Mobile Developer** @ Africlana Ltd — *Aug 2026 – Present*
 - **Frontend & Interactive Web Developer** @ Cloudstech — *Jan 2026 – Present*
 - **Lead Fullstack Developer** @ A1 Information Technology — *May 2026 – Aug 2026*
 - **Fullstack Web & Mobile Developer** @ 360Gadgets Africa — *Apr 2025 – Jan 2026*
